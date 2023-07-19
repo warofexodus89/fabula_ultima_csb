@@ -1,5 +1,5 @@
 {
-  "name": "_Fabula Ultima PC Template",
+  "name": "_Fabula Ultima PC template",
   "type": "_template",
   "system": {
     "hidden": [],
@@ -552,7 +552,7 @@
                     "value": "${0}$",
                     "prefix": "Initiative: ",
                     "suffix": "",
-                    "rollMessage": "<h2>Initiative Roll</h2>\n\n${#dice1:= ref('dex_current')}$\n\n${#dice2:= ref('ins_current')}$ \n\n<p><b>DEX</b> = 1d${!dice1}$ = ${D1:=[1d:dice1:]}$</p>\n\n<p><b>INS</b> = 1d${!dice2}$ = ${D2:=[1d:dice2:]}$</p>\n\n<p><strong>Result: ${!D1}$ + ${!D2}$ = ${D1+D2}$</p>\n\n${! largerEq(D1, 6) and D1 == D2 ? string('<p><b>CRITICAL SUCCESS! Gain an Opportunity</b></p>'): string('')}$\n\n${!D1 == D2 and D1 == 1 ? string('<p><b>FUMBLE<b></p>'): string('')}$",
+                    "rollMessage": "<h2>Initiative Roll</h2>\n\n${#dice1:= ref('dex_current')}$\n\n${#dice2:= ref('ins_current')}$ \n\n<p><b>DEX</b> = 1d${!dice1}$ = ${D1:=[1d:dice1:]}$</p>\n\n<p><b>INS</b> = 1d${!dice2}$ = ${D2:=[1d:dice2:]}$</p>\n\n<p><strong>Result: ${!D1}$ + ${!D2}$ + ${total_init}$= ${D1+D2+total_init}$</p>\n\n${! largerEq(D1, 6) and D1 == D2 ? string('<p><b>CRITICAL SUCCESS! Gain an Opportunity</b></p>'): string('')}$\n\n${!D1 == D2 and D1 == 1 ? string('<p><b>FUMBLE<b></p>'): string('')}$",
                     "altRollMessage": "",
                     "style": "bold",
                     "type": "label"
@@ -5566,7 +5566,7 @@
     "systemVersion": "2.2.7",
     "coreVersion": "10.303",
     "createdTime": 1687192833609,
-    "modifiedTime": 1689670582204,
+    "modifiedTime": 1689753091657,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
