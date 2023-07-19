@@ -12,10 +12,11 @@ There will be updates and changes to the templates as I improve on it to cater f
 
 - [1. Dependencies](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#1-dependencies)
 - [2. Installation](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#2-how-to-use-this-module)
-- [3. Using the CSB templates](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#3-using-the-csb-templates)
-  - [3.1  Creating a new world](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#31-creating-a-new-world)
-  - [3.2 Importing the template](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#32-importing-the-template)
-  - [3.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
+- [3. Downloading the CSB templates](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#3-downloading-the-csb-templates)
+- [4. Using the CSB templates](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#3-using-the-csb-templates)
+  - [4.1  Creating a new world](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#31-creating-a-new-world)
+  - [4.2 Importing the template](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#32-importing-the-template)
+  - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
   
 
 ## 1. Dependencies
@@ -31,9 +32,16 @@ The **Custom System Builder** (aka **CSB**) allows you to create custom sheets f
 
 It is very important to note that Templates should **NOT** be used as fillable sheets, they are used to generate new Actors or Objects sheets.
 
-## 3. Using the CSB templates
+## 3. Downloading the CSB templates
 
-### 3.1 Creating a new world
+In case you can't find it, you can download the ZIP file by clicking on the green "**Code**" button.
+
+![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/397bc943-e0f7-455c-bfb4-cd217c3db2e5)
+
+
+## 4. Using the CSB templates
+
+### 4.1 Creating a new world
 
 To get things started, first you will need to install CSB (you can find the link under Dependencies). Once CSB is installed, create a new world using CSB as the system.
 
@@ -41,13 +49,13 @@ To get things started, first you will need to install CSB (you can find the link
 
 Once the world is created you are not ready to import the templates.
 
-### 3.2 Importing the template
+### 4.2 Importing the template
 
 https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/751859fd-51c3-4134-b9d8-e9bf075359bb
 
 **NOTE:** If the template is blank after importing, try closing and reopening Foundry again as a workaround.
 
-### 3.3 Styling the sheets
+### 4.3 Styling the sheets
 
 You got your template to show but you are not done yet! You still need to install the CSS to make it fancy!
 
