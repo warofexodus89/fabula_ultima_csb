@@ -67,5 +67,5 @@ You got your template to show but you are not done yet! You still need to instal
 https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/42decde1-3fa2-434d-9e7c-3d7cf4e98a4b
 
 
-...And with that you are done! Feel free to check out the wiki if you want to learn more on how to use and customize the sheet!
+...And with that you are done! Feel free to check out the [wiki](https://github.com/warofexodus89/fabula_ultima_csb/wiki) if you want to learn more on how to use and customize the sheet!
 
