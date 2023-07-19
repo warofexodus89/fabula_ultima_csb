@@ -1,0 +1,1738 @@
+{
+  "name": "_Armor",
+  "type": "_equippableItemTemplate",
+  "img": "icons/svg/statue.svg",
+  "system": {
+    "hidden": [],
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "body": {
+      "contents": [
+        {
+          "key": "",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "label": null,
+          "defaultValue": null,
+          "size": "full-size",
+          "icon": "",
+          "value": "Armor Details",
+          "prefix": "",
+          "suffix": "",
+          "rollMessage": "",
+          "altRollMessage": "",
+          "style": "title",
+          "type": "label"
+        },
+        {
+          "key": "details_table",
+          "cssClass": "table{background: linear-gradient(to right, #ff0000 0%, #ffffff 100%)}",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid\"> Martial armor?</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "is_martialarmor",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": null,
+                "size": "full-size",
+                "type": "checkbox"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid\"> Equipped?</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "is_equipped",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": null,
+                "size": "full-size",
+                "type": "checkbox"
+              }
+            ]
+          ],
+          "cols": "4",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "Item_details",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "${is_martialarmor ? \"<i class=\\\"fa-solid fa-shield-cross\\\"> Base Def</i>\" : \"<i class=\\\"fa-solid fa-shield-cross\\\"> Bonus Def</i>\"}$",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "armor_mod",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-shield-cross\"> Mdef</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "bold",
+                "type": "label"
+              },
+              {
+                "key": "magic_defense_mod",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-heart\"> Bonus HP</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "bold",
+                "type": "label"
+              },
+              {
+                "key": "bonus_hp",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "m-small",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-sparkles\"> Bonus MP</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "bold",
+                "type": "label"
+              },
+              {
+                "key": "bonus_mp",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-heart-circle-plus\"> Heal Received Bonus</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "heal_received_bonus",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-staff-snake\"> Healing Bonus</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "healing_bonus",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              },
+              null,
+              null
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-crosshairs\"> Accuracy Check Bonus</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "accuracy_check_bonus",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "",
+                "prefix": "<i class=\"fa-solid fa-wand-magic-sparkles\"> Magic Check Bonus</i>",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "magic_check_bonus",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              }
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-swords\"> Weapon Damage Up</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "wpn_dmg_up",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-staff\"> Magic Damage Up</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "magic_damage_up",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "type": "numberField"
+              }
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-sack\"> Bonus IP</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "bonus_ip",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-clock\"> Initiative Bonus</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "initiative_bonus",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "+0",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            ]
+          ],
+          "cols": "4",
+          "rows": "6",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "add_effects_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-star-of-david\"> Quality:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "add_effects",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "x-large",
+                "style": "dialog",
+                "type": "textArea"
+              }
+            ]
+          ],
+          "cols": "2",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "label": null,
+          "defaultValue": null,
+          "size": "full-size",
+          "icon": "",
+          "value": "Status Immunities",
+          "prefix": "",
+          "suffix": "",
+          "rollMessage": "",
+          "altRollMessage": "",
+          "style": "title",
+          "type": "label"
+        },
+        {
+          "key": "status_rst_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Dexterity die size by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-clock\"> Slow</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "slow_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Willpower die size by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-face-fearful\"> Shaken</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "shaken_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Insight die size by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-face-dizzy\"> Dazed</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "dazed_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Might die size by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-face-tired\"> Weak</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "weak_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Might and Willpower die sizes by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-flask-round-poison\"> Poisoned</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "poisoned_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Temporarily reduces your Dexterity and Insight die sizes by one.",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-face-angry\"> Enraged</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "enraged_rst",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": null,
+                        "size": "small",
+                        "type": "checkbox"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "label": null,
+          "defaultValue": null,
+          "size": "full-size",
+          "icon": "",
+          "value": "Elemental Affinities",
+          "prefix": "",
+          "suffix": "",
+          "rollMessage": "",
+          "altRollMessage": "",
+          "style": "title",
+          "type": "label"
+        },
+        {
+          "key": "elemental_aff",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Physical",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_1",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Fire",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_2",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Ice",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_3",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Earth",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_4",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Air",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_5",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Bolt",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_6",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Light",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_7",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Dark",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_8",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Poison",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_9",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "label": null,
+          "defaultValue": null,
+          "size": "full-size",
+          "icon": "",
+          "value": "Description",
+          "prefix": "",
+          "suffix": "",
+          "rollMessage": "",
+          "altRollMessage": "",
+          "style": "title",
+          "type": "label"
+        },
+        {
+          "key": "desc_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "display": {
+      "width": "730",
+      "height": "700",
+      "fix_size": false,
+      "pp_width": "300",
+      "pp_height": "300"
+    }
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "feb5ead1bf308fcc34226acc2a7d042fe9a7b67c",
+      "sourceId": "Item.cp0B290qrMBSDEQa"
+    },
+    "custom-system-builder": {
+      "version": "2.2.7"
+    },
+    "exportSource": {
+      "world": "fabula-ultima-as-above-so-below",
+      "system": "custom-system-builder",
+      "coreVersion": "10.303",
+      "systemVersion": "2.2.7"
+    }
+  },
+  "_stats": {
+    "systemId": "custom-system-builder",
+    "systemVersion": "2.2.7",
+    "coreVersion": "10.303",
+    "createdTime": 1687435117922,
+    "modifiedTime": 1689612815524,
+    "lastModifiedBy": "Cdab6E6tDeyd5eNc"
+  }
+}

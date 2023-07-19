@@ -1,0 +1,79 @@
+/* Custom */
+
+/* Foundry background color*/
+.white_background { background: #F7FAF5}
+
+.quote_table { border: 0px solid #854A4A; color: #854A4A; }
+.header_block { background: #854A4A; color: #F1E4CA; border: 0px solid #854A4A;}
+.header_font > a {color: #F1E4CA;}
+
+/* Generic font color */
+.font-color {color:#854A4A;}
+
+/* Stat page stylings */
+.tab_content_background { border:0px solid #854A4A; background: #D0CDBF;}
+.tab_content_background > table { border:2px solid #854A4A;}
+.tab_content_background > table > tbody > tr > td { padding-left:0px ; padding-right: 0px; padding-top: 0px;}
+.nav_header_bar > nav { background: #854A4A; color: #F1E4CA; margin:0px;}
+.tab_background {border:0px solid #854A4A; background: #D0CDBF;margin: 0px;}
+.tab_background > table {background: rgba(0, 0, 0, 0.00); border:0px; padding-left:0px;}
+.tab_background > table > tbody > tr > td  {padding-left:0px;}
+.tab_content { border-top: 1px solid #4C0F0F; border-bottom: 1px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px}
+.tab_content > table { border: 0px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px;}
+
+
+/* Gray table color */
+.alt_background {background : #E5E3D9; border-top:1px solid #4C0F0F; border-bottom:1px solid #4C0F0F; margin-top: 10px; margin-bottom: 10px;}
+.alt_background > table {margin-top: 0px; margin-bottom: 0px;}
+
+/* Removes table border and color */
+.table_style > table {border:0px;background-color: rgba(255, 255, 255, 0.0)}
+
+/* Override */
+
+.custom-system-actor nav.sheet-tabs {
+	margin:0px;
+	border: none;
+}
+
+
+.table td {
+	padding-left:0px;
+}
+
+.table tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.0);
+}
+
+.blockquote {
+	border-left: 3px solid #ddd;
+}
+
+
+.window-app .window-content, .sheet.journal-entry .journal-entry-content {
+	background: #FFFFFF;
+}
+
+.custom-system-cell {
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.custom-system-panel {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.custom-system-dynamic-table-row-icons {
+	padding-left:5px;
+}
+
+input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"], input[type="search"], input[type="color"], input[type="color"][data-edit], select {
+	background: #F1E4CA;
+
+}
+
+
+/* Override text/select field color styling for stat page*/
+.alt_text_field_background > input {background : #E5E3D9;}
+.alt_text_field_background > select {background : #E5E3D9;}
