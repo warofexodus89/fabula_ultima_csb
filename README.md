@@ -53,7 +53,7 @@ Once the world is created you are not ready to import the templates.
 
 https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/751859fd-51c3-4134-b9d8-e9bf075359bb
 
-**NOTE:** If the template is blank after importing, try closing and reopening Foundry again as a workaround.
+**Note:** If the template is blank after importing, try closing and reopening Foundry again as a workaround.
 
 ### 4.3 Styling the sheets
 
