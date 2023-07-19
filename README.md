@@ -1,5 +1,5 @@
-# Fabula Ultima Templates for Foundry VTT 
-v10 by Soramaru
+# Fabula Ultima Templates for Foundry VTT v10
+by Soramaru
 
 <p align="center"><img src="../media/fabula-ultima-cover.webp"></p>
 
