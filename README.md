@@ -41,7 +41,7 @@ Once the world is created you are not ready to import the templates.
 
 ### 3.2 Importing the template
 
-<p align="center"><img src="../media/template.mp4"></p>
+https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/751859fd-51c3-4134-b9d8-e9bf075359bb
 
 **NOTE:** If the template is blank after importing, try closing and reopening Foundry again as a workaround.
 
@@ -49,4 +49,8 @@ Once the world is created you are not ready to import the templates.
 
 You got your template to show but you are not done yet! You still need to install the CSS to make it fancy!
 
-<p align="center"><img src="../media/css.mp4"></p>
+https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/42decde1-3fa2-434d-9e7c-3d7cf4e98a4b
+
+
+...And with that you are done! Feel free to check out the wiki if you want to learn more on how to use and customize the sheet!
+
