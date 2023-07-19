@@ -76,4 +76,6 @@ input[type="text"], input[type="number"], input[type="password"], input[type="da
 
 /* Override text/select field color styling for stat page*/
 .alt_text_field_background > input {background : #E5E3D9;}
+.alt_text_field_background  #current_ip {background : #E5E3D9;}
+.alt_text_field_background  #fp {background : #E5E3D9;}
 .alt_text_field_background > select {background : #E5E3D9;}
