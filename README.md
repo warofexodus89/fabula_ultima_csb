@@ -25,7 +25,7 @@ The template runs on **Custom System Builder**. You will need to install this us
 
 - [Custom System Builder](https://gitlab.com/custom-system-builder/custom-system-builder/-/tree/main#how-to-install-the-system)
 
-**Note:**This sheet works on non-beta version of CSB. I can't guarantee that it will work properly on the beta version.
+**Note:** This sheet works on non-beta version of CSB. I can't guarantee that it will work properly on the beta version.
 
 
 ## 2. How to use this module?
