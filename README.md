@@ -2,7 +2,7 @@
 
 <p align="center"><img src="../media/fabula-ultima-cover.webp"></p>
 
-**Dislaimer:** These templates are **NOT** official. I personally use them in my own games but it can be use as a basic character sheet for new players trying out the game. As of current release, the template only caters for the **base game**. So feel free to draw inspiration from it to apply to your own CSB sheets! :)
+**Dislaimer:** These templates are **NOT** official. I personally use them in my own games but it can be used as a basic character sheet for new players trying out the game. As of current release, the template only caters for the **base game**. So feel free to draw inspiration from it to apply to your own CSB sheets (or modify it for your own use)! :)
 
 You can find both PC/NPC and item templates under '**Templates**'. The CSS file is mostly meant for styling the PC template; though you might notice some of it applying to the item templates as well (it still look pleasant!).
 
