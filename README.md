@@ -62,7 +62,7 @@ https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/751859fd-51c3-
 
 ### 4.3 Styling the sheets
 
-You got your template to show but you are not done yet! You still need to install the CSS to make it fancy!
+You got your template to show but you are not done yet! You still need to install the CSS to make it fancy! By default, Foundry doesn't auto detect CSS files (no idea why, security reasons maybe?). So you will have to manually specify the CSS file.
 
 https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/42decde1-3fa2-434d-9e7c-3d7cf4e98a4b
 
