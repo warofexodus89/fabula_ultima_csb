@@ -28,7 +28,7 @@ There will be updates and changes to the templates as I improve on it to cater f
 The **Custom System Builder** (aka **CSB**) allows you to create custom sheets for Actors (PC and NPC) and Objects (accessories, armors and weapons). Through this functionality you will also be able to import templates found in this repository to create:
 
 - Your PC and NPC sheets
-- Accessories, armor and weapon sheets that can be attached to the PCs
+- Accessories and armor sheets that can be attached to the PCs
 
 It is very important to note that Templates should **NOT** be used as fillable sheets, they are used to generate new Actors or Objects sheets.
 
