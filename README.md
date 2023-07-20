@@ -17,7 +17,7 @@ There will be updates and changes to the templates as I improve on it to cater f
   - [4.1  Creating a new world](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#31-creating-a-new-world)
   - [4.2 Importing the template](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#32-importing-the-template)
   - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
-- [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#5-frequently-asked-questions)
+- [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#5-frequently-asked-questions)
   
 
 ## 1. Dependencies
