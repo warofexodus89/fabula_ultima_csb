@@ -77,7 +77,7 @@ Press F5 to refresh your Foundry so that it will load your CSS file. It's good t
 
 **Answer:** Most likely due to the item container filters not being imported over with the templates. Here is what you need to do:
 
-1. Go to the "__Fabula Ultima PC template_".
+1. Go to the **"_Fabula Ultima PC template"**.
 2. Navigate to the tab with faulty item container and click on it.
 3. At the item container window, ensure that right templates are selected in the filter section.
 
