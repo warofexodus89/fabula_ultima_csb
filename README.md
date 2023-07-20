@@ -17,6 +17,7 @@ There will be updates and changes to the templates as I improve on it to cater f
   - [4.1  Creating a new world](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#31-creating-a-new-world)
   - [4.2 Importing the template](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#32-importing-the-template)
   - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
+- [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#5-frequently-asked-questions)
   
 
 ## 1. Dependencies
@@ -70,3 +71,22 @@ Press F5 to refresh your Foundry so that it will load your CSS file. It's good t
 
 ...And with that you are done! Feel free to check out the [wiki](https://github.com/warofexodus89/fabula_ultima_csb/wiki) if you want to learn more on how to use and customize the sheet!
 
+## 5. Frequently asked questions
+
+### 5.1 My gears doesn't appear after dragging them into the character sheet!
+
+**Answer:** Most likely due to the item container filters not being imported over with the templates. Here is what you need to do:
+
+1. Go to the "__Fabula Ultima PC template_".
+2. Navigate to the tab with faulty item container and click on it.
+3. At the item container window, ensure that right templates are selected in the filter section.
+
+![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/f3ab01cf-a804-4181-88a8-d526357e7119)
+
+When it comes to missing equipped items, this is always the main culprit.
+
+### 5.2 The sheet is too big or profile picture on the sheets are too big!
+
+**Answer:** The size of the sheet is fixed to accomodate the components on the sheet but if you want to adjust you can still do so from **"Configure sheet display"** on the respective templates!
+
+![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/8b96a6c3-a32b-474f-be99-3eb42279a2bd)
