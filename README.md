@@ -18,6 +18,8 @@ There will be updates and changes to the templates as I improve on it to cater f
   - [4.2 Importing the template](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#32-importing-the-template)
   - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
 - [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#5-frequently-asked-questions)
+  - [5.1 My gears doesn't appear after dragging them into the character sheet!](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#51-my-gears-doesnt-appear-after-dragging-them-into-the-character-sheet)
+  - [5.2 The sheet is too big or profile picture on the sheets is too big! ](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#52-the-sheet-is-too-big-or-profile-picture-on-the-sheets-is-too-big)
   
 
 ## 1. Dependencies
