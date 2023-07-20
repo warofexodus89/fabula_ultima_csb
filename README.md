@@ -85,7 +85,7 @@ Press F5 to refresh your Foundry so that it will load your CSS file. It's good t
 
 When it comes to missing equipped items, this is always the main culprit.
 
-### 5.2 The sheet is too big or profile picture on the sheets are too big!
+### 5.2 The sheet is too big or profile picture on the sheets is too big!
 
 **Answer:** The size of the sheet is fixed to accomodate the components on the sheet but if you want to adjust you can still do so from **"Configure sheet display"** on the respective templates!
 
