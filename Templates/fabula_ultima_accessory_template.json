@@ -1680,9 +1680,48 @@
       "fix_size": false,
       "pp_width": "300",
       "pp_height": "300"
-    }
+    },
+    "modifiers": [
+      {
+        "priority": 0,
+        "key": "total_def",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "total_mdef",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "total_init",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_hp",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_mp",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_ip",
+        "operator": "add",
+        "formula": "${is_equipped ? 0 : 0}$"
+      }
+    ]
   },
   "effects": [],
+  "folder": "rUpkamytc1F92Qae",
   "flags": {
     "scene-packer": {
       "hash": "329a0be6ce29fb5cc6316e4ba7a0f3a994577edb",
@@ -1691,22 +1730,20 @@
     "custom-system-builder": {
       "version": "2.2.7"
     },
-    "core": {
-      "sourceId": "Item.cp0B290qrMBSDEQa"
-    },
+    "core": {},
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "10.303",
-      "systemVersion": "2.2.7"
+      "coreVersion": "11.306",
+      "systemVersion": "2.3.0"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.2.7",
-    "coreVersion": "10.303",
+    "systemVersion": "2.3.0",
+    "coreVersion": "11.306",
     "createdTime": 1687435117922,
-    "modifiedTime": 1689612278328,
+    "modifiedTime": 1690566741943,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

@@ -625,7 +625,7 @@
                                       "role": "0",
                                       "permission": "0",
                                       "tooltip": "",
-                                      "visibilityFormula": null,
+                                      "visibilityFormula": "",
                                       "contents": [
                                         {
                                           "key": "",
@@ -653,17 +653,30 @@
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "m-small",
-                                          "icon": "",
-                                          "value": "<i class=\"fa-solid fa-dice-d20\"> Base</i>",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "m-small",
+                                              "icon": "",
+                                              "value": "<i class=\"fa-solid fa-dice-d20\"> Base</i>",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         },
                                         {
                                           "key": "",
@@ -672,17 +685,62 @@
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "m-small",
-                                          "icon": "",
-                                          "value": "<i class=\"fa-solid fa-feather\"> Current</i>",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "full-size",
+                                              "icon": "",
+                                              "value": "<i class=\"fa-solid fa-stars\"> Buffs</i>",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "label",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "m-small",
+                                              "icon": "",
+                                              "value": "<i class=\"fa-solid fa-feather\"> Current</i>",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         },
                                         {
                                           "key": "",
@@ -704,40 +762,128 @@
                                           "type": "label"
                                         },
                                         {
-                                          "key": "dex_base",
-                                          "cssClass": "alt_text_field_background",
-                                          "role": "0",
-                                          "permission": "0",
-                                          "tooltip": "",
-                                          "visibilityFormula": "",
-                                          "label": "d",
-                                          "defaultValue": "8",
-                                          "size": "small",
-                                          "allowDecimal": false,
-                                          "minVal": "6",
-                                          "maxVal": "12",
-                                          "allowRelative": false,
-                                          "showControls": false,
-                                          "type": "numberField"
-                                        },
-                                        {
-                                          "key": "dex_current",
+                                          "key": "",
                                           "cssClass": "",
                                           "role": "0",
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "x-small",
-                                          "icon": "",
-                                          "value": "${max(ref('dex_base')- (ref('isSlow')==true ? 2 : 0) - (ref('isEnraged')==true ? 2 : 0),6)}$",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "dex_base_list",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "dex_base",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "dex_current",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "x-small",
+                                              "icon": "",
+                                              "value": "${max(ref('dex_base')- (ref('isSlow')==true ? 2 : 0) - (ref('isEnraged')==true ? 2 : 0),6)}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         },
                                         {
                                           "key": "",
@@ -759,40 +905,128 @@
                                           "type": "label"
                                         },
                                         {
-                                          "key": "ins_base",
-                                          "cssClass": "alt_text_field_background",
-                                          "role": "0",
-                                          "permission": "0",
-                                          "tooltip": "",
-                                          "visibilityFormula": "",
-                                          "label": "d",
-                                          "defaultValue": "8",
-                                          "size": "small",
-                                          "allowDecimal": false,
-                                          "minVal": "6",
-                                          "maxVal": "12",
-                                          "allowRelative": false,
-                                          "showControls": false,
-                                          "type": "numberField"
-                                        },
-                                        {
-                                          "key": "ins_current",
+                                          "key": "",
                                           "cssClass": "",
                                           "role": "0",
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "x-small",
-                                          "icon": "",
-                                          "value": "${max(ref('ins_base')- (ref('isDazed')==true ? 2 : 0) - (ref('isEnraged')==true ? 2 : 0),6)}$ ",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "ins_base_list",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "ins_base",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "ins_current",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "x-small",
+                                              "icon": "",
+                                              "value": "${max(ref('ins_base')- (ref('isDazed')==true ? 2 : 0) - (ref('isEnraged')==true ? 2 : 0),6)}$ ",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         },
                                         {
                                           "key": "",
@@ -814,40 +1048,128 @@
                                           "type": "label"
                                         },
                                         {
-                                          "key": "mig_base",
-                                          "cssClass": "alt_text_field_background",
-                                          "role": "0",
-                                          "permission": "0",
-                                          "tooltip": "",
-                                          "visibilityFormula": "",
-                                          "label": "d",
-                                          "defaultValue": "8",
-                                          "size": "small",
-                                          "allowDecimal": false,
-                                          "minVal": "6",
-                                          "maxVal": "12",
-                                          "allowRelative": false,
-                                          "showControls": false,
-                                          "type": "numberField"
-                                        },
-                                        {
-                                          "key": "mig_current",
+                                          "key": "",
                                           "cssClass": "",
                                           "role": "0",
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "x-small",
-                                          "icon": "",
-                                          "value": "${max(ref('mig_base')- (ref('isWeak')==true ? 2 : 0) - (ref('isPoisoned')==true ? 2 : 0),6)}$",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "mig_base_list",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "mig_base",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "mig_current",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "x-small",
+                                              "icon": "",
+                                              "value": "${max(ref('mig_base')- (ref('isWeak')==true ? 2 : 0) - (ref('isPoisoned')==true ? 2 : 0),6)}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         },
                                         {
                                           "key": "",
@@ -869,43 +1191,131 @@
                                           "type": "label"
                                         },
                                         {
-                                          "key": "wlp_base",
-                                          "cssClass": "alt_text_field_background",
-                                          "role": "0",
-                                          "permission": "0",
-                                          "tooltip": "",
-                                          "visibilityFormula": "",
-                                          "label": "d",
-                                          "defaultValue": "8",
-                                          "size": "small",
-                                          "allowDecimal": false,
-                                          "minVal": "6",
-                                          "maxVal": "12",
-                                          "allowRelative": false,
-                                          "showControls": false,
-                                          "type": "numberField"
-                                        },
-                                        {
-                                          "key": "wlp_current",
+                                          "key": "",
                                           "cssClass": "",
                                           "role": "0",
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
-                                          "label": null,
-                                          "defaultValue": null,
-                                          "size": "x-small",
-                                          "icon": "",
-                                          "value": "${max(ref('wlp_base')- (ref('isShaken')==true ? 2 : 0) - (ref('isPoisoned')==true ? 2 : 0),6)}$",
-                                          "prefix": "",
-                                          "suffix": "",
-                                          "rollMessage": "",
-                                          "altRollMessage": "",
-                                          "style": "bold",
-                                          "type": "label"
+                                          "contents": [
+                                            {
+                                              "key": "wlp_base_list",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "wlp_base",
+                                              "cssClass": "alt_text_field_background",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": "d",
+                                              "defaultValue": "8",
+                                              "size": "small",
+                                              "options": [
+                                                {
+                                                  "key": "6",
+                                                  "value": "6"
+                                                },
+                                                {
+                                                  "key": "8",
+                                                  "value": "8"
+                                                },
+                                                {
+                                                  "key": "10",
+                                                  "value": "10"
+                                                },
+                                                {
+                                                  "key": "12",
+                                                  "value": "12"
+                                                }
+                                              ],
+                                              "tableKey": null,
+                                              "tableKeyColumn": null,
+                                              "tableLabelColumn": null,
+                                              "type": "select"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "wlp_current",
+                                              "cssClass": "",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "x-small",
+                                              "icon": "",
+                                              "value": "${max(ref('wlp_base')- (ref('isShaken')==true ? 2 : 0) - (ref('isPoisoned')==true ? 2 : 0),6)}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "bold",
+                                              "type": "label"
+                                            }
+                                          ],
+                                          "flow": "vertical",
+                                          "align": "center",
+                                          "type": "panel"
                                         }
                                       ],
-                                      "flow": "grid-3",
+                                      "flow": "grid-4",
                                       "align": "center",
                                       "type": "panel"
                                     },
@@ -3034,9 +3444,96 @@
                                 "label": "",
                                 "defaultValue": "",
                                 "size": "full-size",
-                                "charList": "",
-                                "maxLength": "",
-                                "type": "textField",
+                                "options": [
+                                  {
+                                    "key": "Arcanist",
+                                    "value": "Arcanist"
+                                  },
+                                  {
+                                    "key": "Chimerist",
+                                    "value": "Chimerist"
+                                  },
+                                  {
+                                    "key": "Darkblade",
+                                    "value": "Darkblade"
+                                  },
+                                  {
+                                    "key": "Elementalist",
+                                    "value": "Elementalist"
+                                  },
+                                  {
+                                    "key": "Entrophist",
+                                    "value": "Entrophist"
+                                  },
+                                  {
+                                    "key": "Fury",
+                                    "value": "Fury"
+                                  },
+                                  {
+                                    "key": "Guardian",
+                                    "value": "Guardian"
+                                  },
+                                  {
+                                    "key": "Loremaster",
+                                    "value": "Loremaster"
+                                  },
+                                  {
+                                    "key": "Orator",
+                                    "value": "Orator"
+                                  },
+                                  {
+                                    "key": "Rogue",
+                                    "value": "Rogue"
+                                  },
+                                  {
+                                    "key": "Sharpshooter",
+                                    "value": "Sharpshooter"
+                                  },
+                                  {
+                                    "key": "Spiritist",
+                                    "value": "Spiritist"
+                                  },
+                                  {
+                                    "key": "Tinkerer",
+                                    "value": "Tinkerer"
+                                  },
+                                  {
+                                    "key": "Wayfarer",
+                                    "value": "Wayfarer"
+                                  },
+                                  {
+                                    "key": "Weaponmaster",
+                                    "value": "Weaponmaster"
+                                  },
+                                  {
+                                    "key": "Necromancer",
+                                    "value": "Necromancer"
+                                  },
+                                  {
+                                    "key": "Chanter",
+                                    "value": "Chanter"
+                                  },
+                                  {
+                                    "key": "Commander",
+                                    "value": "Commander"
+                                  },
+                                  {
+                                    "key": "Dancer",
+                                    "value": "Dancer"
+                                  },
+                                  {
+                                    "key": "Symbolist",
+                                    "value": "Symbolist"
+                                  },
+                                  {
+                                    "key": "Ace of Cards",
+                                    "value": "Ace of Cards"
+                                  }
+                                ],
+                                "tableKey": null,
+                                "tableKeyColumn": null,
+                                "tableLabelColumn": null,
+                                "type": "select",
                                 "align": "left",
                                 "colName": "Classes"
                               },
@@ -3093,6 +3590,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           },
                           {
@@ -3214,6 +3712,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           },
                           {
@@ -3237,7 +3736,7 @@
                                 "allowDecimal": false,
                                 "minVal": "",
                                 "maxVal": "",
-                                "allowRelative": true,
+                                "allowRelative": false,
                                 "showControls": true,
                                 "type": "numberField"
                               },
@@ -3255,7 +3754,7 @@
                                 "minVal": "",
                                 "maxVal": "",
                                 "allowRelative": true,
-                                "showControls": true,
+                                "showControls": false,
                                 "type": "numberField"
                               },
                               {
@@ -3271,7 +3770,7 @@
                                 "allowDecimal": false,
                                 "minVal": "",
                                 "maxVal": "",
-                                "allowRelative": true,
+                                "allowRelative": false,
                                 "showControls": true,
                                 "type": "numberField"
                               },
@@ -3288,7 +3787,7 @@
                                 "allowDecimal": false,
                                 "minVal": "",
                                 "maxVal": "",
-                                "allowRelative": true,
+                                "allowRelative": false,
                                 "showControls": true,
                                 "type": "numberField"
                               },
@@ -3305,7 +3804,7 @@
                                 "allowDecimal": false,
                                 "minVal": "",
                                 "maxVal": "",
-                                "allowRelative": true,
+                                "allowRelative": false,
                                 "showControls": true,
                                 "type": "numberField"
                               },
@@ -3322,7 +3821,7 @@
                                 "allowDecimal": false,
                                 "minVal": "",
                                 "maxVal": "",
-                                "allowRelative": true,
+                                "allowRelative": false,
                                 "showControls": true,
                                 "type": "numberField"
                               }
@@ -3613,6 +4112,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       },
                       {
@@ -3926,6 +4426,7 @@
                         ],
                         "head": true,
                         "deleteWarning": false,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       },
                       {
@@ -4020,6 +4521,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       }
                     ],
@@ -4382,6 +4884,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           }
                         ],
@@ -4988,6 +5491,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           },
                           {
@@ -5112,6 +5616,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           },
                           {
@@ -5217,6 +5722,7 @@
                             ],
                             "head": true,
                             "deleteWarning": true,
+                            "predefinedLines": [],
                             "type": "dynamicTable"
                           },
                           {
@@ -5295,74 +5801,13 @@
                         "contents": [
                           [
                             {
-                              "key": "",
-                              "cssClass": "",
-                              "role": "0",
-                              "permission": "0",
-                              "tooltip": "",
-                              "visibilityFormula": "",
+                              "key": null,
+                              "cssClass": null,
+                              "role": 0,
+                              "permission": 0,
+                              "tooltip": null,
+                              "visibilityFormula": null,
                               "contents": [
-                                {
-                                  "key": "",
-                                  "cssClass": "",
-                                  "role": "0",
-                                  "permission": "0",
-                                  "tooltip": "",
-                                  "visibilityFormula": null,
-                                  "contents": [
-                                    {
-                                      "key": "",
-                                      "cssClass": "font-color",
-                                      "role": "0",
-                                      "permission": "0",
-                                      "tooltip": "",
-                                      "visibilityFormula": "",
-                                      "label": null,
-                                      "defaultValue": null,
-                                      "size": "full-size",
-                                      "icon": "",
-                                      "value": "<i class=\"fa-solid fa-books\"> Backstory</i>",
-                                      "prefix": "",
-                                      "suffix": "",
-                                      "rollMessage": "",
-                                      "altRollMessage": "",
-                                      "style": "bold",
-                                      "type": "label"
-                                    },
-                                    {
-                                      "key": "",
-                                      "cssClass": "alt_background",
-                                      "role": "0",
-                                      "permission": "0",
-                                      "tooltip": "",
-                                      "visibilityFormula": "",
-                                      "contents": [
-                                        [
-                                          {
-                                            "key": "backstory",
-                                            "cssClass": "",
-                                            "role": "0",
-                                            "permission": "0",
-                                            "tooltip": "",
-                                            "visibilityFormula": null,
-                                            "label": "",
-                                            "defaultValue": "",
-                                            "size": null,
-                                            "style": "sheet",
-                                            "type": "textArea"
-                                          }
-                                        ]
-                                      ],
-                                      "cols": "1",
-                                      "rows": "1",
-                                      "layout": "l",
-                                      "type": "table"
-                                    }
-                                  ],
-                                  "flow": "vertical",
-                                  "align": "center",
-                                  "type": "panel"
-                                },
                                 {
                                   "key": "",
                                   "cssClass": "",
@@ -5373,60 +5818,134 @@
                                   "contents": [
                                     {
                                       "key": "",
-                                      "cssClass": "font-color",
+                                      "cssClass": "",
                                       "role": "0",
                                       "permission": "0",
                                       "tooltip": "",
-                                      "visibilityFormula": "",
-                                      "label": null,
-                                      "defaultValue": null,
-                                      "size": "large",
-                                      "icon": "",
-                                      "value": "<i class=\"fa-solid fa-memo\"> Notes</i>",
-                                      "prefix": "",
-                                      "suffix": "",
-                                      "rollMessage": "",
-                                      "altRollMessage": "",
-                                      "style": "bold",
-                                      "type": "label"
+                                      "visibilityFormula": null,
+                                      "contents": [
+                                        {
+                                          "key": "",
+                                          "cssClass": "font-color",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "label": null,
+                                          "defaultValue": null,
+                                          "size": "full-size",
+                                          "icon": "",
+                                          "value": "<i class=\"fa-solid fa-books\"> Backstory</i>",
+                                          "prefix": "",
+                                          "suffix": "",
+                                          "rollMessage": "",
+                                          "altRollMessage": "",
+                                          "style": "bold",
+                                          "type": "label"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "alt_background",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            [
+                                              {
+                                                "key": "backstory",
+                                                "cssClass": "",
+                                                "role": "0",
+                                                "permission": "0",
+                                                "tooltip": "",
+                                                "visibilityFormula": "",
+                                                "label": "",
+                                                "defaultValue": "",
+                                                "size": null,
+                                                "style": "dialog",
+                                                "type": "textArea"
+                                              }
+                                            ]
+                                          ],
+                                          "cols": "1",
+                                          "rows": "1",
+                                          "layout": "l",
+                                          "type": "table"
+                                        }
+                                      ],
+                                      "flow": "vertical",
+                                      "align": "center",
+                                      "type": "panel"
                                     },
                                     {
                                       "key": "",
-                                      "cssClass": "alt_background",
+                                      "cssClass": "",
                                       "role": "0",
                                       "permission": "0",
                                       "tooltip": "",
                                       "visibilityFormula": "",
                                       "contents": [
-                                        [
-                                          {
-                                            "key": "notes_text",
-                                            "cssClass": "",
-                                            "role": "0",
-                                            "permission": "0",
-                                            "tooltip": "",
-                                            "visibilityFormula": "",
-                                            "label": "",
-                                            "defaultValue": "",
-                                            "size": null,
-                                            "style": "sheet",
-                                            "type": "textArea"
-                                          }
-                                        ]
+                                        {
+                                          "key": "",
+                                          "cssClass": "font-color",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "label": null,
+                                          "defaultValue": null,
+                                          "size": "large",
+                                          "icon": "",
+                                          "value": "<i class=\"fa-solid fa-memo\"> Notes</i>",
+                                          "prefix": "",
+                                          "suffix": "",
+                                          "rollMessage": "",
+                                          "altRollMessage": "",
+                                          "style": "bold",
+                                          "type": "label"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "alt_background",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            [
+                                              {
+                                                "key": "notes_text",
+                                                "cssClass": "",
+                                                "role": "0",
+                                                "permission": "0",
+                                                "tooltip": "",
+                                                "visibilityFormula": "",
+                                                "label": "",
+                                                "defaultValue": "",
+                                                "size": null,
+                                                "style": "dialog",
+                                                "type": "textArea"
+                                              }
+                                            ]
+                                          ],
+                                          "cols": "1",
+                                          "rows": "1",
+                                          "layout": "l",
+                                          "type": "table"
+                                        }
                                       ],
-                                      "cols": "1",
-                                      "rows": "1",
-                                      "layout": "l",
-                                      "type": "table"
+                                      "flow": "vertical",
+                                      "align": "left",
+                                      "type": "panel"
                                     }
                                   ],
-                                  "flow": "vertical",
-                                  "align": "left",
+                                  "flow": "grid-2",
+                                  "align": "center",
                                   "type": "panel"
                                 }
                               ],
-                              "flow": "grid-2",
-                              "align": "center",
+                              "flow": null,
+                              "align": null,
                               "type": "panel"
                             },
                             null
@@ -5475,21 +5994,1099 @@
         "max": "10"
       }
     },
-    "activeEffects": {}
+    "activeEffects": {
+      "slow": [
+        {
+          "priority": 1,
+          "key": "dex_current",
+          "operator": "add",
+          "formula": "-2"
+        },
+        {
+          "priority": 1,
+          "key": "status",
+          "operator": "set",
+          "formula": "\"Slow\""
+        }
+      ],
+      "slowFU": [
+        {
+          "priority": 1,
+          "key": "status",
+          "operator": "set",
+          "formula": "Slow"
+        }
+      ],
+      "unconscious": [],
+      "sleep": [],
+      "stun": [],
+      "prone": [],
+      "restrain": [],
+      "paralysis": [],
+      "fly": [],
+      "blind": [],
+      "deaf": [],
+      "silence": [],
+      "fear": [],
+      "burning": [],
+      "frozen": [],
+      "shock": [],
+      "corrode": [],
+      "bleeding": [],
+      "disease": [],
+      "poison": [],
+      "curse": [],
+      "regen": [],
+      "degen": [],
+      "upgrade": [],
+      "downgrade": [],
+      "invisible": [],
+      "target": [],
+      "eye": [],
+      "bless": [],
+      "fireShield": [],
+      "coldShield": [],
+      "magicShield": [],
+      "holyShield": [],
+      "dead": []
+    },
+    "templateSystemUniqueVersion": 1725329337
   },
   "flags": {
     "custom-system-builder": {
-      "version": "2.1.0"
+      "version": "2.1.0",
+      "templateHistory": [
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "rowLayout": [
+                  {
+                    "key": "ddd",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "full-size",
+                    "icon": "dice",
+                    "value": "",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+                    "altRollMessage": "",
+                    "style": "label",
+                    "type": "label",
+                    "align": "left",
+                    "colName": ""
+                  }
+                ],
+                "head": false,
+                "deleteWarning": false,
+                "headDisplay": true,
+                "showDelete": true,
+                "nameAlign": "left",
+                "nameLabel": "Name",
+                "templateFilter": [
+                  "NYXkfJNMlH1IViV6",
+                  "cp0B290qrMBSDEQa",
+                  "rs9Snd2P25mmakJn",
+                  "BGqsiduGyVp8a28W",
+                  "6fXggxil2Hgib2gI",
+                  "ovjJIsY8b1Vu709i"
+                ],
+                "itemFilter": [],
+                "type": "itemContainer"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents"
+            ],
+            "index": 4,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "Status here",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents"
+            ],
+            "index": 4,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "Status here",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              1,
+              "value"
+            ],
+            "lhs": "",
+            "rhs": "output status here"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "header",
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "status",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "output status here",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "charList"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "maxLength"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "type"
+            ],
+            "lhs": "textField",
+            "rhs": "select"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options"
+            ],
+            "rhs": [
+              {
+                "key": "arcanist",
+                "value": "Arcanist"
+              },
+              {
+                "key": "chimerist",
+                "value": "Chimerist"
+              },
+              {
+                "key": "darkblade",
+                "value": "Darkblade"
+              },
+              {
+                "key": "elementalist",
+                "value": "Elementalist"
+              },
+              {
+                "key": "entrophist",
+                "value": "Entrophist"
+              },
+              {
+                "key": "fury",
+                "value": "Fury"
+              },
+              {
+                "key": "guardian",
+                "value": "Guardian"
+              },
+              {
+                "key": "loremaster",
+                "value": "Loremaster"
+              },
+              {
+                "key": "orator",
+                "value": "Orator"
+              },
+              {
+                "key": "rogue",
+                "value": "Rogue"
+              },
+              {
+                "key": "sharpshooter",
+                "value": "Sharpshooter"
+              },
+              {
+                "key": "spiritist",
+                "value": "Spiritist"
+              },
+              {
+                "key": "tinkerer",
+                "value": "Tinkerer"
+              },
+              {
+                "key": "wayfarer",
+                "value": "Wayfarer"
+              },
+              {
+                "key": "weaponmaster",
+                "value": "Weaponmaster"
+              },
+              {
+                "key": "necromancer",
+                "value": "Necromancer"
+              },
+              {
+                "key": "chanter",
+                "value": "Chanter"
+              },
+              {
+                "key": "commander",
+                "value": "Commander"
+              },
+              {
+                "key": "dancer",
+                "value": "Dancer"
+              },
+              {
+                "key": "symbolist",
+                "value": "Symbolist"
+              },
+              {
+                "key": "aceofcards",
+                "value": "Ace of Cards"
+              }
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "tableKey"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "tableKeyColumn"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "tableLabelColumn"
+            ],
+            "rhs": null
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              20,
+              "key"
+            ],
+            "lhs": "aceofcards",
+            "rhs": "Ace of Cards"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              19,
+              "key"
+            ],
+            "lhs": "symbolist",
+            "rhs": "Symbolist"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              18,
+              "key"
+            ],
+            "lhs": "dancer",
+            "rhs": "Dancer"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              17,
+              "key"
+            ],
+            "lhs": "commander",
+            "rhs": "Commander"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              16,
+              "key"
+            ],
+            "lhs": "chanter",
+            "rhs": "Chanter"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              15,
+              "key"
+            ],
+            "lhs": "necromancer",
+            "rhs": "Necromancer"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              14,
+              "key"
+            ],
+            "lhs": "weaponmaster",
+            "rhs": "Weaponmaster"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              13,
+              "key"
+            ],
+            "lhs": "wayfarer",
+            "rhs": "Wayfarer"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              12,
+              "key"
+            ],
+            "lhs": "tinkerer",
+            "rhs": "Tinkerer"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              11,
+              "key"
+            ],
+            "lhs": "spiritist",
+            "rhs": "Spiritist"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              10,
+              "key"
+            ],
+            "lhs": "sharpshooter",
+            "rhs": "Sharpshooter"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              9,
+              "key"
+            ],
+            "lhs": "rogue",
+            "rhs": "Rogue"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              8,
+              "key"
+            ],
+            "lhs": "orator",
+            "rhs": "Orator"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              7,
+              "key"
+            ],
+            "lhs": "loremaster",
+            "rhs": "Loremaster"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              6,
+              "key"
+            ],
+            "lhs": "guardian",
+            "rhs": "Guardian"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              5,
+              "key"
+            ],
+            "lhs": "fury",
+            "rhs": "Fury"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              4,
+              "key"
+            ],
+            "lhs": "entrophist",
+            "rhs": "Entrophist"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              3,
+              "key"
+            ],
+            "lhs": "elementalist",
+            "rhs": "Elementalist"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              2,
+              "key"
+            ],
+            "lhs": "darkblade",
+            "rhs": "Darkblade"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              1,
+              "key"
+            ],
+            "lhs": "chimerist",
+            "rhs": "Chimerist"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              1,
+              "options",
+              0,
+              "key"
+            ],
+            "lhs": "arcanist",
+            "rhs": "Arcanist"
+          }
+        ]
+      ],
+      "templateHistoryRedo": []
     },
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "10.303",
-      "systemVersion": "2.2.7"
+      "coreVersion": "11.306",
+      "systemVersion": "2.3.0"
     },
-    "core": {
-      "sourceId": "Actor.jij0hGI3KVWAo2at"
-    },
+    "core": {},
     "scene-packer": {
       "sourceId": "Actor.LvBioOfyPFr27nDq"
     }
@@ -5546,7 +7143,7 @@
     },
     "sight": {
       "enabled": false,
-      "range": null,
+      "range": 0,
       "angle": 360,
       "visionMode": "basic",
       "color": null,
@@ -5557,16 +7154,19 @@
     },
     "detectionModes": [],
     "flags": {},
-    "randomImg": false
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
   },
   "items": [],
   "effects": [],
+  "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.2.7",
-    "coreVersion": "10.303",
+    "systemVersion": "2.3.0",
+    "coreVersion": "11.306",
     "createdTime": 1687192833609,
-    "modifiedTime": 1689753091657,
+    "modifiedTime": 1690565931401,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
