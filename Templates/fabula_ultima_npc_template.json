@@ -433,10 +433,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "8",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "6",
@@ -517,10 +517,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "8",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "6",
@@ -601,10 +601,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "8",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "6",
@@ -685,10 +685,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "8",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "6",
@@ -1054,10 +1054,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "DEX",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "DEX",
@@ -1087,10 +1087,10 @@
                                   "role": "0",
                                   "permission": "0",
                                   "tooltip": "",
-                                  "visibilityFormula": null,
+                                  "visibilityFormula": "",
                                   "label": "",
                                   "defaultValue": "DEX",
-                                  "size": "small",
+                                  "size": "m-small",
                                   "options": [
                                     {
                                       "key": "DEX",
@@ -2513,11 +2513,11 @@
                           },
                           {
                             "key": "roll",
-                            "cssClass": null,
+                            "cssClass": "",
                             "role": "0",
                             "permission": "0",
                             "tooltip": "",
-                            "visibilityFormula": null,
+                            "visibilityFormula": "",
                             "label": null,
                             "defaultValue": null,
                             "size": "full-size",
@@ -2525,7 +2525,7 @@
                             "value": "",
                             "prefix": "",
                             "suffix": "",
-                            "rollMessage": "<h2>${!sameRow('basic_name')}$</h2>\n\n${!sameRow('details','')}$\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n${#D1:=[1d:dice1:]}$\n${#D2:=[1d:dice2:]}$\n\n${!concat('<p><b>Check:</b> ', string(D1), ' + ', string(D2), ' + ', string(sameRow('check_bonus')), ' = <b>', string(D1+D2+sameRow('check_bonus')), '</b> vs. DEF</p>')}$\n\n${!concat('<p><b>Damage:</b> HR + ', string(sameRow('dmg_bonus')), ' = <b>', string(max(D1, D2)+sameRow('dmg_bonus')), '</b> ', string(sameRow('type')), '</p>')}$\n\n${!string(sameRow('detail'))}$",
+                            "rollMessage": "<h2>${!sameRow('basic_name')}$</h2>\n\n${!sameRow('detail','')}$\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n${#D1:=[1d:dice1:]}$\n${#D2:=[1d:dice2:]}$\n\n${!concat('<p><b>Check:</b> ', string(D1), ' + ', string(D2), ' + ', string(sameRow('check_bonus')), ' = <b>', string(D1+D2+sameRow('check_bonus')), '</b> vs. DEF</p>')}$\n\n${!concat('<p><b>Damage:</b> HR + ', string(sameRow('dmg_bonus')), ' = <b>', string(max(D1, D2)+sameRow('dmg_bonus')), '</b> ', string(sameRow('type')), '</p>')}$\n\n${!string(sameRow('detail'))}$",
                             "altRollMessage": "",
                             "style": "label",
                             "type": "label",
@@ -2535,6 +2535,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       },
                       {
@@ -2811,6 +2812,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       },
                       {
@@ -2916,6 +2918,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       },
                       {
@@ -3021,6 +3024,7 @@
                         ],
                         "head": true,
                         "deleteWarning": true,
+                        "predefinedLines": [],
                         "type": "dynamicTable"
                       }
                     ],
@@ -3122,17 +3126,377 @@
         "max": "${ref('mp_max')}$"
       }
     },
-    "activeEffects": {}
+    "activeEffects": {},
+    "templateSystemUniqueVersion": 3902028575
   },
   "flags": {
     "custom-system-builder": {
-      "version": "2.1.0"
+      "version": "2.3.1",
+      "templateHistory": [
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              7,
+              "predefinedLines"
+            ],
+            "rhs": []
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              5,
+              "predefinedLines"
+            ],
+            "rhs": []
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              3,
+              "predefinedLines"
+            ],
+            "rhs": []
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "predefinedLines"
+            ],
+            "rhs": []
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              2,
+              "contents",
+              1,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              2,
+              "contents",
+              1,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              3,
+              "contents",
+              1,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              3,
+              "contents",
+              1,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              3,
+              "contents",
+              0,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              3,
+              "contents",
+              0,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              3,
+              "contents",
+              1,
+              "visibilityFormula"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              3,
+              "contents",
+              1,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ]
+      ],
+      "templateHistoryRedo": []
     },
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "10.303",
-      "systemVersion": "2.2.7"
+      "coreVersion": "11.306",
+      "systemVersion": "2.3.1"
     },
     "scene-packer": {
       "sourceId": "Actor.F4wMLkWhh6IAxBin"
@@ -3190,7 +3554,7 @@
     },
     "sight": {
       "enabled": false,
-      "range": null,
+      "range": 0,
       "angle": 360,
       "visionMode": "basic",
       "color": null,
@@ -3201,16 +3565,19 @@
     },
     "detectionModes": [],
     "flags": {},
-    "randomImg": false
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
   },
   "items": [],
   "effects": [],
+  "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.2.7",
-    "coreVersion": "10.303",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.306",
     "createdTime": 1687192833754,
-    "modifiedTime": 1689594652259,
+    "modifiedTime": 1690925420487,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

@@ -17,17 +17,47 @@
 .nav_header_bar > nav { background: #854A4A; color: #F1E4CA; margin:0px;}
 .tab_background {border:0px solid #854A4A; background: #D0CDBF;margin: 0px;}
 .tab_background > table {background: rgba(0, 0, 0, 0.00); border:0px; padding-left:0px;}
-.tab_background > table > tbody > tr > td  {padding-left:0px;}
+.tab_background > table > tbody > tr > td  {padding-left:0px;padding-top: 0px;}
 .tab_content { border-top: 1px solid #4C0F0F; border-bottom: 1px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px}
 .tab_content > table { border: 0px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px;}
 
 
 /* Gray table color */
-.alt_background {background : #E5E3D9; border-top:1px solid #4C0F0F; border-bottom:1px solid #4C0F0F; margin-top: 10px; margin-bottom: 10px;}
+.alt_background {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
 .alt_background > table {margin-top: 0px; margin-bottom: 0px;}
 
 /* Removes table border and color */
-.table_style > table {border:0px;background-color: rgba(255, 255, 255, 0.0)}
+.table_style > table {border:0px;margin-top:0px; margin-bottom:0px; padding:0px;}
+
+/* Ritual section styling */
+.section-border { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 10px; margin-top: 0px}
+.verses-section { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px; margin-bottom: 5px}
+.section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;}
+.ritual-section-header > table {border:0px; border-right: 1px solid #854A4A; background: rgba(0, 0, 0, 0.05); margin:0px;}
+
+.border-right > table {border-right: 1px solid #854A4A;}
+.border-left > table {border-left: 1px solid #854A4A;}
+
+/* Zero power table styling */
+.alt_background_zero {border-top:1px solid #854A4A; border-bottom:1px solid #854A4A;}
+.alt_background_zero > table {margin-top: 0px; margin-bottom: 0px; border: 0px}
+.alt_background_zero > table  > tbody > tr > td {background-color: rgba(255, 255, 255, 0.2);}
+.alt_background_zero_panel {background: #E5E3D9; margin-top: 10px; margin-bottom: 10px; border-top: 1px solid #854A4A;border-bottom: 1px solid #854A4A;}
+.alt_background_zero_panel > div {margin-top:0px; margin-bottom:0px}
+
+/* Buff/Debuff section styling  */
+.label-styling {border: 2px solid #854A4A;background: #F1E4CA;}
+.margin-bottom > table {margin-bottom: 0px;}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #854A4A;
+}
+   
+
+/* Gray table color */
+.alt_background_ritual {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
+
 
 /* Override */
 
@@ -38,6 +68,10 @@
 
 
 .table td {
+	padding-left:0px;
+}
+
+table td:first-child {
 	padding-left:0px;
 }
 
@@ -70,6 +104,7 @@
 
 input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"], input[type="search"], input[type="color"], input[type="color"][data-edit], select {
 	background: #F1E4CA;
+	
 
 }
 
@@ -78,4 +113,4 @@ input[type="text"], input[type="number"], input[type="password"], input[type="da
 .alt_text_field_background > input {background : #E5E3D9;}
 .alt_text_field_background  #current_ip {background : #E5E3D9;}
 .alt_text_field_background  #fp {background : #E5E3D9;}
-.alt_text_field_background > select {background : #E5E3D9;}
+.alt_text_field_background > select {background : #E5E3D9; padding: 0px;}

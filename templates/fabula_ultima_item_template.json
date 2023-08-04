@@ -1,0 +1,505 @@
+{
+  "folder": "rUpkamytc1F92Qae",
+  "name": "_Item",
+  "type": "_equippableItemTemplate",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "hidden": [],
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "body": {
+      "contents": [
+        {
+          "key": "item_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "medium",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "label",
+                    "type": "label"
+                  },
+                  {
+                    "key": "item_price",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "",
+                    "size": "small",
+                    "charList": "",
+                    "maxLength": "",
+                    "type": "textField"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "item_desc_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-sack\"> Item details</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            ],
+            [
+              {
+                "key": "item_details",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": null,
+                "style": "dialog",
+                "type": "textArea"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "2",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "item_effect_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "m-small",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-star-of-david\"> Item effect:</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "label",
+                    "type": "label"
+                  },
+                  {
+                    "key": "item_effect",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "display": {
+      "width": "600",
+      "height": "600",
+      "fix_size": false,
+      "pp_width": "64",
+      "pp_height": "64"
+    },
+    "templateSystemUniqueVersion": 3924649494
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "1fbdf7b8064f6842160e3847297ced76d1b84d57",
+      "sourceId": "Item.BGqsiduGyVp8a28W"
+    },
+    "custom-system-builder": {
+      "version": "2.3.1",
+      "templateHistory": [
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "style"
+            ],
+            "lhs": "sheet",
+            "rhs": "dialog"
+          }
+        ],
+        null,
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-pot-food\"> Item details</i>",
+            "rhs": "<i class=\"fa-solid fa-sack\"> Item details</i>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_desc_table",
+            "rhs": "item_desc_table"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "key"
+            ],
+            "lhs": "food_price_table",
+            "rhs": "item_table"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "key"
+            ],
+            "lhs": "food_effect_table",
+            "rhs": "item_effect_table"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_price",
+            "rhs": "item_price"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "allowDecimal"
+            ],
+            "lhs": false
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "minVal"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "maxVal"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "allowRelative"
+            ],
+            "lhs": false
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "showControls"
+            ],
+            "lhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "type"
+            ],
+            "lhs": "numberField",
+            "rhs": "textField"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "charList"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "maxLength"
+            ],
+            "rhs": ""
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              1,
+              0,
+              "key"
+            ],
+            "lhs": "food_details",
+            "rhs": "item_details"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_effect",
+            "rhs": "item_effect"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-coin\"> Price:</i>",
+            "rhs": "<i class=\"fa-solid fa-coin\"> Value:</i>"
+          }
+        ]
+      ],
+      "templateHistoryRedo": []
+    },
+    "exportSource": {
+      "world": "fabula-ultima-as-above-so-below",
+      "system": "custom-system-builder",
+      "coreVersion": "11.306",
+      "systemVersion": "2.3.1"
+    }
+  },
+  "_stats": {
+    "systemId": "custom-system-builder",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.306",
+    "createdTime": 1688078694030,
+    "modifiedTime": 1690814290647,
+    "lastModifiedBy": "Cdab6E6tDeyd5eNc"
+  }
+}

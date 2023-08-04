@@ -1,0 +1,589 @@
+{
+  "folder": "rUpkamytc1F92Qae",
+  "name": "_Potion",
+  "type": "_equippableItemTemplate",
+  "img": "icons/svg/pill.svg",
+  "system": {
+    "hidden": [],
+    "header": {
+      "contents": [],
+      "key": "custom_header",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "body": {
+      "contents": [
+        {
+          "key": "food_price_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "medium",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-sack\"> IP:</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "label",
+                    "type": "label"
+                  },
+                  {
+                    "key": "potion_ip",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "",
+                    "size": "small",
+                    "allowDecimal": false,
+                    "minVal": "",
+                    "maxVal": "",
+                    "allowRelative": false,
+                    "showControls": false,
+                    "type": "numberField"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "food_effect_table",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "m-small",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-star-of-david\"> Item effect:</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "label",
+                    "type": "label"
+                  },
+                  {
+                    "key": "potion_effect",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "display": {
+      "width": "600",
+      "height": "600",
+      "fix_size": false,
+      "pp_width": "64",
+      "pp_height": "64"
+    },
+    "templateSystemUniqueVersion": 1299614167
+  },
+  "effects": [],
+  "flags": {
+    "scene-packer": {
+      "hash": "b4afe39b7822d3e31cacdb60b62eb449ca736d06",
+      "sourceId": "Item.2O0nQqfCIXpAdaWE"
+    },
+    "custom-system-builder": {
+      "version": "2.3.1",
+      "templateHistory": [
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-coin\"> Price:</i>",
+            "rhs": "<i class=\"fa-solid fa-sack\"> IP:</i>"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "food_effect_table",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "m-small",
+                          "icon": "",
+                          "value": "<i class=\"fa-solid fa-star-of-david\"> Item effect:</i>",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "food_effect",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "horizontal",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_desc_table",
+            "rhs": "food_effect_table"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": [
+                {
+                  "key": "food_details",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": "",
+                  "defaultValue": "",
+                  "size": null,
+                  "style": "sheet",
+                  "type": "textArea"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "label"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "defaultValue"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "size"
+            ],
+            "lhs": "full-size"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "icon"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-pot-food\"> Item details</i>"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "prefix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "suffix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "rollMessage"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "altRollMessage"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "style"
+            ],
+            "lhs": "label"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "type"
+            ],
+            "lhs": "label",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "contents"
+            ],
+            "rhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "m-small",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-star-of-david\"> Item effect:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "food_effect",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": null,
+                "style": "dialog",
+                "type": "textArea"
+              }
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "align"
+            ],
+            "rhs": "left"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "rows"
+            ],
+            "lhs": "2",
+            "rhs": "1"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_effect",
+            "rhs": "potion_effect"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "key"
+            ],
+            "lhs": "food_price",
+            "rhs": "potion_ip"
+          }
+        ]
+      ],
+      "templateHistoryRedo": []
+    },
+    "exportSource": {
+      "world": "fabula-ultima-as-above-so-below",
+      "system": "custom-system-builder",
+      "coreVersion": "11.306",
+      "systemVersion": "2.3.1"
+    }
+  },
+  "_stats": {
+    "systemId": "custom-system-builder",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.306",
+    "createdTime": 1688078694030,
+    "modifiedTime": 1690655190576,
+    "lastModifiedBy": "Cdab6E6tDeyd5eNc"
+  }
+}

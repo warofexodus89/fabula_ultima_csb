@@ -1710,44 +1710,8 @@
       "pp_width": "300",
       "pp_height": "300"
     },
-    "modifiers": [
-      {
-        "priority": 0,
-        "key": "total_def",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      },
-      {
-        "priority": 0,
-        "key": "total_mdef",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      },
-      {
-        "priority": 0,
-        "key": "total_init",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      },
-      {
-        "priority": 0,
-        "key": "max_hp",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      },
-      {
-        "priority": 0,
-        "key": "max_mp",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      },
-      {
-        "priority": 0,
-        "key": "max_ip",
-        "operator": "add",
-        "formula": "${is_equipped ? 0 : 0}$"
-      }
-    ]
+    "modifiers": [],
+    "templateSystemUniqueVersion": 3880067978
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -1757,21 +1721,21 @@
       "sourceId": "Item.cp0B290qrMBSDEQa"
     },
     "custom-system-builder": {
-      "version": "2.2.7"
+      "version": "2.3.1"
     },
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.306",
-      "systemVersion": "2.3.0"
+      "systemVersion": "2.3.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.3.0",
+    "systemVersion": "2.3.1",
     "coreVersion": "11.306",
     "createdTime": 1687435117922,
-    "modifiedTime": 1690566528251,
+    "modifiedTime": 1690620049158,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
