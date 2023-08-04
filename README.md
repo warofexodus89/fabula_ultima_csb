@@ -1,4 +1,4 @@
-# Fabula Ultima Templates for Foundry VTT v10
+# Fabula Ultima Templates for Foundry VTT v11
 
 <p align="center"><img src="../media/fabula-ultima-cover.webp"></p>
 
