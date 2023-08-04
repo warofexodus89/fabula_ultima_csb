@@ -38,7 +38,7 @@ I will also suggest to go through the wiki if you want to learn more in-depth sh
 The **Custom System Builder** (aka **CSB**) allows you to create custom sheets for Actors (PC and NPC) and Objects (accessories, armors and weapons). Through this functionality you will also be able to import templates found in this repository to create:
 
 - Your PC and NPC sheets
-- Accessories and armor sheets that can be attached to the PCs
+- Items, potions, utilities and accessories and armor sheets that can be attached to the PCs
 
 It is very important to note that Templates should **NOT** be used as fillable sheets, they are used to generate new Actors or Objects sheets.
 
