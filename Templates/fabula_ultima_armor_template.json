@@ -1710,7 +1710,44 @@
       "pp_width": "300",
       "pp_height": "300"
     },
-    "modifiers": [],
+    "modifiers": [
+      {
+        "priority": 0,
+        "key": "total_def",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('armor_mod') : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "total_mdef",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_mp",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_mp') : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "total_init",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_hp",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_hp') : 0}$"
+      },
+      {
+        "priority": 0,
+        "key": "max_ip",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_ip') : 0}$"
+      }
+    ],
     "templateSystemUniqueVersion": 3880067978
   },
   "effects": [],
@@ -1735,7 +1772,7 @@
     "systemVersion": "2.3.1",
     "coreVersion": "11.306",
     "createdTime": 1687435117922,
-    "modifiedTime": 1690620049158,
+    "modifiedTime": 1691259255876,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
