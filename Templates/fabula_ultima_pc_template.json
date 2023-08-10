@@ -830,7 +830,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('dex_base')}$",
+                                              "value": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -927,7 +927,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('ins_base')}$",
+                                              "value": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -1024,7 +1024,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('mig_base')}$",
+                                              "value": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -1121,7 +1121,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('wlp_base')}$",
+                                              "value": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -1436,6 +1436,95 @@
                                               "tableKeyColumn": null,
                                               "tableLabelColumn": null,
                                               "type": "select"
+                                            }
+                                          ],
+                                          "flow": "horizontal",
+                                          "align": "center",
+                                          "type": "panel"
+                                        },
+                                        {
+                                          "key": "",
+                                          "cssClass": "",
+                                          "role": "0",
+                                          "permission": "0",
+                                          "tooltip": "",
+                                          "visibilityFormula": "",
+                                          "contents": [
+                                            {
+                                              "key": "dex_mod",
+                                              "cssClass": "hidding-mod-atr",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "full-size",
+                                              "icon": "",
+                                              "value": "${ref('dex_base')}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "label",
+                                              "type": "label"
+                                            },
+                                            {
+                                              "key": "ins_mod",
+                                              "cssClass": "hidding-mod-atr",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "full-size",
+                                              "icon": "",
+                                              "value": "${ref('ins_base')}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "label",
+                                              "type": "label"
+                                            },
+                                            {
+                                              "key": "mig_mod",
+                                              "cssClass": "hidding-mod-atr",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "full-size",
+                                              "icon": "",
+                                              "value": "${ref('mig_base')}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "label",
+                                              "type": "label"
+                                            },
+                                            {
+                                              "key": "wlp_mod",
+                                              "cssClass": "hidding-mod-atr",
+                                              "role": "0",
+                                              "permission": "0",
+                                              "tooltip": "",
+                                              "visibilityFormula": "",
+                                              "label": null,
+                                              "defaultValue": null,
+                                              "size": "full-size",
+                                              "icon": "",
+                                              "value": "${ref('wlp_base')}$",
+                                              "prefix": "",
+                                              "suffix": "",
+                                              "rollMessage": "",
+                                              "altRollMessage": "",
+                                              "style": "label",
+                                              "type": "label"
                                             }
                                           ],
                                           "flow": "horizontal",
@@ -3350,7 +3439,7 @@
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
-                    "visibilityFormula": "",
+                    "visibilityFormula": "isOptional == true",
                     "contents": [
                       {
                         "key": "",
@@ -4564,7 +4653,7 @@
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
-                    "visibilityFormula": "",
+                    "visibilityFormula": "isClassFeatures == true",
                     "contents": [
                       {
                         "key": "",
@@ -5970,7 +6059,7 @@
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
-                    "visibilityFormula": "",
+                    "visibilityFormula": "isSpells == true",
                     "contents": [
                       {
                         "key": "ritual_panel",
@@ -6773,7 +6862,7 @@
                         "type": "panel"
                       }
                     ],
-                    "name": "Spells",
+                    "name": "Spells & Rituals",
                     "type": "tab"
                   },
                   {
@@ -7956,6 +8045,195 @@
                     ],
                     "name": "Inventory",
                     "type": "tab"
+                  },
+                  {
+                    "key": "settings",
+                    "cssClass": null,
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "alt_background_ritual",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-gears\"> Tab Visibility</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "bold",
+                            "type": "label"
+                          },
+                          {
+                            "key": "",
+                            "cssClass": "section-border-light ",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "contents": [
+                              {
+                                "key": "",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "contents": [
+                                  {
+                                    "key": "",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "Quirks are an advanced optional rule that provides strong thematic and mechanical options for Player Characters.",
+                                    "visibilityFormula": "",
+                                    "label": null,
+                                    "defaultValue": null,
+                                    "size": "medium",
+                                    "icon": "",
+                                    "value": "<i class=\"fa-solid fa-scroll-old\"> Optional Rules</i>",
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "rollMessage": "",
+                                    "altRollMessage": "",
+                                    "style": "label",
+                                    "type": "label"
+                                  },
+                                  {
+                                    "key": "isOptional",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "label": "",
+                                    "defaultValue": null,
+                                    "size": "x-small",
+                                    "type": "checkbox"
+                                  }
+                                ],
+                                "flow": "horizontal",
+                                "align": "center",
+                                "type": "panel"
+                              },
+                              {
+                                "key": "",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "contents": [
+                                  {
+                                    "key": "",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                                    "visibilityFormula": "",
+                                    "label": null,
+                                    "defaultValue": null,
+                                    "size": "medium",
+                                    "icon": "",
+                                    "value": "<i class=\"fa-solid fa-star-of-david\"> Spells & Rituals</i>",
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "rollMessage": "",
+                                    "altRollMessage": "",
+                                    "style": "label",
+                                    "type": "label"
+                                  },
+                                  {
+                                    "key": "isSpells",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "label": "",
+                                    "defaultValue": null,
+                                    "size": "x-small",
+                                    "type": "checkbox"
+                                  }
+                                ],
+                                "flow": "horizontal",
+                                "align": "center",
+                                "type": "panel"
+                              },
+                              {
+                                "key": "",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "contents": [
+                                  {
+                                    "key": "",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                                    "visibilityFormula": "",
+                                    "label": null,
+                                    "defaultValue": null,
+                                    "size": "medium",
+                                    "icon": "",
+                                    "value": "<i class=\"fa-solid fa-hand-holding-magic\"> Class features</i>",
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "rollMessage": "",
+                                    "altRollMessage": "",
+                                    "style": "label",
+                                    "type": "label"
+                                  },
+                                  {
+                                    "key": "isClassFeatures",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "label": "",
+                                    "defaultValue": null,
+                                    "size": "x-small",
+                                    "type": "checkbox"
+                                  }
+                                ],
+                                "flow": "horizontal",
+                                "align": "center",
+                                "type": "panel"
+                              }
+                            ],
+                            "flow": "horizontal",
+                            "align": "center",
+                            "type": "panel"
+                          }
+                        ],
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
+                      }
+                    ],
+                    "name": "⚙️",
+                    "type": "tab"
                   }
                 ],
                 "type": "tabbedPanel"
@@ -8009,9 +8287,9 @@
       "slowFU": [
         {
           "priority": 0,
-          "key": "dex_current",
+          "key": "dex_mod",
           "operator": "add",
-          "formula": "${ref('dex_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
@@ -8055,9 +8333,9 @@
       "dazedFU": [
         {
           "priority": 0,
-          "key": "ins_current",
+          "key": "ins_mod",
           "operator": "add",
-          "formula": "${ref('ins_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
@@ -8069,9 +8347,9 @@
       "weakFU": [
         {
           "priority": 0,
-          "key": "mig_current",
+          "key": "mig_mod",
           "operator": "add",
-          "formula": "${ref('mig_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
@@ -8083,29 +8361,29 @@
       "shakenFU": [
         {
           "priority": 0,
-          "key": "wlp_current",
-          "operator": "add",
-          "formula": "${ref('wlp_base') > 6 ? -2: 0 }$"
-        },
-        {
-          "priority": 0,
           "key": "isShaken",
           "operator": "set",
           "formula": "<i class=\"fa-solid fa-square-check\"> Shaken</i>"
+        },
+        {
+          "priority": 0,
+          "key": "wlp_mod",
+          "operator": "add",
+          "formula": "-2"
         }
       ],
       "poisonedFU": [
         {
-          "priority": 1,
-          "key": "mig_current",
+          "priority": 0,
+          "key": "mig_mod",
           "operator": "add",
-          "formula": "${ref('mig_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
-          "priority": 1,
-          "key": "wlp_current",
+          "priority": 0,
+          "key": "wlp_mod",
           "operator": "add",
-          "formula": "${ref('wlp_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
@@ -8117,15 +8395,15 @@
       "enragedFU": [
         {
           "priority": 0,
-          "key": "dex_current",
+          "key": "dex_mod",
           "operator": "add",
-          "formula": "${ref('dex_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
-          "key": "ins_current",
+          "key": "ins_mod",
           "operator": "add",
-          "formula": "${ref('ins_base') > 6 ? -2: 0 }$"
+          "formula": "-2"
         },
         {
           "priority": 0,
@@ -8141,9 +8419,9 @@
       "fedBacon": [
         {
           "priority": 0,
-          "key": "mig_current",
+          "key": "mig_mod",
           "operator": "add",
-          "formula": "${ref('mig_base') < 12 ? +2: 0 }$"
+          "formula": "2"
         }
       ],
       "blindFU": [
@@ -8155,7 +8433,7 @@
         }
       ]
     },
-    "templateSystemUniqueVersion": 1463309136
+    "templateSystemUniqueVersion": 2990258080
   },
   "flags": {
     "custom-system-builder": {
@@ -8179,15 +8457,234 @@
               0,
               0,
               "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
+              2,
+              "value"
+            ],
+            "lhs": "0",
+            "rhs": "${ref('mig_base')}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
               3,
+              "value"
+            ],
+            "lhs": "0",
+            "rhs": "${ref('wlp_base')}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              5,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('dex_base')}$",
+            "rhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              8,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('ins_base')}$",
+            "rhs": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              11,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('mig_base')}$",
+            "rhs": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              14,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('wlp_base')}$",
+            "rhs": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
               "contents",
               4,
               "contents",
               0,
-              "tooltip"
+              "cssClass"
+            ],
+            "lhs": "font-color",
+            "rhs": "hidding-mod-atr"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
+              1,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "Modifiers from buffs/debuffs are displayed here."
+            "rhs": "hidding-mod-atr"
           }
         ],
         [
@@ -8208,15 +8705,17 @@
               0,
               0,
               "contents",
-              3,
-              "contents",
-              5,
+              0,
               "contents",
               1,
-              "tooltip"
+              "contents",
+              4,
+              "contents",
+              2,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "Modifiers from buffs/debuffs are displayed here."
+            "rhs": "hidding-mod-atr"
           }
         ],
         [
@@ -8237,192 +8736,17 @@
               0,
               0,
               "contents",
-              3,
-              "contents",
-              5,
-              "contents",
               0,
-              "tooltip"
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
+              3,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "Modifiers from buffs/debuffs are displayed here."
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "header",
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "value"
-            ],
-            "lhs": "${ref('char_level')+5*ref('mig_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'hp'))+ref('skill_hp')}$",
-            "rhs": "${ref('char_level')+5*ref('mig_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'hp'))+ref('skill_hp')+ref('mod_hp')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "header",
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "value"
-            ],
-            "lhs": "${ref('char_level')+5*ref('wlp_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'mp'))+ref('skill_mp')}$",
-            "rhs": "${ref('char_level')+5*ref('wlp_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'mp'))+ref('skill_mp')+ref('mod_mp')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$",
-            "rhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + ref('mod_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "value"
-            ],
-            "lhs": "${ref('ins_current')+ ref('skillmdef_mod')+ sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
-            "rhs": "${ref('ins_current')+ ref('skillmdef_mod')+ ref('mod_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              5,
-              "contents",
-              1,
-              "contents",
-              3,
-              "rowLayout",
-              11,
-              "rollMessage"
-            ],
-            "lhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              5,
-              "contents",
-              1,
-              "key"
-            ],
-            "lhs": "mod_mag",
-            "rhs": "mod_mcheck"
+            "rhs": "hidding-mod-atr"
           }
         ]
       ],
@@ -8431,7 +8755,7 @@
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "11.306",
+      "coreVersion": "11.307",
       "systemVersion": "2.3.1"
     },
     "core": {},
@@ -8512,9 +8836,9 @@
   "_stats": {
     "systemId": "custom-system-builder",
     "systemVersion": "2.3.1",
-    "coreVersion": "11.306",
+    "coreVersion": "11.307",
     "createdTime": 1687192833609,
-    "modifiedTime": 1691149424583,
+    "modifiedTime": 1691699739337,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
