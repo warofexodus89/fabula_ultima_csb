@@ -830,7 +830,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$",
+                                              "value": "${ref('dex_mod')< 6 ? 6: ref('dex_mod')> 12 ? 12:ref('dex_mod')}$\n",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -927,7 +927,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$",
+                                              "value": "${ref('ins_mod')< 6 ? 6: ref('ins_mod')> 12 ? 12:ref('ins_mod')}$\n",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -1024,7 +1024,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$",
+                                              "value": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -1121,7 +1121,7 @@
                                               "defaultValue": null,
                                               "size": "x-small",
                                               "icon": "",
-                                              "value": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$",
+                                              "value": "${ref('wlp_mod')< 6 ? 6: ref('wlp_mod')> 12 ? 12:ref('wlp_mod')}$\n",
                                               "prefix": "d",
                                               "suffix": "",
                                               "rollMessage": "",
@@ -8433,198 +8433,12 @@
         }
       ]
     },
-    "templateSystemUniqueVersion": 2990258080
+    "templateSystemUniqueVersion": 2494009689
   },
   "flags": {
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "contents",
-              2,
-              "value"
-            ],
-            "lhs": "0",
-            "rhs": "${ref('mig_base')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "contents",
-              3,
-              "value"
-            ],
-            "lhs": "0",
-            "rhs": "${ref('wlp_base')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              5,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('dex_base')}$",
-            "rhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              8,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('ins_base')}$",
-            "rhs": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              11,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('mig_base')}$",
-            "rhs": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              14,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('wlp_base')}$",
-            "rhs": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -8748,6 +8562,192 @@
             "lhs": "",
             "rhs": "hidding-mod-atr"
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              5,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$",
+            "rhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$\n${ref('dex_mod')< 12 ? ref('dex_mod'):12}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              5,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$\n${ref('dex_mod')< 12 ? ref('dex_mod'):12}$",
+            "rhs": "${ref('dex_mod')< 6 ? 6: ref('dex_mod')> 12 ? 12:ref('dex_mod')}$\n"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              8,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$",
+            "rhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              11,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$",
+            "rhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              8,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n",
+            "rhs": "${ref('ins_mod')< 6 ? 6: ref('ins_mod')> 12 ? 12:ref('ins_mod')}$\n"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              14,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$",
+            "rhs": "${ref('wlp_mod')< 6 ? 6: ref('wlp_mod')> 12 ? 12:ref('wlp_mod')}$\n"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -8838,7 +8838,7 @@
     "systemVersion": "2.3.1",
     "coreVersion": "11.307",
     "createdTime": 1687192833609,
-    "modifiedTime": 1691699739337,
+    "modifiedTime": 1691700866737,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
