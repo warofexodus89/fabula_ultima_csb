@@ -20,6 +20,8 @@
 .tab_background > table > tbody > tr > td  {padding-left:0px;padding-top: 0px;}
 .tab_content { border-top: 1px solid #4C0F0F; border-bottom: 1px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px}
 .tab_content > table { border: 0px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px;}
+.hidding-mod-atr {color:#F1E4CA;}
+
 
 
 /* Gray table color */
@@ -30,6 +32,7 @@
 .table_style > table {border:0px;margin-top:0px; margin-bottom:0px; padding:0px;}
 
 /* Ritual section styling */
+.alt_background_ritual {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
 .section-border { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 10px; margin-top: 0px}
 .verses-section { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px; margin-bottom: 5px}
 .section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;}
@@ -54,10 +57,6 @@ hr.solid {
   border-top: 3px solid #854A4A;
 }
    
-
-/* Gray table color */
-.alt_background_ritual {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
-
 
 /* Override */
 
