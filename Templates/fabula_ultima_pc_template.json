@@ -300,14 +300,14 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "fp",
+                          "key": "up",
                           "cssClass": "",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
                           "label": "",
-                          "defaultValue": "3",
+                          "defaultValue": "0",
                           "size": "small",
                           "allowDecimal": false,
                           "minVal": "0",
@@ -1444,15 +1444,15 @@
                                         },
                                         {
                                           "key": "",
-                                          "cssClass": "",
-                                          "role": "0",
+                                          "cssClass": "hidding-mod-atr",
+                                          "role": "4",
                                           "permission": "0",
                                           "tooltip": "",
                                           "visibilityFormula": "",
                                           "contents": [
                                             {
                                               "key": "dex_mod",
-                                              "cssClass": "hidding-mod-atr",
+                                              "cssClass": "",
                                               "role": "0",
                                               "permission": "0",
                                               "tooltip": "",
@@ -1462,7 +1462,7 @@
                                               "size": "full-size",
                                               "icon": "",
                                               "value": "${ref('dex_base')}$",
-                                              "prefix": "",
+                                              "prefix": "Dex: ",
                                               "suffix": "",
                                               "rollMessage": "",
                                               "altRollMessage": "",
@@ -1471,7 +1471,7 @@
                                             },
                                             {
                                               "key": "ins_mod",
-                                              "cssClass": "hidding-mod-atr",
+                                              "cssClass": "",
                                               "role": "0",
                                               "permission": "0",
                                               "tooltip": "",
@@ -1481,7 +1481,7 @@
                                               "size": "full-size",
                                               "icon": "",
                                               "value": "${ref('ins_base')}$",
-                                              "prefix": "",
+                                              "prefix": "Ins: ",
                                               "suffix": "",
                                               "rollMessage": "",
                                               "altRollMessage": "",
@@ -1490,7 +1490,7 @@
                                             },
                                             {
                                               "key": "mig_mod",
-                                              "cssClass": "hidding-mod-atr",
+                                              "cssClass": "",
                                               "role": "0",
                                               "permission": "0",
                                               "tooltip": "",
@@ -1500,7 +1500,7 @@
                                               "size": "full-size",
                                               "icon": "",
                                               "value": "${ref('mig_base')}$",
-                                              "prefix": "",
+                                              "prefix": "Mig: ",
                                               "suffix": "",
                                               "rollMessage": "",
                                               "altRollMessage": "",
@@ -1509,7 +1509,7 @@
                                             },
                                             {
                                               "key": "wlp_mod",
-                                              "cssClass": "hidding-mod-atr",
+                                              "cssClass": "",
                                               "role": "0",
                                               "permission": "0",
                                               "tooltip": "",
@@ -1519,7 +1519,7 @@
                                               "size": "full-size",
                                               "icon": "",
                                               "value": "${ref('wlp_base')}$",
-                                              "prefix": "",
+                                              "prefix": "Wlp: ",
                                               "suffix": "",
                                               "rollMessage": "",
                                               "altRollMessage": "",
@@ -3707,7 +3707,7 @@
                                           "contents": [
                                             [
                                               {
-                                                "key": "notes_text",
+                                                "key": "quirk_desc",
                                                 "cssClass": "",
                                                 "role": "0",
                                                 "permission": "0",
@@ -5024,7 +5024,7 @@
                             "defaultValue": null,
                             "size": "full-size",
                             "icon": "",
-                            "value": "<i class=\"fa-solid fa-waveform\"> Frequency</i>",
+                            "value": "<i class=\"fa-solid fa-waveform\"> Volumes</i>",
                             "prefix": "",
                             "suffix": "",
                             "rollMessage": "",
@@ -5720,7 +5720,7 @@
                                 "tableLabelColumn": null,
                                 "type": "select",
                                 "align": "center",
-                                "colName": "Frequency"
+                                "colName": "Volume"
                               },
                               {
                                 "key": "key",
@@ -8429,11 +8429,28 @@
           "priority": 0,
           "key": "mod_acc",
           "operator": "set",
-          "formula": "-2"
+          "formula": "-4"
+        },
+        {
+          "priority": 0,
+          "key": "mod_mcheck",
+          "operator": "set",
+          "formula": "-4"
+        }
+      ],
+      "fireVulFU": [],
+      "sleepFU": [],
+      "confuseFU": [],
+      "refreshedInsFU": [
+        {
+          "priority": 0,
+          "key": "ins_mod",
+          "operator": "add",
+          "formula": "2"
         }
       ]
     },
-    "templateSystemUniqueVersion": 2494009689
+    "templateSystemUniqueVersion": 1201019509
   },
   "flags": {
     "custom-system-builder": {
@@ -8464,10 +8481,10 @@
               4,
               "contents",
               0,
-              "cssClass"
+              "prefix"
             ],
-            "lhs": "font-color",
-            "rhs": "hidding-mod-atr"
+            "lhs": "",
+            "rhs": "Dex: "
           }
         ],
         [
@@ -8497,8 +8514,37 @@
               1,
               "cssClass"
             ],
+            "lhs": "hidding-mod-atr",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
+              1,
+              "prefix"
+            ],
             "lhs": "",
-            "rhs": "hidding-mod-atr"
+            "rhs": "Ins: "
           }
         ],
         [
@@ -8525,11 +8571,42 @@
               "contents",
               4,
               "contents",
-              2,
-              "cssClass"
+              1,
+              "value"
             ],
             "lhs": "",
-            "rhs": "hidding-mod-atr"
+            "rhs": "${ref('ins_base')}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "contents",
+              3,
+              "prefix"
+            ],
+            "lhs": "",
+            "rhs": "Wlp: "
           }
         ],
         [
@@ -8559,7 +8636,94 @@
               3,
               "cssClass"
             ],
+            "lhs": "hidding-mod-atr",
+            "rhs": ""
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "role"
+            ],
+            "lhs": "0",
+            "rhs": "4"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "cssClass"
+            ],
             "lhs": "",
+            "rhs": "font-color"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              4,
+              "cssClass"
+            ],
+            "lhs": "font-color",
             "rhs": "hidding-mod-atr"
           }
         ],
@@ -8574,24 +8738,15 @@
               0,
               0,
               "contents",
-              0,
+              4,
               "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              5,
+              2,
               "contents",
               0,
               "value"
             ],
-            "lhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$",
-            "rhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$\n${ref('dex_mod')< 12 ? ref('dex_mod'):12}$"
+            "lhs": "<i class=\"fa-solid fa-waveform\"> Frequency</i>",
+            "rhs": "<i class=\"fa-solid fa-waveform\"> Volumes</i>"
           }
         ],
         [
@@ -8605,148 +8760,17 @@
               0,
               0,
               "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              5,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('dex_mod')> 6 ? ref('dex_mod'):6}$\n${ref('dex_mod')< 12 ? ref('dex_mod'):12}$",
-            "rhs": "${ref('dex_mod')< 6 ? 6: ref('dex_mod')> 12 ? 12:ref('dex_mod')}$\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
+              4,
               "contents",
               2,
               "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              8,
-              "contents",
-              0,
-              "value"
+              4,
+              "rowLayout",
+              1,
+              "colName"
             ],
-            "lhs": "${ref('ins_mod')> 6 ? ref('ins_mod'):6}$",
-            "rhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              11,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('mig_mod')> 6 ? ref('mig_mod'):6}$",
-            "rhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              8,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('mig_mod')< 6 ? 6: ref('mig_mod')> 12 ? 12:ref('mig_mod')}$\n",
-            "rhs": "${ref('ins_mod')< 6 ? 6: ref('ins_mod')> 12 ? 12:ref('ins_mod')}$\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              14,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "${ref('wlp_mod')> 6 ? ref('wlp_mod'):6}$",
-            "rhs": "${ref('wlp_mod')< 6 ? 6: ref('wlp_mod')> 12 ? 12:ref('wlp_mod')}$\n"
+            "lhs": "Frequency",
+            "rhs": "Volume"
           }
         ]
       ],
@@ -8838,7 +8862,7 @@
     "systemVersion": "2.3.1",
     "coreVersion": "11.307",
     "createdTime": 1687192833609,
-    "modifiedTime": 1691700866737,
+    "modifiedTime": 1692069640717,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

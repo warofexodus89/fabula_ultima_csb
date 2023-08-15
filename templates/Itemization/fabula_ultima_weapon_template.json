@@ -1970,17 +1970,76 @@
           "permission": "0",
           "tooltip": "",
           "visibilityFormula": "",
-          "label": null,
-          "defaultValue": null,
-          "size": "full-size",
-          "icon": "",
-          "value": "Description",
-          "prefix": "",
-          "suffix": "",
-          "rollMessage": "",
-          "altRollMessage": "",
-          "style": "title",
-          "type": "label"
+          "contents": [
+            {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            },
+            {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "medium",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            {
+              "key": "item_price",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "",
+              "size": "small",
+              "charList": "",
+              "maxLength": "",
+              "type": "textField"
+            }
+          ],
+          "flow": "horizontal",
+          "align": "right",
+          "type": "panel"
         },
         {
           "key": "desc_table",
@@ -2042,7 +2101,7 @@
       "pp_width": "300",
       "pp_height": "300"
     },
-    "templateSystemUniqueVersion": 923785355
+    "templateSystemUniqueVersion": 3076703723
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -2052,22 +2111,527 @@
       "sourceId": "Item.ovjJIsY8b1Vu709i"
     },
     "custom-system-builder": {
-      "version": "2.3.1"
+      "version": "2.3.1",
+      "templateHistory": [
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 11,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "desc_table",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "key"
+            ],
+            "lhs": "",
+            "rhs": "desc_table"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "label"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "defaultValue"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "size"
+            ],
+            "lhs": "full-size"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "icon"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "value"
+            ],
+            "lhs": "Description"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "prefix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "suffix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "rollMessage"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "altRollMessage"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "style"
+            ],
+            "lhs": "title"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "type"
+            ],
+            "lhs": "label",
+            "rhs": "table"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "contents"
+            ],
+            "rhs": [
+              [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "contents": [
+                    {
+                      "key": "item_desc",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "label": "",
+                      "defaultValue": "<p>Enter description here.</p>",
+                      "size": null,
+                      "style": "dialog",
+                      "type": "textArea"
+                    }
+                  ],
+                  "flow": "vertical",
+                  "align": "left",
+                  "type": "panel"
+                }
+              ]
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "cols"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "rows"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "layout"
+            ],
+            "rhs": ""
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 11,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "desc_table",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "key"
+            ],
+            "lhs": "desc_table",
+            "rhs": ""
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "item_price",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "contents",
+              0
+            ],
+            "lhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ],
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "cols"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "rows"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "layout"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "type"
+            ],
+            "lhs": "table",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              10,
+              "align"
+            ],
+            "rhs": "right"
+          }
+        ]
+      ],
+      "templateHistoryRedo": []
     },
     "core": {},
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "11.306",
+      "coreVersion": "11.307",
       "systemVersion": "2.3.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
     "systemVersion": "2.3.1",
-    "coreVersion": "11.306",
+    "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1690615318057,
+    "modifiedTime": 1692098724800,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

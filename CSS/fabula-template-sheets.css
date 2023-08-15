@@ -3,6 +3,9 @@
 /* Foundry background color*/
 .white_background { background: #F7FAF5}
 
+/* ------------- PC Sheet styling -------------  */
+
+/* Main ui PC styling */
 .quote_table { border: 0px solid #854A4A; color: #854A4A; }
 .header_block { background: #854A4A; color: #F1E4CA; border: 0px solid #854A4A;}
 .header_font > a {color: #F1E4CA;}
@@ -10,7 +13,7 @@
 /* Generic font color */
 .font-color {color:#854A4A;}
 
-/* Stat page stylings */
+/* PC stat page stylings */
 .tab_content_background { border:0px solid #854A4A; background: #D0CDBF;}
 .tab_content_background > table { border:2px solid #854A4A;}
 .tab_content_background > table > tbody > tr > td { padding-left:0px ; padding-right: 0px; padding-top: 0px;}
@@ -23,13 +26,14 @@
 .hidding-mod-atr {color:#F1E4CA;}
 
 
-
-/* Gray table color */
+/* PC gray table color */
 .alt_background {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
 .alt_background > table {margin-top: 0px; margin-bottom: 0px;}
 
-/* Removes table border and color */
+/* Table styling */
 .table_style > table {border:0px;margin-top:0px; margin-bottom:0px; padding:0px;}
+.border-right > table {border-right: 1px solid #854A4A;}
+.border-left > table {border-left: 1px solid #854A4A;}
 
 /* Ritual section styling */
 .alt_background_ritual {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
@@ -38,8 +42,6 @@
 .section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;}
 .ritual-section-header > table {border:0px; border-right: 1px solid #854A4A; background: rgba(0, 0, 0, 0.05); margin:0px;}
 
-.border-right > table {border-right: 1px solid #854A4A;}
-.border-left > table {border-left: 1px solid #854A4A;}
 
 /* Zero power table styling */
 .alt_background_zero {border-top:1px solid #854A4A; border-bottom:1px solid #854A4A;}
@@ -51,6 +53,38 @@
 /* Buff/Debuff section styling  */
 .label-styling {border: 2px solid #854A4A;background: #F1E4CA;}
 .margin-bottom > table {margin-bottom: 0px;}
+
+/* ------------- NPC Sheet styling -------------  */
+
+/* Main ui NPC styling */
+.npc_quote_table { border: 0px solid #854A4A; color: #43436a; }
+.npc_header_block { background: #43436a; color: #68c2d3; border: 0px solid #43436a;}
+.npc_header_font > a {color: #68c2d3;}
+
+/* NPC stat page stylings */
+.npc_tab_content_background { border:0px solid #43436a; background: #D0CDBF;}
+.npc_tab_content_background > table { border:2px solid #43436a;}
+.npc_tab_content_background > table > tbody > tr > td { padding-left:0px ; padding-right: 0px; padding-top: 0px;}
+.npc_nav_header_bar > nav { background: #43436a; color: #68c2d3; margin:0px;}
+.npc_tab_background {border:0px solid #854A4A; background: #D0CDBF;margin: 0px;}
+.npc_tab_background > table {background: rgba(0, 0, 0, 0.00); border:0px; padding-left:0px;}
+.npc_tab_background > table > tbody > tr > td  {padding-left:0px;padding-top: 0px;}
+.npc_tab_content { border-top: 1px solid #43436a; border-bottom: 1px solid #43436a; background: #e3f5ee; color:#43436a; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px}
+.margin-top-styling {margin-top:10px;}
+.npc_tab_content > table { border: 0px solid #4C0F0F; background:#e3f5ee; color:#43436a; margin-left: 0px; margin-right: 0px; padding: 0px;}
+.npc-label-styling {border: 2px solid #43436a;background: #ecf8f4;}
+.npc-hidding-mod-atr {color:#e3f5ee;}
+
+/* NPC gray table color */
+.npc_alt_background {background : #ecf8f4; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px; color:#43436a;}
+.npc_alt_background > table {margin-top: 0px; margin-bottom: 0px;}
+
+/* Generic font color */
+.npc-font-color {color:#43436a;}
+
+/* NPC combat section */
+.npc_alt_background_combat {background : #daf1e9; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px;}
+
 
 /* Solid border */
 hr.solid {
@@ -108,8 +142,19 @@ input[type="text"], input[type="number"], input[type="password"], input[type="da
 }
 
 
-/* Override text/select field color styling for stat page*/
+/* Override text/select field color styling for PC stat page*/
 .alt_text_field_background > input {background : #E5E3D9;}
 .alt_text_field_background  #current_ip {background : #E5E3D9;}
 .alt_text_field_background  #fp {background : #E5E3D9;}
 .alt_text_field_background > select {background : #E5E3D9; padding: 0px;}
+.alt_text_field_background > span > input {background : #E5E3D9;}
+
+/* Override text/select field color styling for NPC stat page*/
+.npc_alt_text_field_background > input {background : #ecf8f4;}
+.npc_alt_text_field_background  #current_ip {background : #ecf8f4;}
+.npc_alt_text_field_background  #fp {background : #ecf8f4;}
+.npc_alt_text_field_background > select {background : #ecf8f4; padding: 0px;}
+.npc_alt_text_field_background > span > input {background : #ecf8f4;}
+
+
+
