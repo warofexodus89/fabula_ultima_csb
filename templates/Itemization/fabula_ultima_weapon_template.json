@@ -39,7 +39,7 @@
         },
         {
           "key": "",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -75,7 +75,8 @@
                 "label": "",
                 "defaultValue": null,
                 "size": "full-size",
-                "type": "checkbox"
+                "type": "checkbox",
+                "defaultChecked": false
               }
             ],
             [
@@ -192,24 +193,28 @@
                     "tooltip": "",
                     "visibilityFormula": "",
                     "label": "",
-                    "defaultValue": "DEX",
-                    "size": "small",
+                    "defaultValue": "-",
+                    "size": "m-small",
                     "options": [
                       {
                         "key": "DEX",
-                        "value": "Dex"
+                        "value": "DEX"
                       },
                       {
                         "key": "INS",
-                        "value": "Insight"
+                        "value": "INS"
                       },
                       {
                         "key": "WLP",
-                        "value": "Willpower"
+                        "value": "WLP"
                       },
                       {
                         "key": "MIG",
-                        "value": "Might"
+                        "value": "MIG"
+                      },
+                      {
+                        "key": "-",
+                        "value": "-"
                       }
                     ],
                     "tableKey": null,
@@ -244,24 +249,28 @@
                     "tooltip": "",
                     "visibilityFormula": "",
                     "label": "",
-                    "defaultValue": "DEX",
-                    "size": "small",
+                    "defaultValue": "-",
+                    "size": "m-small",
                     "options": [
                       {
                         "key": "DEX",
-                        "value": "Dex"
+                        "value": "DEX"
                       },
                       {
                         "key": "WLP",
-                        "value": "Willpower"
+                        "value": "WLP"
                       },
                       {
                         "key": "INS",
-                        "value": "Insight"
+                        "value": "INS"
                       },
                       {
                         "key": "MIG",
-                        "value": "Might"
+                        "value": "MIG"
+                      },
+                      {
+                        "key": "-",
+                        "value": "-"
                       }
                     ],
                     "tableKey": null,
@@ -310,6 +319,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -348,6 +358,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -452,7 +463,7 @@
         },
         {
           "key": "",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -488,7 +499,8 @@
                 "label": "",
                 "defaultValue": null,
                 "size": "full-size",
-                "type": "checkbox"
+                "type": "checkbox",
+                "defaultChecked": false
               }
             ]
           ],
@@ -499,7 +511,7 @@
         },
         {
           "key": "Item_details",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -540,6 +552,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -576,6 +589,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -614,6 +628,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -650,6 +665,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -688,6 +704,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -724,6 +741,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               null,
@@ -764,6 +782,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -800,6 +819,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -838,6 +858,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -874,6 +895,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -891,7 +913,7 @@
         },
         {
           "key": "add_effects_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -958,7 +980,7 @@
         },
         {
           "key": "status_rst_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -1010,7 +1032,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1054,7 +1077,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1098,7 +1122,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1142,7 +1167,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1186,7 +1212,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1230,7 +1257,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -1270,7 +1298,7 @@
         },
         {
           "key": "elemental_aff",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -2043,7 +2071,7 @@
         },
         {
           "key": "desc_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -2101,7 +2129,7 @@
       "pp_width": "300",
       "pp_height": "300"
     },
-    "templateSystemUniqueVersion": 3076703723
+    "templateSystemUniqueVersion": 573507914
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -2115,301 +2143,74 @@
       "templateHistory": [
         [
           {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents"
-            ],
-            "index": 11,
-            "item": {
-              "kind": "D",
-              "lhs": {
-                "key": "desc_table",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  [
-                    {
-                      "key": "",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "contents": [
-                        {
-                          "key": "item_desc",
-                          "cssClass": "",
-                          "role": "0",
-                          "permission": "0",
-                          "tooltip": "",
-                          "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "<p>Enter description here.</p>",
-                          "size": null,
-                          "style": "dialog",
-                          "type": "textArea"
-                        }
-                      ],
-                      "flow": "vertical",
-                      "align": "left",
-                      "type": "panel"
-                    }
-                  ]
-                ],
-                "cols": "1",
-                "rows": "1",
-                "layout": "",
-                "type": "table"
-              }
-            }
-          },
-          {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              10,
-              "key"
-            ],
-            "lhs": "",
-            "rhs": "desc_table"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
+              1,
               "contents",
-              10,
-              "label"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
+              2,
+              1,
               "contents",
-              10,
-              "defaultValue"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
+              0,
               "size"
             ],
-            "lhs": "full-size"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "icon"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "value"
-            ],
-            "lhs": "Description"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "prefix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "suffix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "rollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "altRollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "style"
-            ],
-            "lhs": "title"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "type"
-            ],
-            "lhs": "label",
-            "rhs": "table"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "contents"
-            ],
-            "rhs": [
-              [
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "contents": [
-                    {
-                      "key": "item_desc",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "",
-                      "defaultValue": "<p>Enter description here.</p>",
-                      "size": null,
-                      "style": "dialog",
-                      "type": "textArea"
-                    }
-                  ],
-                  "flow": "vertical",
-                  "align": "left",
-                  "type": "panel"
-                }
-              ]
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "cols"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "rows"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "layout"
-            ],
-            "rhs": ""
+            "lhs": "small",
+            "rhs": "m-small"
           }
         ],
         [
           {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              2,
+              "defaultValue"
+            ],
+            "lhs": "DEX",
+            "rhs": "-"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              2,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          },
+          {
             "kind": "A",
             "path": [
               "body",
-              "contents"
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              2,
+              "options"
             ],
-            "index": 11,
+            "index": 4,
             "item": {
               "kind": "N",
               "rhs": {
-                "key": "desc_table",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  [
-                    {
-                      "key": "",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "contents": [
-                        {
-                          "key": "item_desc",
-                          "cssClass": "",
-                          "role": "0",
-                          "permission": "0",
-                          "tooltip": "",
-                          "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "<p>Enter description here.</p>",
-                          "size": null,
-                          "style": "dialog",
-                          "type": "textArea"
-                        }
-                      ],
-                      "flow": "vertical",
-                      "align": "left",
-                      "type": "panel"
-                    }
-                  ]
-                ],
-                "cols": "1",
-                "rows": "1",
-                "layout": "",
-                "type": "table"
+                "key": "-",
+                "value": "-"
               }
             }
           },
@@ -2418,201 +2219,487 @@
             "path": [
               "body",
               "contents",
-              10,
-              "key"
-            ],
-            "lhs": "desc_table",
-            "rhs": ""
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
+              1,
               "contents",
-              10,
-              "contents"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "item_price",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": "",
-                "defaultValue": "",
-                "size": "small",
-                "charList": "",
-                "maxLength": "",
-                "type": "textField"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
+              2,
+              1,
               "contents",
-              10,
-              "contents"
+              2,
+              "options",
+              3,
+              "value"
             ],
-            "index": 1,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": null,
-                "defaultValue": null,
-                "size": "medium",
-                "icon": "",
-                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                "prefix": "",
-                "suffix": "",
-                "rollMessage": "",
-                "altRollMessage": "",
-                "style": "label",
-                "type": "label"
-              }
-            }
+            "lhs": "Might",
+            "rhs": "MIG"
           },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              10,
+              1,
               "contents",
-              0
-            ],
-            "lhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "item_desc",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "<p>Enter description here.</p>",
-                    "size": null,
-                    "style": "dialog",
-                    "type": "textArea"
-                  }
-                ],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            ],
-            "rhs": {
-              "key": "",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "contents": [
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "label": null,
-                  "defaultValue": null,
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Description",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "style": "title",
-                  "type": "label"
-                }
-              ],
-              "flow": "vertical",
-              "align": "left",
-              "type": "panel"
-            }
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
+              2,
+              1,
               "contents",
-              10,
-              "cols"
+              2,
+              "options",
+              2,
+              "value"
             ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "rows"
-            ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "layout"
-            ],
-            "lhs": ""
+            "lhs": "Insight",
+            "rhs": "INS"
           },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              10,
-              "type"
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              2,
+              "options",
+              1,
+              "value"
             ],
-            "lhs": "table",
-            "rhs": "panel"
+            "lhs": "Willpower",
+            "rhs": "WLP"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              2,
+              "options",
+              0,
+              "value"
+            ],
+            "lhs": "Dex",
+            "rhs": "DEX"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              0,
+              "defaultValue"
+            ],
+            "lhs": "DEX",
+            "rhs": "-"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              2,
+              1,
+              "contents",
+              0,
+              "options"
+            ],
+            "index": 4,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "-",
+                "value": "-"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              5,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
           },
           {
             "kind": "N",
             "path": [
               "body",
               "contents",
-              10,
-              "flow"
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              1,
+              "defaultChecked"
             ],
-            "rhs": "horizontal"
+            "rhs": false
           },
           {
             "kind": "N",
             "path": [
               "body",
               "contents",
-              10,
-              "align"
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "defaultChecked"
             ],
-            "rhs": "right"
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              4,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              4,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              3,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              3,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              2,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              2,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              1,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              1,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              0,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "contents",
+              0,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              3,
+              "contents",
+              0,
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              4,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              3,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              3,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              4,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              11,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
           }
         ]
       ],
@@ -2623,15 +2710,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.3.1"
+      "systemVersion": "2.4.0"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.3.1",
+    "systemVersion": "2.4.0",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692098724800,
+    "modifiedTime": 1692558510741,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

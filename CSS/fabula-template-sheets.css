@@ -42,6 +42,9 @@
 .section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;}
 .ritual-section-header > table {border:0px; border-right: 1px solid #854A4A; background: rgba(0, 0, 0, 0.05); margin:0px;}
 
+/* Project section */
+.project_details_table {border: 1px solid; margin: 10px; text-align: center;}
+
 
 /* Zero power table styling */
 .alt_background_zero {border-top:1px solid #854A4A; border-bottom:1px solid #854A4A;}
@@ -86,6 +89,21 @@
 .npc_alt_background_combat {background : #daf1e9; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px;}
 
 
+/* ------------- Item Sheet styling -------------  */
+.item_alt_background {background : #fafffa; border-top:1px solid #279123; border-bottom:1px solid #279123; margin-top: 10px; margin-bottom: 10px; color:#022e00;}
+.item_alt_background > table {margin-top: 0px; margin-bottom: 0px;}
+
+/* ------------- Chat Sheet styling -------------  */
+
+.chat-padding {padding:3px;}
+.npc_chat_card {background : rgba(235, 247, 243, 0.502) ; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px; color:#43436a;}
+.npc_chat_card > table {margin-top: 0px; margin-bottom: 0px;}
+.pc_chat_card {background : rgba(242, 229, 203, 0.502); border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
+.item_chat_card {background : rgba(250, 255, 250, 0.9); border-top:1px solid#279123; border-bottom:1px solid #279123; margin-top: 10px; margin-bottom: 10px;}
+.item_chat_card > table {margin-top: 0px; margin-bottom: 0px;}
+.damage_chat_card {text-align: center; padding-right: 5px;}
+
+
 /* Solid border */
 hr.solid {
   border-top: 3px solid #854A4A;
@@ -118,7 +136,8 @@ table td:first-child {
 
 
 .window-app .window-content, .sheet.journal-entry .journal-entry-content {
-	background: #FFFFFF;
+	background-image: url(https://www.needgames.it/wp-content/uploads/2022/03/sfondo-Fu-Ch-1920x1080-1.jpg);
+    background-size: cover;;
 }
 
 .custom-system-cell {
@@ -139,6 +158,11 @@ input[type="text"], input[type="number"], input[type="password"], input[type="da
 	background: #F1E4CA;
 	
 
+}
+
+.chat-message {
+	background-image: url(https://www.needgames.it/wp-content/uploads/2022/03/sfondo-Fu-Ch-1920x1080-1.jpg);
+    background-size: cover;
 }
 
 

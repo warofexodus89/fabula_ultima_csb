@@ -71,6 +71,7 @@
                           "maxVal": "${ref('max_hp')}$",
                           "allowRelative": true,
                           "showControls": false,
+                          "controlsStyle": "hover",
                           "type": "numberField"
                         },
                         {
@@ -152,6 +153,7 @@
                           "maxVal": "${ref('max_mp')}$",
                           "allowRelative": true,
                           "showControls": false,
+                          "controlsStyle": "hover",
                           "type": "numberField"
                         },
                         {
@@ -233,6 +235,7 @@
                           "maxVal": "${ref('max_ip')}$",
                           "allowRelative": true,
                           "showControls": true,
+                          "controlsStyle": "hover",
                           "type": "numberField"
                         },
                         {
@@ -314,6 +317,7 @@
                           "maxVal": "",
                           "allowRelative": false,
                           "showControls": true,
+                          "controlsStyle": "hover",
                           "type": "numberField"
                         }
                       ],
@@ -437,6 +441,7 @@
                 "maxVal": "50",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -473,6 +478,7 @@
                 "maxVal": "20",
                 "allowRelative": true,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -509,6 +515,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": false,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               null
@@ -1614,7 +1621,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -1658,7 +1666,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -1702,7 +1711,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -1746,7 +1756,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -1790,7 +1801,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -1834,7 +1846,8 @@
                                                 "label": "",
                                                 "defaultValue": null,
                                                 "size": "full-size",
-                                                "type": "checkbox"
+                                                "type": "checkbox",
+                                                "defaultChecked": false
                                               }
                                             ],
                                             "flow": "vertical",
@@ -3416,7 +3429,57 @@
                                 ],
                                 "head": true,
                                 "deleteWarning": true,
-                                "predefinedLines": [],
+                                "predefinedLines": [
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 0
+                                  },
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 1
+                                  },
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 2
+                                  },
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 3
+                                  },
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 4
+                                  },
+                                  {
+                                    "deleted": false,
+                                    "name": "",
+                                    "bond1": "",
+                                    "bond2": "",
+                                    "bond3": "",
+                                    "predefinedIdx": 5
+                                  }
+                                ],
+                                "canPlayerAdd": false,
                                 "type": "dynamicTable"
                               }
                             ],
@@ -3530,7 +3593,8 @@
                                               "label": "",
                                               "defaultValue": null,
                                               "size": "x-small",
-                                              "type": "checkbox"
+                                              "type": "checkbox",
+                                              "defaultChecked": false
                                             }
                                           ],
                                           "flow": "horizontal",
@@ -3574,7 +3638,8 @@
                                               "label": "",
                                               "defaultValue": null,
                                               "size": "x-small",
-                                              "type": "checkbox"
+                                              "type": "checkbox",
+                                              "defaultChecked": false
                                             }
                                           ],
                                           "flow": "horizontal",
@@ -3618,7 +3683,8 @@
                                               "label": "",
                                               "defaultValue": null,
                                               "size": "x-small",
-                                              "type": "checkbox"
+                                              "type": "checkbox",
+                                              "defaultChecked": false
                                             }
                                           ],
                                           "flow": "horizontal",
@@ -3799,7 +3865,7 @@
                                           "value": "",
                                           "prefix": "",
                                           "suffix": "",
-                                          "rollMessage": "<h2>Unleashes <i class=\"fa-solid fa-swords\"> </i> ${!string(zero_name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n\n\n<table> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(effect_desc)}$\n    </span>\n  </td>\n</tr>\n</table>",
+                                          "rollMessage": "<h2>Unleashes <i class=\"fa-solid fa-swords\"> </i> ${!string(zero_name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n\n\n<table class=\"pc_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(effect_desc)}$\n    </span>\n  </td>\n</tr>\n</table>",
                                           "altRollMessage": "",
                                           "style": "label",
                                           "type": "label"
@@ -4116,7 +4182,7 @@
                                           "value": "",
                                           "prefix": "",
                                           "suffix": "",
-                                          "rollMessage": "<h2>Initiates <i class=\"fa-solid fa-tent\"></i> ${!sameRow('activity_name')}$!</h2>\n\n<p><b> Target: </b> ${!sameRow('target')}$</p>\n\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-cauldron\"><b> Effect</b></i></p>\n\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n\n\n\n",
+                                          "rollMessage": "<h2>Initiates <i class=\"fa-solid fa-tent\"></i> ${!sameRow('activity_name')}$!</h2>\n\n\n\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-cauldron\"><b> Effect</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p style=\"text-align: right;\"><b> Target: </b> ${!sameRow('target')}$</p>\n\n\n",
                                           "altRollMessage": "",
                                           "style": "label",
                                           "type": "label",
@@ -4126,7 +4192,25 @@
                                       ],
                                       "head": true,
                                       "deleteWarning": false,
-                                      "predefinedLines": [],
+                                      "predefinedLines": [
+                                        {
+                                          "deleted": false,
+                                          "activity_name": "",
+                                          "target": "",
+                                          "description": "",
+                                          "roll": null,
+                                          "predefinedIdx": 0
+                                        },
+                                        {
+                                          "deleted": false,
+                                          "activity_name": "",
+                                          "target": "",
+                                          "description": "",
+                                          "roll": null,
+                                          "predefinedIdx": 1
+                                        }
+                                      ],
+                                      "canPlayerAdd": false,
                                       "type": "dynamicTable"
                                     }
                                   ],
@@ -4360,6 +4444,7 @@
                                 "maxVal": "10",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "Level"
@@ -4399,6 +4484,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           },
                           {
@@ -4477,6 +4563,7 @@
                                 "maxVal": "10",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "SL"
@@ -4510,7 +4597,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-scroll-old\"></i> ${!sameRow('skill_name')}$</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid\"><b>Skill Level:</b> ${!sameRow('level')}$</i></p>\n\n\n<table>\n  <tr>\n    <td>${!sameRow('description')}$</td>\n  </tr>\n</table>",
+                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-scroll-old\"></i> ${!sameRow('skill_name')}$</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid\"><b>Skill Level:</b> ${!sameRow('level')}$</i></p>\n\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!sameRow('description')}$</td>\n  </tr>\n</table>",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -4521,6 +4608,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           },
                           {
@@ -4546,6 +4634,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               },
                               {
@@ -4563,6 +4652,7 @@
                                 "maxVal": "",
                                 "allowRelative": true,
                                 "showControls": false,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               },
                               {
@@ -4580,6 +4670,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               },
                               {
@@ -4597,6 +4688,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               },
                               {
@@ -4614,6 +4706,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               },
                               {
@@ -4631,6 +4724,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField"
                               }
                             ],
@@ -4727,7 +4821,53 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "full-size",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": false
+                                  }
+                                ],
+                                "flow": "vertical",
+                                "align": "center",
+                                "type": "panel"
+                              },
+                              {
+                                "key": "",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "contents": [
+                                  {
+                                    "key": "",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "label": null,
+                                    "defaultValue": null,
+                                    "size": "full-size",
+                                    "icon": "",
+                                    "value": "<i class=\"fa-solid fa-screwdriver-wrench\"> Projects</i>",
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "rollMessage": "",
+                                    "altRollMessage": "",
+                                    "style": "label",
+                                    "type": "label"
+                                  },
+                                  {
+                                    "key": "isProjects",
+                                    "cssClass": "font-color",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "label": "",
+                                    "defaultValue": null,
+                                    "size": "full-size",
+                                    "type": "checkbox",
+                                    "defaultChecked": false
                                   }
                                 ],
                                 "flow": "vertical",
@@ -4771,7 +4911,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "full-size",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": false
                                   }
                                 ],
                                 "flow": "vertical",
@@ -4815,7 +4956,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "full-size",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": false
                                   }
                                 ],
                                 "flow": "vertical",
@@ -4859,7 +5001,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "full-size",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": false
                                   }
                                 ],
                                 "flow": "vertical",
@@ -4987,7 +5130,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Summons <i class=\"fa-solid fa-diamond\"></i> ${!sameRow('arc_name')}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-minimize\"><b> Merge Effects</b></i></p>\n\n<table>\n  <tr>\n    <td>${!string(sameRow('arc_merge'))}$</td>\n  </tr>\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-maximize\"><b> Dismiss Effects</b></i></p>\n\n</hr>\n<table>\n  <tr>\n    <td>${!string(sameRow('arc_dismiss'))}$</td>\n  </tr>\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-star-of-david\"><b> Cost: </b></i> 40 MP</p>\n\n",
+                                "rollMessage": "<h2>Summons <i class=\"fa-solid fa-diamond\"></i> ${!sameRow('arc_name')}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-minimize\"><b> Merge Effects</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('arc_merge'))}$</td>\n  </tr>\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-maximize\"><b> Dismiss Effects</b></i></p>\n\n</hr>\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('arc_dismiss'))}$</td>\n  </tr>\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-star-of-david\"><b> Cost: </b></i> 40 MP</p>\n\n",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -4998,6 +5141,384 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
+                            "type": "dynamicTable"
+                          }
+                        ],
+                        "flow": "vertical",
+                        "align": "center",
+                        "type": "panel"
+                      },
+                      {
+                        "key": "project_panel",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "isProjects==true",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "full-size",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-screwdriver-wrench\"> Projects</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "bold",
+                            "type": "label"
+                          },
+                          {
+                            "key": "project_table",
+                            "cssClass": "alt_background",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "rowLayout": [
+                              {
+                                "key": "project_name",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": "medium",
+                                "charList": "",
+                                "maxLength": "",
+                                "type": "textField",
+                                "align": "center",
+                                "colName": "Name"
+                              },
+                              {
+                                "key": "proj_potency",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "-",
+                                "size": "m-small",
+                                "options": [
+                                  {
+                                    "key": "minor",
+                                    "value": "Minor"
+                                  },
+                                  {
+                                    "key": "medium",
+                                    "value": "Medium"
+                                  },
+                                  {
+                                    "key": "major",
+                                    "value": "Major"
+                                  },
+                                  {
+                                    "key": "extreme",
+                                    "value": "Extreme"
+                                  },
+                                  {
+                                    "key": "-",
+                                    "value": "-"
+                                  }
+                                ],
+                                "tableKey": null,
+                                "tableKeyColumn": null,
+                                "tableLabelColumn": null,
+                                "type": "select",
+                                "align": "center",
+                                "colName": "Potency"
+                              },
+                              {
+                                "key": "proj_area",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "-",
+                                "size": "m-small",
+                                "options": [
+                                  {
+                                    "key": "individual",
+                                    "value": "Individual"
+                                  },
+                                  {
+                                    "key": "small",
+                                    "value": "Small"
+                                  },
+                                  {
+                                    "key": "large",
+                                    "value": "Large"
+                                  },
+                                  {
+                                    "key": "huge",
+                                    "value": "Huge"
+                                  },
+                                  {
+                                    "key": "-",
+                                    "value": "-"
+                                  }
+                                ],
+                                "tableKey": null,
+                                "tableKeyColumn": null,
+                                "tableLabelColumn": null,
+                                "type": "select",
+                                "align": "center",
+                                "colName": "Area"
+                              },
+                              {
+                                "key": "uses",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "-",
+                                "size": "medium",
+                                "options": [
+                                  {
+                                    "key": "consumable",
+                                    "value": "Consumable"
+                                  },
+                                  {
+                                    "key": "permanent",
+                                    "value": "Permanent"
+                                  },
+                                  {
+                                    "key": "-",
+                                    "value": "-"
+                                  }
+                                ],
+                                "tableKey": null,
+                                "tableKeyColumn": null,
+                                "tableLabelColumn": null,
+                                "type": "select",
+                                "align": "center",
+                                "colName": "Uses"
+                              },
+                              {
+                                "key": "isFlaw",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "25% reduction to cost.",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": null,
+                                "size": "m-small",
+                                "type": "checkbox",
+                                "defaultChecked": false,
+                                "align": "center",
+                                "colName": "Terrible Flaw?"
+                              },
+                              {
+                                "key": "proj_desc",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": null,
+                                "style": "dialog",
+                                "type": "textArea",
+                                "align": "center",
+                                "colName": "Item Description"
+                              },
+                              {
+                                "key": "desc",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "medium",
+                                "icon": "",
+                                "value": "<div style=\"display: none;\">\n\n${consoleLog(concat('Project:', string(equalText(sameRow('proj_potency'), 'minor') ==  true ? 100 : equalText(sameRow('proj_potency'), 'medium') ==  true ? 200 : equalText(sameRow('proj_potency'), 'major') ==  true ? 400 : equalText(sameRow('proj_potency'), 'extreme') ==  true ? 800 : 0)))\nconsoleLog(concat('Area:', string(equalText(sameRow('proj_area'), 'individual') ==  true ? 1 : equalText(sameRow('proj_area'), 'small') ==  true ? 2 : equalText(sameRow('proj_area'), 'large') ==  true ? 3: equalText(sameRow('proj_area'), 'huge') ==  true ? 4 : 0)))\nconsoleLog(concat('Uses:', string(equalText(sameRow('uses'),'consumable') == true ? 1 : equalText(sameRow('uses'),'permanent') == true ? 5 : 0)))\nconsoleLog(concat('Flaw:', string(sameRow('isFlaw') == true ? 0.750 : 1)))\n\n}$\n\n</div>\n\n<table class=\"project_details_table\">\n  <tr style=\"border: 1px solid\">\n    <td style=\"border: 1px solid\"> \n      <span>\n        <strong>Zenit Cost</strong>\n      </span>\n    </td style=\"border: 1px solid\">\n    <td>\n      <span>\n        ${(equalText(sameRow('proj_potency'), 'minor') ==  true ? 100 : equalText(sameRow('proj_potency'), 'medium') ==  true ? 200 : equalText(sameRow('proj_potency'), 'major') ==  true ? 400 : equalText(sameRow('proj_potency'), 'extreme') ==  true ? 800 : 0) * (equalText(sameRow('proj_area'), 'individual') ==  true ? 1 : equalText(sameRow('proj_area'), 'small') ==  true ? 2 : equalText(sameRow('proj_area'), 'large') ==  true ? 3: equalText(sameRow('proj_area'), 'huge') ==  true ? 4 : 0) * (equalText(sameRow('uses'),'consumable') == true ? 1 : equalText(sameRow('uses'),'permanent') == true ? 5 : 0) * (sameRow('isFlaw') == true ? 0.750 : 1)}$ \n      </span>\n    </td>\n  </tr>\n\n   <tr style=\"border: 1px solid\">\n    <td style=\"border: 1px solid\">\n      <span>\n        <strong>Workload (Days)</strong>\n      </span>\n    </td>\n    <td>\n      <span>\n        ${ (((equalText(sameRow('proj_potency'), 'minor') ==  true ? 100 : equalText(sameRow('proj_potency'), 'medium') ==  true ? 200 : equalText(sameRow('proj_potency'), 'major') ==  true ? 400 : equalText(sameRow('proj_potency'), 'extreme') ==  true ? 800 : 0) * (equalText(sameRow('proj_area'), 'individual') ==  true ? 1 : equalText(sameRow('proj_area'), 'small') ==  true ? 2 : equalText(sameRow('proj_area'), 'large') ==  true ? 3: equalText(sameRow('proj_area'), 'huge') ==  true ? 4 : 0) / 100) * (equalText(sameRow('uses'),'consumable') == true ? 1 : equalText(sameRow('uses'),'permanent') == true ? 5 : 0) * (sameRow('isFlaw') == true ? 0.750 : 1)) < 1 == true ? 1 : (((equalText(sameRow('proj_potency'), 'minor') ==  true ? 100 : equalText(sameRow('proj_potency'), 'medium') ==  true ? 200 : equalText(sameRow('proj_potency'), 'major') ==  true ? 400 : equalText(sameRow('proj_potency'), 'extreme') ==  true ? 800 : 0) * (equalText(sameRow('proj_area'), 'individual') ==  true ? 1 : equalText(sameRow('proj_area'), 'small') ==  true ? 2 : equalText(sameRow('proj_area'), 'large') ==  true ? 3: equalText(sameRow('proj_area'), 'huge') ==  true ? 4 : 0) / 100) * (equalText(sameRow('uses'),'consumable') == true ? 1 : equalText(sameRow('uses'),'permanent') == true ? 5 : 0) * (sameRow('isFlaw') == true ? 0.750 : 1)) }$\n      </span>\n    </td>\n  </tr>\n</table>",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label",
+                                "align": "center",
+                                "colName": "Project Details"
+                              }
+                            ],
+                            "head": true,
+                            "deleteWarning": true,
+                            "predefinedLines": [],
+                            "canPlayerAdd": true,
+                            "type": "dynamicTable"
+                          },
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "full-size",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-bars-progress\"> Project Progress</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "bold",
+                            "type": "label"
+                          },
+                          {
+                            "key": "proj_prog_table",
+                            "cssClass": "alt_background",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "rowLayout": [
+                              {
+                                "key": "project_name",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": "m-large",
+                                "options": [],
+                                "tableKey": "project_table",
+                                "tableKeyColumn": "project_name",
+                                "tableLabelColumn": "",
+                                "type": "select",
+                                "align": "center",
+                                "colName": "Name"
+                              },
+                              {
+                                "key": "tinkerer",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "1",
+                                "size": "m-small",
+                                "allowDecimal": false,
+                                "minVal": "1",
+                                "maxVal": "",
+                                "allowRelative": false,
+                                "showControls": true,
+                                "controlsStyle": "hover",
+                                "type": "numberField",
+                                "align": "center",
+                                "colName": "Number of Tinkerers"
+                              },
+                              {
+                                "key": "helpers",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "0",
+                                "size": "m-small",
+                                "allowDecimal": false,
+                                "minVal": "0",
+                                "maxVal": "",
+                                "allowRelative": false,
+                                "showControls": false,
+                                "controlsStyle": "hover",
+                                "type": "numberField",
+                                "align": "center",
+                                "colName": "Number of Helpers"
+                              },
+                              {
+                                "key": "workload",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "You can find the workload above under 'Project Details'.",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "m-small",
+                                "icon": "",
+                                "value": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label",
+                                "align": "center",
+                                "colName": "Workload (Days)"
+                              },
+                              {
+                                "key": "project_progress",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "full-size",
+                                "icon": "",
+                                "value": "${(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1)) <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label",
+                                "align": "center",
+                                "colName": "Project Progress"
+                              },
+                              {
+                                "key": "progress_tracker",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "0",
+                                "size": "small",
+                                "allowDecimal": false,
+                                "minVal": "0",
+                                "maxVal": "",
+                                "allowRelative": false,
+                                "showControls": true,
+                                "controlsStyle": "hover",
+                                "type": "numberField",
+                                "align": "center",
+                                "colName": "Day Tracker"
+                              }
+                            ],
+                            "head": true,
+                            "deleteWarning": true,
+                            "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           }
                         ],
@@ -5528,6 +6049,7 @@
                                     "head": true,
                                     "deleteWarning": true,
                                     "predefinedLines": [],
+                                    "canPlayerAdd": true,
                                     "type": "dynamicTable"
                                   }
                                 ],
@@ -5636,6 +6158,7 @@
                                     "head": true,
                                     "deleteWarning": true,
                                     "predefinedLines": [],
+                                    "canPlayerAdd": true,
                                     "type": "dynamicTable"
                                   }
                                 ],
@@ -5787,7 +6310,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Vocalizes <i class=\"fa-solid fa-user-music\"></i> ${!sameRow('name')}$!</h2>\n<p>with a <b>${!sameRow('tone')}$ tone</b>, in <b>${!sameRow('key')}$ key</b>; and at  <b>${!sameRow('frequency')}$ frequency</b>.</p>\n</hr>\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
+                                "rollMessage": "<h2>Vocalizes <i class=\"fa-solid fa-user-music\"></i> ${!sameRow('name')}$!</h2>\n<p>with a <b>${!sameRow('tone')}$ tone</b>, in <b>${!sameRow('key')}$ key</b>; and at  <b>${!sameRow('frequency')}$ frequency</b>.</p>\n</hr>\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -5798,6 +6321,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           }
                         ],
@@ -5912,7 +6436,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Performs <i class=\"fa-solid fa-feather\"></i> ${!sameRow('dance_name')}$!</h2>\n<p><b>Cost:</b> 10 MP</p>\n<p><b>Duration:</b> ${!sameRow('duration')}$</p>\n</hr>\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
+                                "rollMessage": "<h2>Performs <i class=\"fa-solid fa-feather\"></i> ${!sameRow('dance_name')}$!</h2>\n<p><b>Cost:</b> 10 MP</p>\n<p><b>Duration:</b> ${!sameRow('duration')}$</p>\n</hr>\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -5923,6 +6447,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           }
                         ],
@@ -6042,6 +6567,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           }
                         ],
@@ -6141,7 +6667,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6185,7 +6712,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6229,7 +6757,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6273,7 +6802,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6317,7 +6847,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6361,7 +6892,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "vertical",
@@ -6529,7 +7061,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Casts <i class=\"fa-solid fa-sparkles\"></i> ${!sameRow('spell_name')}$!</h2>\n<p><b>Cost:</b> ${!sameRow('cost')}$ MP</p>\n<p><b>Target:</b> ${!sameRow('target')}$</p>\n<p><b>Duration:</b> ${!sameRow('duration')}$</p>\n</hr>\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
+                                "rollMessage": "<h2>Casts <i class=\"fa-solid fa-sparkles\"></i> ${!sameRow('spell_name')}$!</h2>\n<p><b>Cost:</b> ${!sameRow('cost')}$ MP</p>\n<p><b>Target:</b> ${!sameRow('target')}$</p>\n<p><b>Duration:</b> ${!sameRow('duration')}$</p>\n</hr>\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -6540,6 +7072,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           },
                           {
@@ -6736,6 +7269,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "Magic Check Bonus"
@@ -6755,6 +7289,7 @@
                                 "maxVal": "",
                                 "allowRelative": false,
                                 "showControls": false,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "HR +"
@@ -6843,7 +7378,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table>\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+                                "rollMessage": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -6854,6 +7389,7 @@
                             "head": true,
                             "deleteWarning": false,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           }
                         ],
@@ -6919,6 +7455,7 @@
                                 "defaultValue": null,
                                 "size": "x-small",
                                 "type": "checkbox",
+                                "defaultChecked": false,
                                 "align": "center",
                                 "colName": "Equipped?"
                               },
@@ -6970,6 +7507,7 @@
                                 "defaultValue": null,
                                 "size": "x-small",
                                 "type": "checkbox",
+                                "defaultChecked": false,
                                 "align": "left",
                                 "colName": "Ranged?"
                               },
@@ -7066,6 +7604,7 @@
                                 "maxVal": "",
                                 "allowRelative": true,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "Accuracy"
@@ -7085,6 +7624,7 @@
                                 "maxVal": "",
                                 "allowRelative": true,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "HR +"
@@ -7104,6 +7644,7 @@
                                 "maxVal": "",
                                 "allowRelative": true,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "Bonus def"
@@ -7123,6 +7664,7 @@
                                 "maxVal": "",
                                 "allowRelative": true,
                                 "showControls": true,
+                                "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
                                 "colName": "Bonus Mdef"
@@ -7211,8 +7753,8 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-                                "altRollMessage": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#16E9DE':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#168BE9':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA7D15':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#9AE51A':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#E85817':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#EFE710':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#000000':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#ffffff':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#FF00F5':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#B200FF':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#e3d9d2':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#a8a19b':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:right; padding-right: 5px\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+                                "rollMessage": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n    <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+                                "altRollMessage": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
                                 "style": "label",
                                 "type": "label",
                                 "align": "left",
@@ -7222,6 +7764,7 @@
                             "head": true,
                             "deleteWarning": true,
                             "predefinedLines": [],
+                            "canPlayerAdd": true,
                             "type": "dynamicTable"
                           },
                           {
@@ -7464,7 +8007,8 @@
                                         "label": "",
                                         "defaultValue": null,
                                         "size": "x-small",
-                                        "type": "checkbox"
+                                        "type": "checkbox",
+                                        "defaultChecked": false
                                       }
                                     ],
                                     "flow": "horizontal",
@@ -7772,7 +8316,7 @@
                                     "value": "",
                                     "prefix": "",
                                     "suffix": "",
-                                    "rollMessage": "<h2>Uses <i class=\"fa-solid fa-flask-round-potion\"> </i> ${!string(item.name)}$!</h2>\n\n\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.potion_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-sack\"><b> IP: </b></i> ${!string(item.potion_ip)}$ </p>",
+                                    "rollMessage": "<h2>Uses <i class=\"fa-solid fa-flask-round-potion\"> </i> ${!string(item.name)}$!</h2>\n\n\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.potion_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-sack\"><b> IP: </b></i> ${!string(item.potion_ip)}$ </p>",
                                     "altRollMessage": "",
                                     "style": "label",
                                     "type": "label",
@@ -7888,7 +8432,7 @@
                                     "value": "",
                                     "prefix": "",
                                     "suffix": "",
-                                    "rollMessage": "<h2>Uses <i class=\"fa-solid fa-gear\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n\n\n<table> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.util_effect)}$\n    </span>\n  </td>\n</tr>\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-sack\"><b> IP: </b></i> ${!string(item.util_ip)}$ </p>",
+                                    "rollMessage": "<h2>Uses <i class=\"fa-solid fa-gear\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n\n\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.util_effect)}$\n    </span>\n  </td>\n</tr>\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-sack\"><b> IP: </b></i> ${!string(item.util_ip)}$ </p>",
                                     "altRollMessage": "",
                                     "style": "label",
                                     "type": "label",
@@ -8004,7 +8548,7 @@
                                 "colName": "Quality"
                               },
                               {
-                                "key": "others_item_desc",
+                                "key": "roll",
                                 "cssClass": "",
                                 "role": "0",
                                 "permission": "0",
@@ -8017,7 +8561,7 @@
                                 "value": "",
                                 "prefix": "",
                                 "suffix": "",
-                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
+                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
                                 "altRollMessage": "",
                                 "style": "label",
                                 "type": "label",
@@ -8126,7 +8670,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "x-small",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": false
                                   }
                                 ],
                                 "flow": "horizontal",
@@ -8170,7 +8715,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "x-small",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": true
                                   }
                                 ],
                                 "flow": "horizontal",
@@ -8214,7 +8760,8 @@
                                     "label": "",
                                     "defaultValue": null,
                                     "size": "x-small",
-                                    "type": "checkbox"
+                                    "type": "checkbox",
+                                    "defaultChecked": true
                                   }
                                 ],
                                 "flow": "horizontal",
@@ -8264,9 +8811,13 @@
       "pp_height": "250"
     },
     "attributeBar": {
-      "Fabula Points": {
-        "value": "fp",
-        "max": "10"
+      "hp_tracker": {
+        "value": "${ref('current_hp')}$",
+        "max": "${ref('max_hp')}$"
+      },
+      "mp_tracker": {
+        "value": "${ref('current_mp')}$",
+        "max": "${ref('max_mp')}$"
       }
     },
     "activeEffects": {
@@ -8450,7 +9001,8 @@
         }
       ]
     },
-    "templateSystemUniqueVersion": 1201019509
+    "activeConditionalModifierGroups": [],
+    "templateSystemUniqueVersion": 3794105943
   },
   "flags": {
     "custom-system-builder": {
@@ -8467,24 +9019,17 @@
               0,
               0,
               "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
               4,
               "contents",
-              0,
-              "prefix"
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
             ],
-            "lhs": "",
-            "rhs": "Dex: "
+            "lhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',proj_name ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', proj_name),0)) ,'consumable') == true ? 1 : 5 )\n\t\n}$",
+            "rhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0))\n}$"
           }
         ],
         [
@@ -8498,24 +9043,185 @@
               0,
               0,
               "contents",
-              0,
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
+            ],
+            "lhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0))\n}$",
+            "rhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0))\n}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
               "contents",
               0,
-              "contents",
               0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
               "contents",
               4,
               "contents",
-              1,
-              "cssClass"
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
             ],
-            "lhs": "hidding-mod-atr",
-            "rhs": ""
+            "lhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0))\n}$",
+            "rhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
+            ],
+            "lhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$",
+            "rhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ "
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
+            ],
+            "lhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ ",
+            "rhs": "<div style=\"display: none;\">\n\n${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$\n</div>\n\n${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ "
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              4,
+              "value"
+            ],
+            "lhs": "<div style=\"display: none;\">\n\t${#tinkerer:= sameRow('tinkerer') * 2}$\n\t${#helper:= sameRow('helpers') * 1}$\n\t${#progressPerDay:= tinkerer + helper}$\n\t${#daysToCompletion:= sameRow('workload')/progressPerDay}$\n\t${#text:= daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor(progressPerDay)) , ' progress per day /' , string(floor(daysToCompletion)) ,' days')}$\n</div>\n\n<span>${text}$</span>\n\n\n",
+            "rhs": "${daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              4,
+              "value"
+            ],
+            "lhs": "${daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$",
+            "rhs": "${(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1)) <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              2,
+              "contents",
+              3,
+              "rowLayout",
+              3,
+              "value"
+            ],
+            "lhs": "<div style=\"display: none;\">\n\n${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$\n</div>\n\n${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ ",
+            "rhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              0,
+              "contents",
+              1,
+              "rowLayout",
+              12,
+              "rollMessage"
+            ],
+            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n    <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
           },
           {
             "kind": "E",
@@ -8527,250 +9233,41 @@
               0,
               0,
               "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
+              6,
               "contents",
               0,
               "contents",
               1,
-              "contents",
-              4,
-              "contents",
-              1,
-              "prefix"
-            ],
-            "lhs": "",
-            "rhs": "Ins: "
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "contents",
-              1,
-              "value"
-            ],
-            "lhs": "",
-            "rhs": "${ref('ins_base')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "contents",
-              3,
-              "prefix"
-            ],
-            "lhs": "",
-            "rhs": "Wlp: "
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "contents",
-              3,
-              "cssClass"
-            ],
-            "lhs": "hidding-mod-atr",
-            "rhs": ""
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "role"
-            ],
-            "lhs": "0",
-            "rhs": "4"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "font-color"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              4,
-              "cssClass"
-            ],
-            "lhs": "font-color",
-            "rhs": "hidding-mod-atr"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "<i class=\"fa-solid fa-waveform\"> Frequency</i>",
-            "rhs": "<i class=\"fa-solid fa-waveform\"> Volumes</i>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              4,
               "rowLayout",
-              1,
-              "colName"
+              12,
+              "altRollMessage"
             ],
-            "lhs": "Frequency",
-            "rhs": "Volume"
+            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              5,
+              "contents",
+              1,
+              "contents",
+              3,
+              "rowLayout",
+              11,
+              "rollMessage"
+            ],
+            "lhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
+            "rhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
           }
         ]
       ],
@@ -8780,7 +9277,7 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.3.1"
+      "systemVersion": "2.4.0"
     },
     "core": {},
     "scene-packer": {
@@ -8859,10 +9356,10 @@
   "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.3.1",
+    "systemVersion": "2.4.0",
     "coreVersion": "11.307",
     "createdTime": 1687192833609,
-    "modifiedTime": 1692069640717,
+    "modifiedTime": 1692566445263,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

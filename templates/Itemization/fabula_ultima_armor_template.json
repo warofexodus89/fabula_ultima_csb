@@ -39,7 +39,7 @@
         },
         {
           "key": "details_table",
-          "cssClass": "table{background: linear-gradient(to right, #ff0000 0%, #ffffff 100%)}",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -75,7 +75,8 @@
                 "label": "",
                 "defaultValue": null,
                 "size": "x-small",
-                "type": "checkbox"
+                "type": "checkbox",
+                "defaultChecked": false
               },
               {
                 "key": "",
@@ -106,7 +107,8 @@
                 "label": "",
                 "defaultValue": null,
                 "size": "x-small",
-                "type": "checkbox"
+                "type": "checkbox",
+                "defaultChecked": false
               }
             ],
             [
@@ -125,7 +127,7 @@
         },
         {
           "key": "Item_details",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -302,6 +304,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -338,6 +341,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               null,
@@ -378,6 +382,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -414,6 +419,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -452,6 +458,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               },
               {
@@ -488,6 +495,7 @@
                 "maxVal": "",
                 "allowRelative": false,
                 "showControls": true,
+                "controlsStyle": "hover",
                 "type": "numberField"
               }
             ],
@@ -567,7 +575,7 @@
         },
         {
           "key": "add_effects_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -634,7 +642,7 @@
         },
         {
           "key": "status_rst_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -686,7 +694,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -730,7 +739,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -774,7 +784,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -818,7 +829,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -862,7 +874,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -906,7 +919,8 @@
                         "label": "",
                         "defaultValue": null,
                         "size": "small",
-                        "type": "checkbox"
+                        "type": "checkbox",
+                        "defaultChecked": false
                       }
                     ],
                     "flow": "vertical",
@@ -946,7 +960,7 @@
         },
         {
           "key": "elemental_aff",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -1646,7 +1660,6 @@
           "permission": "0",
           "tooltip": "",
           "visibilityFormula": "",
-          "type": "panel",
           "contents": [
             {
               "key": "",
@@ -1715,11 +1728,12 @@
             }
           ],
           "flow": "horizontal",
-          "align": "right"
+          "align": "right",
+          "type": "panel"
         },
         {
           "key": "desc_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -1754,10 +1768,10 @@
               }
             ]
           ],
-          "type": "table",
           "cols": "1",
           "rows": "1",
-          "layout": ""
+          "layout": "",
+          "type": "table"
         }
       ],
       "key": "custom_body",
@@ -1779,43 +1793,61 @@
     },
     "modifiers": [
       {
+        "id": "9H3m33lvx0JEcB9l",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "total_def",
         "operator": "add",
-        "formula": "${is_equipped ? ref('armor_mod') : 0}$"
+        "formula": "${is_equipped ? ref('armor_mod') : 0}$",
+        "description": ""
       },
       {
+        "id": "vW6I4MBGWYyBQfmE",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "total_mdef",
         "operator": "add",
-        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$"
+        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$",
+        "description": ""
       },
       {
+        "id": "RpvrAfkaDy00xzql",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "max_mp",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_mp') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_mp') : 0}$",
+        "description": ""
       },
       {
+        "id": "sGmIYm8tJz8igs9N",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "total_init",
         "operator": "add",
-        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$"
+        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$",
+        "description": ""
       },
       {
+        "id": "BUjjtvmtzpOStwf0",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "max_hp",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_hp') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_hp') : 0}$",
+        "description": ""
       },
       {
+        "id": "Dza0fwopacwYoQa1",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "max_ip",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_ip') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_ip') : 0}$",
+        "description": ""
       }
     ],
-    "templateSystemUniqueVersion": 1298614563
+    "templateSystemUniqueVersion": 1008168967
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -1827,212 +1859,6 @@
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              1,
-              1
-            ],
-            "lhs": {
-              "key": "is_equipped",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "label": "",
-              "defaultValue": null,
-              "size": "x-small",
-              "type": "checkbox"
-            },
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              3
-            ],
-            "lhs": null,
-            "rhs": {
-              "key": "is_equipped",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "label": "",
-              "defaultValue": null,
-              "size": "x-small",
-              "type": "checkbox"
-            }
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "rows"
-            ],
-            "lhs": "3",
-            "rhs": "1"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "header",
-              "contents",
-              0,
-              "align"
-            ],
-            "lhs": "center",
-            "rhs": "right"
-          }
-        ],
-        [
-          {
-            "kind": "A",
-            "path": [
-              "header",
-              "contents"
-            ],
-            "index": 0,
-            "item": {
-              "kind": "D",
-              "lhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": null,
-                    "defaultValue": null,
-                    "size": "medium",
-                    "icon": "",
-                    "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                    "prefix": "",
-                    "suffix": "",
-                    "rollMessage": "",
-                    "altRollMessage": "",
-                    "style": "label",
-                    "type": "label"
-                  },
-                  {
-                    "key": "item_price",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "",
-                    "size": "small",
-                    "charList": "",
-                    "maxLength": "",
-                    "type": "textField"
-                  }
-                ],
-                "flow": "grid-2",
-                "align": "right",
-                "type": "panel"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents"
-            ],
-            "index": 10,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": null,
-                    "defaultValue": null,
-                    "size": "medium",
-                    "icon": "",
-                    "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                    "prefix": "",
-                    "suffix": "",
-                    "rollMessage": "",
-                    "altRollMessage": "",
-                    "style": "label",
-                    "type": "label"
-                  },
-                  {
-                    "key": "item_price",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "",
-                    "size": "small",
-                    "charList": "",
-                    "maxLength": "",
-                    "type": "textField"
-                  }
-                ],
-                "flow": "grid-2",
-                "align": "right",
-                "type": "panel"
-              }
-            }
-          }
-        ],
-        null,
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "flow"
-            ],
-            "lhs": "grid-2",
-            "rhs": "horizontal"
-          }
-        ],
         [
           {
             "kind": "A",
@@ -3432,6 +3258,290 @@
             ],
             "rhs": "right"
           }
+        ],
+        [
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              5,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              4,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              4,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              2,
+              3,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              2,
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "table{background: linear-gradient(to right, #ff0000 0%, #ffffff 100%)}",
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              3,
+              "defaultChecked"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "contents",
+              0,
+              1,
+              "defaultChecked"
+            ],
+            "rhs": false
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              3,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              5,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -3440,15 +3550,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.3.1"
+      "systemVersion": "2.4.0"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.3.1",
+    "systemVersion": "2.4.0",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692098680199,
+    "modifiedTime": 1692558406012,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

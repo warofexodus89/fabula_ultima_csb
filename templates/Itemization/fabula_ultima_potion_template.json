@@ -21,7 +21,7 @@
       "contents": [
         {
           "key": "food_price_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -70,6 +70,7 @@
                     "maxVal": "",
                     "allowRelative": false,
                     "showControls": false,
+                    "controlsStyle": "hover",
                     "type": "numberField"
                   }
                 ],
@@ -86,7 +87,7 @@
         },
         {
           "key": "food_effect_table",
-          "cssClass": "",
+          "cssClass": "item_alt_background",
           "role": "0",
           "permission": "0",
           "tooltip": "",
@@ -163,7 +164,7 @@
       "pp_width": "64",
       "pp_height": "64"
     },
-    "templateSystemUniqueVersion": 1299614167
+    "templateSystemUniqueVersion": 2490731286
   },
   "effects": [],
   "flags": {
@@ -567,6 +568,47 @@
             "lhs": "food_price",
             "rhs": "potion_ip"
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -574,16 +616,16 @@
     "exportSource": {
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
-      "coreVersion": "11.306",
-      "systemVersion": "2.3.1"
+      "coreVersion": "11.307",
+      "systemVersion": "2.4.0"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.3.1",
-    "coreVersion": "11.306",
+    "systemVersion": "2.4.0",
+    "coreVersion": "11.307",
     "createdTime": 1688078694030,
-    "modifiedTime": 1690655190576,
+    "modifiedTime": 1692558459913,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
