@@ -994,7 +994,1371 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_1",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Fire",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_2",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Ice",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_3",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Earth",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_4",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Air",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_5",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Bolt",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_6",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Light",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_7",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Dark",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_8",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Poison",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_9",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        },
+        {
+          "key": "",
+          "cssClass": "",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            },
+            {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "medium",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            {
+              "key": "item_price",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "",
+              "size": "small",
+              "charList": "",
+              "maxLength": "",
+              "type": "textField"
+            }
+          ],
+          "flow": "horizontal",
+          "align": "right",
+          "type": "panel"
+        },
+        {
+          "key": "desc_table",
+          "cssClass": "item_alt_background",
+          "role": "0",
+          "permission": "0",
+          "tooltip": "",
+          "visibilityFormula": "",
+          "contents": [
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          ],
+          "cols": "1",
+          "rows": "1",
+          "layout": "",
+          "type": "table"
+        }
+      ],
+      "key": "custom_body",
+      "cssClass": null,
+      "role": 0,
+      "permission": 0,
+      "tooltip": null,
+      "visibilityFormula": null,
+      "flow": null,
+      "align": null,
+      "type": "panel"
+    },
+    "display": {
+      "width": "730",
+      "height": "700",
+      "fix_size": false,
+      "pp_width": "300",
+      "pp_height": "300"
+    },
+    "modifiers": [
+      {
+        "id": "9H3m33lvx0JEcB9l",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "total_def",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('armor_mod') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "vW6I4MBGWYyBQfmE",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "total_mdef",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "RpvrAfkaDy00xzql",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "max_mp",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_mp') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "sGmIYm8tJz8igs9N",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "total_init",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "BUjjtvmtzpOStwf0",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "max_hp",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_hp') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "Dza0fwopacwYoQa1",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "max_ip",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('bonus_ip') : 0}$",
+        "description": ""
+      }
+    ],
+    "templateSystemUniqueVersion": 2510260046
+  },
+  "effects": [],
+  "folder": "rUpkamytc1F92Qae",
+  "flags": {
+    "scene-packer": {
+      "hash": "feb5ead1bf308fcc34226acc2a7d042fe9a7b67c"
+    },
+    "custom-system-builder": {
+      "version": "2.3.1",
+      "templateHistory": [
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              4,
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              4,
+              3,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              5,
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              5,
+              3,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 10,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "desc_table",
+                "cssClass": "item_alt_background",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "key"
+            ],
+            "lhs": "desc_table",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "cssClass"
+            ],
+            "lhs": "item_alt_background",
+            "rhs": ""
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents",
+              0
+            ],
+            "lhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ],
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "cols"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "rows"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "layout"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "type"
+            ],
+            "lhs": "table",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "align"
+            ],
+            "rhs": "right"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "key"
+            ],
+            "lhs": "",
+            "rhs": "elemental_aff"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents",
+              0
+            ],
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            },
+            "rhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Physical",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1647,21 +3011,369 @@
               null,
               null
             ]
-          ],
-          "cols": "1",
-          "rows": "1",
-          "layout": "",
-          "type": "table"
-        },
-        {
-          "key": "",
-          "cssClass": "",
-          "role": "0",
-          "permission": "0",
-          "tooltip": "",
-          "visibilityFormula": "",
-          "contents": [
-            {
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "flow"
+            ],
+            "lhs": "horizontal"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "align"
+            ],
+            "lhs": "right"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "type"
+            ],
+            "lhs": "panel",
+            "rhs": "table"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cols"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "rows"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "layout"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "key"
+            ],
+            "lhs": "elemental_aff",
+            "rhs": "elemental_aff_copy1"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              8,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              5,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : ''}$\"></i>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : ''}$\"></i>"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 10,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "desc_table",
+                "cssClass": "item_alt_background",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "key"
+            ],
+            "lhs": "",
+            "rhs": "desc_table"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "contents",
+              0
+            ],
+            "lhs": {
               "key": "",
               "cssClass": "",
               "role": "0",
@@ -1693,53 +3405,7 @@
               "align": "left",
               "type": "panel"
             },
-            {
-              "key": "",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "label": null,
-              "defaultValue": null,
-              "size": "medium",
-              "icon": "",
-              "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-              "prefix": "",
-              "suffix": "",
-              "rollMessage": "",
-              "altRollMessage": "",
-              "style": "label",
-              "type": "label"
-            },
-            {
-              "key": "item_price",
-              "cssClass": "align-center",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "label": "",
-              "defaultValue": "",
-              "size": "small",
-              "charList": "",
-              "maxLength": "",
-              "type": "textField"
-            }
-          ],
-          "flow": "horizontal",
-          "align": "right",
-          "type": "panel"
-        },
-        {
-          "key": "desc_table",
-          "cssClass": "item_alt_background",
-          "role": "0",
-          "permission": "0",
-          "tooltip": "",
-          "visibilityFormula": "",
-          "contents": [
-            [
+            "rhs": [
               {
                 "key": "",
                 "cssClass": "",
@@ -1767,111 +3433,932 @@
                 "type": "panel"
               }
             ]
-          ],
-          "cols": "1",
-          "rows": "1",
-          "layout": "",
-          "type": "table"
-        }
-      ],
-      "key": "custom_body",
-      "cssClass": null,
-      "role": 0,
-      "permission": 0,
-      "tooltip": null,
-      "visibilityFormula": null,
-      "flow": null,
-      "align": null,
-      "type": "panel"
-    },
-    "display": {
-      "width": "730",
-      "height": "700",
-      "fix_size": false,
-      "pp_width": "300",
-      "pp_height": "300"
-    },
-    "modifiers": [
-      {
-        "id": "9H3m33lvx0JEcB9l",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "total_def",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('armor_mod') : 0}$",
-        "description": ""
-      },
-      {
-        "id": "vW6I4MBGWYyBQfmE",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "total_mdef",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$",
-        "description": ""
-      },
-      {
-        "id": "RpvrAfkaDy00xzql",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "max_mp",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_mp') : 0}$",
-        "description": ""
-      },
-      {
-        "id": "sGmIYm8tJz8igs9N",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "total_init",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$",
-        "description": ""
-      },
-      {
-        "id": "BUjjtvmtzpOStwf0",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "max_hp",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_hp') : 0}$",
-        "description": ""
-      },
-      {
-        "id": "Dza0fwopacwYoQa1",
-        "conditionalGroup": "",
-        "priority": 0,
-        "key": "max_ip",
-        "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_ip') : 0}$",
-        "description": ""
-      }
-    ],
-    "templateSystemUniqueVersion": 1371225855
-  },
-  "effects": [],
-  "folder": "rUpkamytc1F92Qae",
-  "flags": {
-    "scene-packer": {
-      "hash": "feb5ead1bf308fcc34226acc2a7d042fe9a7b67c"
-    },
-    "custom-system-builder": {
-      "version": "2.3.1",
-      "templateHistory": [
-        [
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "flow"
+            ],
+            "lhs": "horizontal"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "align"
+            ],
+            "lhs": "right"
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
+              9,
+              "type"
+            ],
+            "lhs": "panel",
+            "rhs": "table"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
               "contents",
-              1,
-              1,
+              9,
+              "cols"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "rows"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              9,
+              "layout"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "key"
+            ],
+            "lhs": "elemental_aff",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
               "cssClass"
             ],
-            "lhs": "",
-            "rhs": "align-center"
+            "lhs": "item_alt_background",
+            "rhs": ""
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents",
+              0
+            ],
+            "lhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Physical",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_1",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Fire",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_2",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Ice",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_3",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Earth",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_4",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Air",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_5",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Bolt",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_6",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Light",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_7",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Dark",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_8",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Poison",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_9",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cols"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "rows"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "layout"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "type"
+            ],
+            "lhs": "table",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "align"
+            ],
+            "rhs": "right"
           }
         ],
         [
@@ -1880,142 +4367,2275 @@
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              1,
-              3,
-              "cssClass"
+              7,
+              "key"
             ],
-            "lhs": "",
-            "rhs": "align-center"
+            "lhs": "elemental_aff_copy1",
+            "rhs": "elemental_aff"
           }
         ],
         [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 9,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "desc_table",
+                "cssClass": "item_alt_background",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              2,
-              1,
-              "cssClass"
+              8,
+              "key"
             ],
             "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "rhs": "desc_table"
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              2,
-              3,
+              8,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
+              8,
               "contents",
-              3,
-              1,
-              "cssClass"
+              0
             ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            },
+            "rhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ]
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "flow"
+            ],
+            "lhs": "horizontal"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "align"
+            ],
+            "lhs": "right"
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              3,
-              3,
-              "cssClass"
+              8,
+              "type"
             ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "lhs": "panel",
+            "rhs": "table"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cols"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "rows"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "layout"
+            ],
+            "rhs": ""
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              4,
-              1,
-              "cssClass"
+              7,
+              "key"
             ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "lhs": "elemental_aff",
+            "rhs": ""
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              4,
-              3,
+              7,
               "cssClass"
             ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "lhs": "item_alt_background",
+            "rhs": ""
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              5,
-              1,
-              "cssClass"
+              0
             ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
+            "lhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Physical",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_1",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Fire",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_2",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Ice",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_3",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Earth",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_4",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Air",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_5",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Bolt",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_6",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Light",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_7",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Dark",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_8",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Poison",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_9",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "cols"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "rows"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "layout"
+            ],
+            "lhs": ""
+          },
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
+              7,
+              "type"
+            ],
+            "lhs": "table",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
               "contents",
-              5,
-              3,
+              7,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "align"
+            ],
+            "rhs": "right"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents"
+            ],
+            "index": 9,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "desc_table",
+                "cssClass": "item_alt_background",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  [
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "item_desc",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": "",
+                          "defaultValue": "<p>Enter description here.</p>",
+                          "size": null,
+                          "style": "dialog",
+                          "type": "textArea"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "left",
+                      "type": "panel"
+                    }
+                  ]
+                ],
+                "cols": "1",
+                "rows": "1",
+                "layout": "",
+                "type": "table"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "key"
+            ],
+            "lhs": "desc_table",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cssClass"
+            ],
+            "lhs": "item_alt_background",
+            "rhs": ""
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "contents",
+              0
+            ],
+            "lhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "item_desc",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": "",
+                    "defaultValue": "<p>Enter description here.</p>",
+                    "size": null,
+                    "style": "dialog",
+                    "type": "textArea"
+                  }
+                ],
+                "flow": "vertical",
+                "align": "left",
+                "type": "panel"
+              }
+            ],
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            }
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "cols"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "rows"
+            ],
+            "lhs": "1"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "layout"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "type"
+            ],
+            "lhs": "table",
+            "rhs": "panel"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "flow"
+            ],
+            "rhs": "horizontal"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              8,
+              "align"
+            ],
+            "rhs": "right"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "key"
+            ],
+            "lhs": "",
+            "rhs": "elemental_aff"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_alt_background"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "item_price",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "",
+                "size": "small",
+                "charList": "",
+                "maxLength": "",
+                "type": "textField"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "medium",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0
+            ],
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "contents": [
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "label": null,
+                  "defaultValue": null,
+                  "size": "full-size",
+                  "icon": "",
+                  "value": "Description",
+                  "prefix": "",
+                  "suffix": "",
+                  "rollMessage": "",
+                  "altRollMessage": "",
+                  "style": "title",
+                  "type": "label"
+                }
+              ],
+              "flow": "vertical",
+              "align": "left",
+              "type": "panel"
+            },
+            "rhs": [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Physical",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_1",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Fire",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_2",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Ice",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_3",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Earth",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_4",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Air",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_5",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Bolt",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_6",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Light",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_7",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Dark",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_8",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "Poison",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label"
+                      },
+                      {
+                        "key": "affinity_9",
+                        "cssClass": "item_no_padding",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "NOR",
+                        "size": "small",
+                        "options": [
+                          {
+                            "key": "NOR",
+                            "value": "-"
+                          },
+                          {
+                            "key": "RES",
+                            "value": "RES"
+                          },
+                          {
+                            "key": "VUL",
+                            "value": "VUL"
+                          },
+                          {
+                            "key": "IMM",
+                            "value": "IMM"
+                          },
+                          {
+                            "key": "ABS",
+                            "value": "ABS"
+                          },
+                          {
+                            "key": "RPL",
+                            "value": "RPL"
+                          }
+                        ],
+                        "tableKey": null,
+                        "tableKeyColumn": null,
+                        "tableLabelColumn": null,
+                        "type": "select"
+                      }
+                    ],
+                    "flow": "vertical",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              },
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "flow"
+            ],
+            "lhs": "horizontal"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "align"
+            ],
+            "lhs": "right"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "type"
+            ],
+            "lhs": "panel",
+            "rhs": "table"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "cols"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "rows"
+            ],
+            "rhs": "1"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "layout"
+            ],
+            "rhs": ""
           }
         ]
       ],
@@ -2033,7 +6653,7 @@
     "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692783993131,
+    "modifiedTime": 1692805724114,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

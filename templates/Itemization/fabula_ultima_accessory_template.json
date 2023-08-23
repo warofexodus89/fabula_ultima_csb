@@ -956,7 +956,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-sword\" style=\"color: ${equalText(string(ref('affinity_1')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -966,7 +966,7 @@
                       },
                       {
                         "key": "affinity_1",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1029,7 +1029,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-fire\" style=\"color: ${equalText(string(ref('affinity_2')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1039,7 +1039,7 @@
                       },
                       {
                         "key": "affinity_2",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1102,7 +1102,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-snowflake\" style=\"color: ${equalText(string(ref('affinity_3')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1112,7 +1112,7 @@
                       },
                       {
                         "key": "affinity_3",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1175,7 +1175,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-mountains\" style=\"color: ${equalText(string(ref('affinity_4')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1185,7 +1185,7 @@
                       },
                       {
                         "key": "affinity_4",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1248,7 +1248,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-wind\" style=\"color: ${equalText(string(ref('affinity_5')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1258,7 +1258,7 @@
                       },
                       {
                         "key": "affinity_5",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1321,7 +1321,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-bolt\" style=\"color: ${equalText(string(ref('affinity_6')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1331,7 +1331,7 @@
                       },
                       {
                         "key": "affinity_6",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1394,7 +1394,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-sun\" style=\"color: ${equalText(string(ref('affinity_7')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1404,7 +1404,7 @@
                       },
                       {
                         "key": "affinity_7",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1467,7 +1467,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-moon-stars\" style=\"color: ${equalText(string(ref('affinity_8')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1477,7 +1477,7 @@
                       },
                       {
                         "key": "affinity_8",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1540,7 +1540,7 @@
                         "defaultValue": null,
                         "size": "full-size",
                         "icon": "",
-                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
+                        "value": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>",
                         "prefix": "",
                         "suffix": "",
                         "rollMessage": "",
@@ -1550,7 +1550,7 @@
                       },
                       {
                         "key": "affinity_9",
-                        "cssClass": "",
+                        "cssClass": "item_no_padding",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
@@ -1791,7 +1791,7 @@
         "formula": "${is_equipped ? ref('bonus_ip') : 0}$"
       }
     ],
-    "templateSystemUniqueVersion": 1178054464
+    "templateSystemUniqueVersion": 587314177
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -1808,14 +1808,18 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              1,
-              1,
-              "cssClass"
+              0,
+              0,
+              "contents",
+              8,
+              "contents",
+              0,
+              "value"
             ],
-            "lhs": "",
-            "rhs": "align-center"
+            "lhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
+            "rhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>"
           }
         ],
         [
@@ -1824,30 +1828,18 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              1,
-              3,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
+              0,
+              0,
               "contents",
-              2,
+              0,
               "contents",
-              2,
               1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
           }
         ],
         [
@@ -1856,30 +1848,18 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              2,
-              3,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
+              0,
+              0,
               "contents",
-              2,
+              1,
               "contents",
-              3,
               1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
           }
         ],
         [
@@ -1888,14 +1868,18 @@
             "path": [
               "body",
               "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
               2,
               "contents",
-              3,
-              3,
+              1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
           }
         ],
         [
@@ -1904,14 +1888,38 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_no_padding"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
               "contents",
               4,
+              "contents",
               1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
           }
         ],
         [
@@ -1920,30 +1928,18 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              4,
-              3,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "align-center"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
+              0,
+              0,
               "contents",
               5,
+              "contents",
               1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
           }
         ],
         [
@@ -1952,14 +1948,58 @@
             "path": [
               "body",
               "contents",
-              2,
+              7,
               "contents",
-              5,
-              3,
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "align-center"
+            "rhs": "item_no_padding"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_no_padding"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              7,
+              "contents",
+              0,
+              0,
+              "contents",
+              8,
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "item_no_padding"
           }
         ]
       ],
@@ -1978,7 +2018,7 @@
     "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692771538214,
+    "modifiedTime": 1692805704170,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

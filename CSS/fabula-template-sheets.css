@@ -1,7 +1,8 @@
 /* Custom */
 
-/* Foundry background color*/
-.white_background { background: #F7FAF5}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Gloria+Hallelujah&family=Great+Vibes&family=Tangerine:wght@400;700&display=swap');
+
 
 /* ------------- PC Sheet styling -------------  */
 
@@ -11,7 +12,7 @@
 .header_font > a {color: #F1E4CA;}
 
 /* Generic font color */
-.font-color {color:#854A4A;}
+.font-color {color:#854A4A; }
 
 /* PC stat page stylings */
 .tab_content_background { border:0px solid #854A4A; background: #D0CDBF;}
@@ -91,7 +92,8 @@
 
 /* ------------- Item Sheet styling -------------  */
 .item_alt_background {background : #fafffa; border-top:1px solid #279123; border-bottom:1px solid #279123; margin-top: 10px; margin-bottom: 10px; color:#022e00;}
-.item_alt_background > table {margin-top: 0px; margin-bottom: 0px;}
+.item_alt_background > table {margin-top: 0px; margin-bottom: 0px; color:#022e00;}
+.item_no_padding > select {padding:0px}
 
 /* ------------- Chat Sheet styling -------------  */
 
@@ -136,7 +138,7 @@ table td:first-child {
 
 
 .window-app .window-content, .sheet.journal-entry .journal-entry-content {
-	background-image: url(https://www.needgames.it/wp-content/uploads/2022/03/sfondo-Fu-Ch-1920x1080-1.jpg);
+	background-image: url(https://i.imgur.com/fM9uRk8.jpg);
     background-size: cover;;
 }
 
@@ -155,30 +157,129 @@ table td:first-child {
 }
 
 input[type="text"], input[type="number"], input[type="password"], input[type="date"], input[type="time"], input[type="search"], input[type="color"], input[type="color"][data-edit], select {
-	background: #F1E4CA;
-	
+	background: rgba(241, 228, 202, 0.5);
+	border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 
+input[type="checkbox"] {
+	box-shadow: rgb(9 30 66 / 25%) 0px 1px 1px, rgb(9 30 66 / 13%) 0px 0px 1px 1px;
 }
 
 .chat-message {
-	background-image: url(https://www.needgames.it/wp-content/uploads/2022/03/sfondo-Fu-Ch-1920x1080-1.jpg);
+	background-image: url(https://i.imgur.com/fM9uRk8.jpg);
     background-size: cover;
 }
 
+#template, input[name="name"] {
+	border: none;
+    outline: none;
+    border-bottom: 1px solid #353935;
+    background: transparent;
+    color: #353935;
+    box-shadow: none;
+}
 
-/* Override text/select field color styling for PC stat page*/
-.alt_text_field_background > input {background : #E5E3D9;}
-.alt_text_field_background  #current_ip {background : #E5E3D9;}
-.alt_text_field_background  #fp {background : #E5E3D9;}
-.alt_text_field_background > select {background : #E5E3D9; padding: 0px;}
-.alt_text_field_background > span > input {background : #E5E3D9;}
+.sheet header.sheet-header h1 input {
+	height: 100%;
+	margin: 20px 2%;
+	box-shadow: none;
+
+}
+
+.charname {
+	text-align: center;     
+	font-size: 80px;
+    font-family: 'Tangerine', cursive;
+}
+
+.itemname {
+	text-align: center;     
+	font-size: 50px;
+    font-family: 'Great Vibes', cursive;
+}
+
+
+a.content-link {
+    background: none;
+    border: none;
+}
+
+.custom-system-item-container-image {
+    object-fit: contain;
+    max-width: 35px;
+    max-height: 35px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.custom-system-item-container-image:hover {
+    transform: scale(2);
+    margin-right: 20px;
+}
+
+/* Attribute icon and font styling */
+
+.life-icon, .mana-icon, .ip-icon, .fp-icon, .init-icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.life-icon {
+	background-image: url('https://i.imgur.com/bQgsdeb.png');
+}
+
+.mana-icon {
+	background-image: url('https://i.imgur.com/72W8FoU.png');
+}
+
+.ip-icon {
+	background-image: url('https://i.imgur.com/ZoZdUUd.png');
+}
+
+.fp-icon {
+	background-image: url('https://i.imgur.com/NpaNy0W.png');
+}
+
+.init-icon {
+	background-image: url('https://i.imgur.com/tw0WXI3.png');
+}
+
+.char-attribute-text {
+	font-family: 'VT323', monospace;
+	font-size: 35px;
+	text-align: left;
+	margin-left:-30px;
+}
+
+
+/* Override text/select field color styling for PC stat page */
+.alt_text_field_background > input {background : rgba(230, 228, 218, 0.6); text-align: center;}
+.alt_text_field_background  #current_ip {background : rgba(230, 228, 218, 0.6); text-align: center;}
+.alt_text_field_background  #fp {background : rgba(230, 228, 218, 0.6); text-align: center;}
+.alt_text_field_background > select {background : rgba(230, 228, 218, 0.6); padding: 0px; text-align: center;}
+.alt_text_field_background > span > input {background : rgba(230, 228, 218, 0.6); text-align: center;;}
 
 /* Override text/select field color styling for NPC stat page*/
-.npc_alt_text_field_background > input {background : #ecf8f4;}
-.npc_alt_text_field_background  #current_ip {background : #ecf8f4;}
-.npc_alt_text_field_background  #fp {background : #ecf8f4;}
-.npc_alt_text_field_background > select {background : #ecf8f4; padding: 0px;}
-.npc_alt_text_field_background > span > input {background : #ecf8f4;}
+.npc_alt_text_field_background > input {background : rgba(235, 247, 243, 0.4); text-align: center;}
+.npc_alt_text_field_background  #current_ip {background : rgba(235, 247, 243, 0.4); text-align: center;}
+.npc_alt_text_field_background  #fp {background : rgba(235, 247, 243, 0.4); text-align: center;}
+.npc_alt_text_field_background > select {background : rgba(235, 247, 243, 0.4); padding: 0px; text-align: center;}
+.npc_alt_text_field_background > span > input {background : rgba(235, 247, 243, 0.4); text-align: center;}
 
+.main_attribute_field_background > span > input {background : rgba(235, 247, 243, 0.2); text-align: center;}
+.main_attribute_field_background > input {background : rgba(235, 247, 243, 0.2); text-align: center;}
 
+.align-left > input { text-align: left; }
+.align-center > select {text-align: center;}
+.align-center > input {text-align: center;}
+.align-center > span > input {text-align: center;}
+
+.no-margin {
+	margin-left:0px;
+}
 
