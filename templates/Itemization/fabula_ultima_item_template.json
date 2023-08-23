@@ -57,13 +57,13 @@
                   },
                   {
                     "key": "item_price",
-                    "cssClass": "",
+                    "cssClass": "align-center",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
                     "visibilityFormula": "",
                     "label": "",
-                    "defaultValue": "",
+                    "defaultValue": "0",
                     "size": "small",
                     "charList": "",
                     "maxLength": "",
@@ -210,56 +210,16 @@
       "pp_width": "64",
       "pp_height": "64"
     },
-    "templateSystemUniqueVersion": 3509055373
+    "templateSystemUniqueVersion": 585427070
   },
   "effects": [],
   "flags": {
     "scene-packer": {
-      "hash": "1fbdf7b8064f6842160e3847297ced76d1b84d57",
-      "sourceId": "Item.BGqsiduGyVp8a28W"
+      "hash": "1fbdf7b8064f6842160e3847297ced76d1b84d57"
     },
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "key"
-            ],
-            "lhs": "food_desc_table",
-            "rhs": "item_desc_table"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              0,
-              "key"
-            ],
-            "lhs": "food_price_table",
-            "rhs": "item_table"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "key"
-            ],
-            "lhs": "food_effect_table",
-            "rhs": "item_effect_table"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -489,6 +449,43 @@
             "lhs": "",
             "rhs": "item_alt_background"
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        null,
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "defaultValue"
+            ],
+            "lhs": "",
+            "rhs": "0"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -497,15 +494,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
+      "systemVersion": "2.4.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1688078694030,
-    "modifiedTime": 1692558443902,
+    "modifiedTime": 1692771390670,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

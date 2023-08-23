@@ -57,7 +57,7 @@
                   },
                   {
                     "key": "util_ip",
-                    "cssClass": "",
+                    "cssClass": "align-center",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
@@ -164,13 +164,12 @@
       "pp_width": "64",
       "pp_height": "64"
     },
-    "templateSystemUniqueVersion": 1335734973
+    "templateSystemUniqueVersion": 2000292638
   },
   "effects": [],
   "flags": {
     "scene-packer": {
-      "hash": "796d68ed0e5ed1c395b9276e6864e9608b54ac92",
-      "sourceId": "Item.D0LM9ITiRyr5O8Fd"
+      "hash": "796d68ed0e5ed1c395b9276e6864e9608b54ac92"
     },
     "custom-system-builder": {
       "version": "2.3.1",
@@ -645,6 +644,24 @@
             "lhs": "",
             "rhs": "item_alt_background"
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -653,15 +670,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
+      "systemVersion": "2.4.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1688078694030,
-    "modifiedTime": 1692558473120,
+    "modifiedTime": 1692771288004,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

@@ -31,16 +31,16 @@
                   "contents": [
                     {
                       "key": "",
-                      "cssClass": "",
+                      "cssClass": "life-icon",
                       "role": "0",
                       "permission": "0",
                       "tooltip": "Health Points",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
-                      "size": "full-size",
+                      "size": "small",
                       "icon": "",
-                      "value": "<h1 style=\"color: #f20012; font-weight: bold;\"><i class=\"fa-solid fa-heart\" style=\"--fa-primary-color: #f20012; --fa-secondary-color: #f20012;\"> H P</i>  </h1>",
+                      "value": "",
                       "prefix": "",
                       "suffix": "",
                       "rollMessage": "",
@@ -57,49 +57,81 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "current_hp",
-                          "cssClass": "",
-                          "role": "0",
-                          "permission": "0",
-                          "tooltip": "",
-                          "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "0",
-                          "size": "small",
-                          "allowDecimal": false,
-                          "minVal": "0",
-                          "maxVal": "${ref('max_hp')}$",
-                          "allowRelative": true,
-                          "showControls": false,
-                          "controlsStyle": "hover",
-                          "type": "numberField"
-                        },
-                        {
-                          "key": "max_hp",
-                          "cssClass": "",
+                          "key": "",
+                          "cssClass": "char-attribute-text",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
                           "label": null,
                           "defaultValue": null,
-                          "size": "small",
+                          "size": "full-size",
                           "icon": "",
-                          "value": "${ref('char_level')+5*ref('mig_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'hp'))+ref('skill_hp')+ref('mod_hp')}$",
-                          "prefix": "/ ",
+                          "value": "<span style=\"color:#f20012; text-decoration: underline;\"> Health<span>",
+                          "prefix": "",
                           "suffix": "",
                           "rollMessage": "",
                           "altRollMessage": "",
-                          "style": "bold",
+                          "style": "label",
                           "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "current_hp",
+                              "cssClass": "main_attribute_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "${ref('max_hp')}$",
+                              "allowRelative": true,
+                              "showControls": false,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            },
+                            {
+                              "key": "max_hp",
+                              "cssClass": "",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": null,
+                              "defaultValue": null,
+                              "size": "small",
+                              "icon": "",
+                              "value": "${ref('char_level')+5*ref('mig_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'hp'))+ref('skill_hp')+ref('mod_hp')}$",
+                              "prefix": "/ ",
+                              "suffix": "",
+                              "rollMessage": "",
+                              "altRollMessage": "",
+                              "style": "bold",
+                              "type": "label"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "center",
+                          "type": "panel"
                         }
                       ],
-                      "flow": "horizontal",
+                      "flow": "vertical",
                       "align": "center",
                       "type": "panel"
                     }
                   ],
-                  "flow": "vertical",
+                  "flow": "horizontal",
                   "align": "center",
                   "type": "panel"
                 },
@@ -113,16 +145,16 @@
                   "contents": [
                     {
                       "key": "",
-                      "cssClass": "",
+                      "cssClass": "mana-icon",
                       "role": "0",
                       "permission": "0",
                       "tooltip": "Mind Point",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
-                      "size": "full-size",
+                      "size": "small",
                       "icon": "",
-                      "value": "<h1 style=\"color: blue; font-weight: bold;\"><i class=\"fa-solid fa-sparkles\"> M P</i></h1>",
+                      "value": "",
                       "prefix": "",
                       "suffix": "",
                       "rollMessage": "",
@@ -139,49 +171,81 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "current_mp",
-                          "cssClass": "",
-                          "role": "0",
-                          "permission": "0",
-                          "tooltip": "",
-                          "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "0",
-                          "size": "small",
-                          "allowDecimal": false,
-                          "minVal": "0",
-                          "maxVal": "${ref('max_mp')}$",
-                          "allowRelative": true,
-                          "showControls": false,
-                          "controlsStyle": "hover",
-                          "type": "numberField"
-                        },
-                        {
-                          "key": "max_mp",
-                          "cssClass": "",
+                          "key": "",
+                          "cssClass": "char-attribute-text",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
                           "label": null,
                           "defaultValue": null,
-                          "size": "small",
+                          "size": "full-size",
                           "icon": "",
-                          "value": "${ref('char_level')+5*ref('wlp_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'mp'))+ref('skill_mp')+ref('mod_mp')}$",
-                          "prefix": "/ ",
+                          "value": "<span style=\"color:#6fa1f8; text-decoration: underline;\"> Magic<span>",
+                          "prefix": "",
                           "suffix": "",
                           "rollMessage": "",
                           "altRollMessage": "",
-                          "style": "bold",
+                          "style": "label",
                           "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "current_mp",
+                              "cssClass": "main_attribute_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "${ref('max_mp')}$",
+                              "allowRelative": true,
+                              "showControls": false,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            },
+                            {
+                              "key": "max_mp",
+                              "cssClass": "",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": null,
+                              "defaultValue": null,
+                              "size": "small",
+                              "icon": "",
+                              "value": "${ref('char_level')+5*ref('wlp_base')+5*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'mp'))+ref('skill_mp')+ref('mod_mp')}$",
+                              "prefix": "/ ",
+                              "suffix": "",
+                              "rollMessage": "",
+                              "altRollMessage": "",
+                              "style": "bold",
+                              "type": "label"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "center",
+                          "type": "panel"
                         }
                       ],
-                      "flow": "horizontal",
+                      "flow": "vertical",
                       "align": "center",
                       "type": "panel"
                     }
                   ],
-                  "flow": "vertical",
+                  "flow": "horizontal",
                   "align": "center",
                   "type": "panel"
                 },
@@ -195,16 +259,16 @@
                   "contents": [
                     {
                       "key": "",
-                      "cssClass": "",
+                      "cssClass": "ip-icon",
                       "role": "0",
                       "permission": "0",
                       "tooltip": "Inventory Points",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
-                      "size": "full-size",
+                      "size": "small",
                       "icon": "",
-                      "value": "<h1 style=\"color: saddlebrown; font-weight: bold;\"><i class=\"fa-solid fa-sack\"> I P</i></h1>",
+                      "value": "",
                       "prefix": "",
                       "suffix": "",
                       "rollMessage": "",
@@ -221,49 +285,81 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "current_ip",
-                          "cssClass": "",
-                          "role": "0",
-                          "permission": "0",
-                          "tooltip": "",
-                          "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "6",
-                          "size": "small",
-                          "allowDecimal": false,
-                          "minVal": "0",
-                          "maxVal": "${ref('max_ip')}$",
-                          "allowRelative": true,
-                          "showControls": true,
-                          "controlsStyle": "hover",
-                          "type": "numberField"
-                        },
-                        {
-                          "key": "max_ip",
-                          "cssClass": "",
+                          "key": "",
+                          "cssClass": "char-attribute-text",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
                           "label": null,
                           "defaultValue": null,
-                          "size": "small",
+                          "size": "full-size",
                           "icon": "",
-                          "value": "${6+2*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'ip'))}$",
-                          "prefix": "/ ",
+                          "value": "<span style=\"color:#9f7dd3; text-decoration: underline;\";>Items</span>",
+                          "prefix": "",
                           "suffix": "",
                           "rollMessage": "",
                           "altRollMessage": "",
-                          "style": "bold",
+                          "style": "label",
                           "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "current_ip",
+                              "cssClass": "main_attribute_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "6",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "${ref('max_ip')}$",
+                              "allowRelative": true,
+                              "showControls": true,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            },
+                            {
+                              "key": "max_ip",
+                              "cssClass": "",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": null,
+                              "defaultValue": null,
+                              "size": "small",
+                              "icon": "",
+                              "value": "${6+2*count(fetchFromDynamicTable('class_list','benefit', 'benefit', 'ip'))}$",
+                              "prefix": "/ ",
+                              "suffix": "",
+                              "rollMessage": "",
+                              "altRollMessage": "",
+                              "style": "bold",
+                              "type": "label"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "center",
+                          "type": "panel"
                         }
                       ],
-                      "flow": "horizontal",
+                      "flow": "vertical",
                       "align": "center",
                       "type": "panel"
                     }
                   ],
-                  "flow": "vertical",
+                  "flow": "horizontal",
                   "align": "center",
                   "type": "panel"
                 },
@@ -277,16 +373,16 @@
                   "contents": [
                     {
                       "key": "",
-                      "cssClass": "",
+                      "cssClass": "fp-icon",
                       "role": "0",
                       "permission": "0",
                       "tooltip": "Fabula Points",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
-                      "size": "full-size",
+                      "size": "small",
                       "icon": "",
-                      "value": "<h1 style=\"color: darkcyan; font-weight: bold;\"><i class=\"fa-solid fa-wand-magic\"> F P</i></h1>",
+                      "value": "",
                       "prefix": "",
                       "suffix": "",
                       "rollMessage": "",
@@ -303,30 +399,62 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "up",
+                          "key": "",
+                          "cssClass": "char-attribute-text",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "full-size",
+                          "icon": "",
+                          "value": "<span style=\"color:#adad7b; text-decoration: underline;\";>Fabula</span> ",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "",
                           "cssClass": "",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "0",
-                          "size": "small",
-                          "allowDecimal": false,
-                          "minVal": "0",
-                          "maxVal": "",
-                          "allowRelative": false,
-                          "showControls": true,
-                          "controlsStyle": "hover",
-                          "type": "numberField"
+                          "contents": [
+                            {
+                              "key": "up",
+                              "cssClass": "main_attribute_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "small",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "",
+                              "allowRelative": false,
+                              "showControls": true,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            }
+                          ],
+                          "flow": "vertical",
+                          "align": "left",
+                          "type": "panel"
                         }
                       ],
-                      "flow": "horizontal",
+                      "flow": "vertical",
                       "align": "center",
                       "type": "panel"
                     }
                   ],
-                  "flow": "vertical",
+                  "flow": "horizontal",
                   "align": "center",
                   "type": "panel"
                 }
@@ -428,7 +556,7 @@
               },
               {
                 "key": "char_level",
-                "cssClass": "",
+                "cssClass": "align-center ",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -465,7 +593,7 @@
               },
               {
                 "key": "experience",
-                "cssClass": "",
+                "cssClass": "align-center ",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -502,7 +630,7 @@
               },
               {
                 "key": "zenit",
-                "cssClass": "",
+                "cssClass": "align-center ",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -3337,7 +3465,7 @@
                                     "tooltip": "",
                                     "visibilityFormula": "",
                                     "label": "",
-                                    "defaultValue": "",
+                                    "defaultValue": "-",
                                     "size": "full-size",
                                     "charList": "",
                                     "maxLength": "",
@@ -3347,13 +3475,13 @@
                                   },
                                   {
                                     "key": "bond1",
-                                    "cssClass": "",
+                                    "cssClass": "align-center",
                                     "role": "0",
                                     "permission": "0",
                                     "tooltip": "",
                                     "visibilityFormula": "",
                                     "label": "",
-                                    "defaultValue": "",
+                                    "defaultValue": "-",
                                     "size": "medium",
                                     "options": [
                                       {
@@ -3363,6 +3491,10 @@
                                       {
                                         "key": "inferiority",
                                         "value": "Inferiority"
+                                      },
+                                      {
+                                        "key": "-",
+                                        "value": "-"
                                       }
                                     ],
                                     "tableKey": null,
@@ -3374,13 +3506,13 @@
                                   },
                                   {
                                     "key": "bond2",
-                                    "cssClass": "",
+                                    "cssClass": "align-center ",
                                     "role": "0",
                                     "permission": "0",
                                     "tooltip": "",
                                     "visibilityFormula": "",
                                     "label": "",
-                                    "defaultValue": "",
+                                    "defaultValue": "-",
                                     "size": "medium",
                                     "options": [
                                       {
@@ -3390,6 +3522,10 @@
                                       {
                                         "key": "mistrust",
                                         "value": "Mistrust"
+                                      },
+                                      {
+                                        "key": "-",
+                                        "value": "-"
                                       }
                                     ],
                                     "tableKey": null,
@@ -3401,13 +3537,13 @@
                                   },
                                   {
                                     "key": "bond3",
-                                    "cssClass": "",
+                                    "cssClass": "align-center ",
                                     "role": "0",
                                     "permission": "0",
                                     "tooltip": "",
                                     "visibilityFormula": "",
                                     "label": "",
-                                    "defaultValue": "",
+                                    "defaultValue": "-",
                                     "size": "medium",
                                     "options": [
                                       {
@@ -3417,6 +3553,10 @@
                                       {
                                         "key": "hatred",
                                         "value": "Hatred"
+                                      },
+                                      {
+                                        "key": "-",
+                                        "value": "-"
                                       }
                                     ],
                                     "tableKey": null,
@@ -3433,49 +3573,49 @@
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 0
                                   },
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 1
                                   },
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 2
                                   },
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 3
                                   },
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 4
                                   },
                                   {
                                     "deleted": false,
                                     "name": "",
-                                    "bond1": "",
-                                    "bond2": "",
-                                    "bond3": "",
+                                    "bond1": "-",
+                                    "bond2": "-",
+                                    "bond3": "-",
                                     "predefinedIdx": 5
                                   }
                                 ],
@@ -4191,7 +4331,7 @@
                                         }
                                       ],
                                       "head": true,
-                                      "deleteWarning": false,
+                                      "deleteWarning": true,
                                       "predefinedLines": [
                                         {
                                           "deleted": false,
@@ -4523,7 +4663,7 @@
                                 "visibilityFormula": "",
                                 "label": "",
                                 "defaultValue": "",
-                                "size": "medium",
+                                "size": "m-large",
                                 "charList": "",
                                 "maxLength": "",
                                 "type": "textField",
@@ -4532,7 +4672,7 @@
                               },
                               {
                                 "key": "class",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -4569,6 +4709,26 @@
                                 "colName": "SL"
                               },
                               {
+                                "key": "max_level",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "1",
+                                "size": "small",
+                                "allowDecimal": false,
+                                "minVal": "1",
+                                "maxVal": "10",
+                                "allowRelative": false,
+                                "showControls": true,
+                                "controlsStyle": "hover",
+                                "type": "numberField",
+                                "align": "center",
+                                "colName": "Max SL"
+                              },
+                              {
                                 "key": "description",
                                 "cssClass": "font-color",
                                 "role": "0",
@@ -4580,7 +4740,93 @@
                                 "size": "full-size",
                                 "style": "dialog",
                                 "type": "textArea",
-                                "align": "left",
+                                "align": "center",
+                                "colName": "Description"
+                              },
+                              {
+                                "key": "roll",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "full-size",
+                                "icon": "dice",
+                                "value": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-scroll-old\"></i> ${!sameRow('skill_name')}$</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid\"><b>Skill Level:</b> ${!sameRow('level')}$</i></p>\n\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!sameRow('description')}$</td>\n  </tr>\n</table>",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label",
+                                "align": "right",
+                                "colName": ""
+                              }
+                            ],
+                            "head": true,
+                            "deleteWarning": true,
+                            "predefinedLines": [],
+                            "canPlayerAdd": true,
+                            "type": "dynamicTable"
+                          },
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "full-size",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-helmet-battle\"> Heroic Skills</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "bold",
+                            "type": "label"
+                          },
+                          {
+                            "key": "heroic_list",
+                            "cssClass": "alt_background",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "rowLayout": [
+                              {
+                                "key": "skill_name",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": "m-large",
+                                "charList": "",
+                                "maxLength": "",
+                                "type": "textField",
+                                "align": "center",
+                                "colName": "Skill Name"
+                              },
+                              {
+                                "key": "description",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": "full-size",
+                                "style": "dialog",
+                                "type": "textArea",
+                                "align": "center",
                                 "colName": "Description"
                               },
                               {
@@ -5162,7 +5408,7 @@
                             "cssClass": "font-color",
                             "role": "0",
                             "permission": "0",
-                            "tooltip": "",
+                            "tooltip": "Add project details then track via 'Project Progress'.",
                             "visibilityFormula": "",
                             "label": null,
                             "defaultValue": null,
@@ -5170,7 +5416,7 @@
                             "icon": "",
                             "value": "<i class=\"fa-solid fa-screwdriver-wrench\"> Projects</i>",
                             "prefix": "",
-                            "suffix": "",
+                            "suffix": "   <i class=\"fa-solid fa-circle-question\"></i>",
                             "rollMessage": "",
                             "altRollMessage": "",
                             "style": "bold",
@@ -5202,7 +5448,7 @@
                               },
                               {
                                 "key": "proj_potency",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -5241,7 +5487,7 @@
                               },
                               {
                                 "key": "proj_area",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -5280,7 +5526,7 @@
                               },
                               {
                                 "key": "uses",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -5396,7 +5642,7 @@
                             "rowLayout": [
                               {
                                 "key": "project_name",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -5899,7 +6145,7 @@
                                       },
                                       {
                                         "key": "type",
-                                        "cssClass": "",
+                                        "cssClass": "align-center ",
                                         "role": "0",
                                         "permission": "0",
                                         "tooltip": "",
@@ -5950,7 +6196,7 @@
                                       },
                                       {
                                         "key": "status_effects",
-                                        "cssClass": "",
+                                        "cssClass": "align-center ",
                                         "role": "0",
                                         "permission": "0",
                                         "tooltip": "",
@@ -5985,7 +6231,7 @@
                                       },
                                       {
                                         "key": "attributes",
-                                        "cssClass": "",
+                                        "cssClass": "align-center ",
                                         "role": "0",
                                         "permission": "0",
                                         "tooltip": "",
@@ -6020,7 +6266,7 @@
                                       },
                                       {
                                         "key": "recovery",
-                                        "cssClass": "",
+                                        "cssClass": "align-center ",
                                         "role": "0",
                                         "permission": "0",
                                         "tooltip": "",
@@ -6200,7 +6446,7 @@
                             "rowLayout": [
                               {
                                 "key": "name",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -6216,7 +6462,7 @@
                               },
                               {
                                 "key": "frequency",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -6247,7 +6493,7 @@
                               },
                               {
                                 "key": "key",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -6265,7 +6511,7 @@
                               },
                               {
                                 "key": "tone",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7186,7 +7432,7 @@
                               },
                               {
                                 "key": "main_attrib_1",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7217,11 +7463,11 @@
                                 "tableLabelColumn": null,
                                 "type": "select",
                                 "align": "center",
-                                "colName": "First Attribute"
+                                "colName": "Attr.1"
                               },
                               {
                                 "key": "main_attrib_2",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7252,7 +7498,7 @@
                                 "tableLabelColumn": null,
                                 "type": "select",
                                 "align": "center",
-                                "colName": "Second Attribute"
+                                "colName": "Attr.2"
                               },
                               {
                                 "key": "magic_chk_bonus",
@@ -7272,7 +7518,7 @@
                                 "controlsStyle": "hover",
                                 "type": "numberField",
                                 "align": "center",
-                                "colName": "Magic Check Bonus"
+                                "colName": "M.Check Bonus"
                               },
                               {
                                 "key": "spell1_damage",
@@ -7296,7 +7542,7 @@
                               },
                               {
                                 "key": "spell1_damagetype",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7513,7 +7759,7 @@
                               },
                               {
                                 "key": "main_attrib_1",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7548,11 +7794,11 @@
                                 "tableLabelColumn": null,
                                 "type": "select",
                                 "align": "center",
-                                "colName": "First Attribute"
+                                "colName": "Attr.1"
                               },
                               {
                                 "key": "main_attrib_2",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -7587,7 +7833,7 @@
                                 "tableLabelColumn": null,
                                 "type": "select",
                                 "align": "center",
-                                "colName": "Second Attribute"
+                                "colName": "Attr.2"
                               },
                               {
                                 "key": "weapon1_mod",
@@ -7671,7 +7917,7 @@
                               },
                               {
                                 "key": "weapon1_damagetype",
-                                "cssClass": "",
+                                "cssClass": "align-center ",
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
@@ -9002,7 +9248,7 @@
       ]
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 3794105943
+    "templateSystemUniqueVersion": 2793558475
   },
   "flags": {
     "custom-system-builder": {
@@ -9012,262 +9258,222 @@
           {
             "kind": "E",
             "path": [
-              "body",
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
               "contents",
               2,
               "contents",
+              1,
+              "contents",
+              1,
+              "contents",
               0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              3,
-              "value"
+              "cssClass"
             ],
-            "lhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',proj_name ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', proj_name),0)) ,'consumable') == true ? 1 : 5 )\n\t\n}$",
-            "rhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0))\n}$"
+            "lhs": "",
+            "rhs": "main_attribute_field_background"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              2,
+              "header",
               "contents",
               0,
+              "contents",
               0,
               "contents",
-              4,
-              "contents",
-              2,
-              "contents",
               3,
-              "rowLayout",
-              3,
-              "value"
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              "cssClass"
             ],
-            "lhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', proj_name),0))\n}$",
-            "rhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0))\n}$"
+            "lhs": "align-center",
+            "rhs": "main_attribute_field_background"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              2,
+              "header",
               "contents",
               0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              3,
-              "value"
-            ],
-            "lhs": "${\n\tconsoleLog(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0))\n}$",
-            "rhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              3,
-              "value"
-            ],
-            "lhs": "${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$",
-            "rhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ "
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              3,
-              "value"
-            ],
-            "lhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ ",
-            "rhs": "<div style=\"display: none;\">\n\n${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$\n</div>\n\n${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ "
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              4,
-              "value"
-            ],
-            "lhs": "<div style=\"display: none;\">\n\t${#tinkerer:= sameRow('tinkerer') * 2}$\n\t${#helper:= sameRow('helpers') * 1}$\n\t${#progressPerDay:= tinkerer + helper}$\n\t${#daysToCompletion:= sameRow('workload')/progressPerDay}$\n\t${#text:= daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor(progressPerDay)) , ' progress per day /' , string(floor(daysToCompletion)) ,' days')}$\n</div>\n\n<span>${text}$</span>\n\n\n",
-            "rhs": "${daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              4,
-              "value"
-            ],
-            "lhs": "${daysToCompletion <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$",
-            "rhs": "${(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1)) <= 1 == true ? 'Number of days: 1' : concat( string(floor((sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) , ' progress per day /' , string(floor(sameRow('workload')/(sameRow('tinkerer') * 2) + (sameRow('helpers') * 1))) ,' days')}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              2,
-              "contents",
-              3,
-              "rowLayout",
-              3,
-              "value"
-            ],
-            "lhs": "<div style=\"display: none;\">\n\n${\n\tconsoleLog(sameRow('project_name'))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0))\n\tconsoleLog(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))\n\tconsoleLog(equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 )\n\tconsoleLog((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)\n}$\n</div>\n\n${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$ ",
-            "rhs": "${(switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_potency', 'project_name', sameRow('project_name')),0)) , 'minor', 1, 'medium', 2, 'major', 4, 'extreme', 8, 0)) * (switchCase(string(first(fetchFromDynamicTable('project_table', 'proj_area', 'project_name',sameRow('project_name') ),0)), 'individual', 1, 'small', 2, 'large', 3, 'huge', 4, 0))  * (equalText(string(first(fetchFromDynamicTable('project_table', 'uses', 'project_name', sameRow('project_name')),0)) ,'consumable') == true ? 1 : 5 ) * ((first(fetchFromDynamicTable('project_table', 'isFlaw', 'project_name', sameRow('project_name')),0)) == true ? 0.750 : 1)}$"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
               "contents",
               0,
               "contents",
               1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n    <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              0,
               "contents",
               1,
-              "rowLayout",
-              12,
-              "altRollMessage"
+              "contents",
+              1,
+              "contents",
+              0,
+              "size"
             ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('skillacc_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
+            "lhs": "small",
+            "rhs": "full-size"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
               "contents",
               2,
               "contents",
-              0,
-              0,
-              "contents",
-              5,
+              1,
               "contents",
               1,
               "contents",
-              3,
-              "rowLayout",
-              11,
-              "rollMessage"
+              0,
+              "size"
             ],
-            "lhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:='fa-star-of-david'}$\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('magic_chk_bonus')+ref('skillmag_mod')+ref('mod_mcheck')}$ HR: ${HR}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('spell1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('spell1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
+            "lhs": "small",
+            "rhs": "full-size"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "full-size"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": "small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#f20012\"> Health<span>",
+            "rhs": "<span style=\"color:#f20012; text-decoration: underline;\"> Health<span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#6fa1f8\"> Magic<span>",
+            "rhs": "<span style=\"color:#6fa1f8; text-decoration: underline;\"> Magic<span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#9f7dd3\";>Items</span>",
+            "rhs": "<span style=\"color:#9f7dd3; text-decoration: underline;\";>Items</span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#adad7b\";>Fabula</span> ",
+            "rhs": "<span style=\"color:#adad7b; text-decoration: underline;\";>Fabula</span> "
           }
         ]
       ],
@@ -9277,12 +9483,9 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
+      "systemVersion": "2.4.1"
     },
-    "core": {},
-    "scene-packer": {
-      "sourceId": "Actor.LvBioOfyPFr27nDq"
-    }
+    "core": {}
   },
   "img": "icons/svg/mystery-man.svg",
   "prototypeToken": {
@@ -9356,10 +9559,10 @@
   "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687192833609,
-    "modifiedTime": 1692566445263,
+    "modifiedTime": 1692803974574,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

@@ -155,7 +155,7 @@
               },
               {
                 "key": "armor_mod",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -188,7 +188,7 @@
               },
               {
                 "key": "magic_defense_mod",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -223,7 +223,7 @@
               },
               {
                 "key": "bonus_hp",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -256,7 +256,7 @@
               },
               {
                 "key": "bonus_mp",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -291,7 +291,7 @@
               },
               {
                 "key": "heal_received_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -328,7 +328,7 @@
               },
               {
                 "key": "healing_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -369,7 +369,7 @@
               },
               {
                 "key": "accuracy_check_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -406,7 +406,7 @@
               },
               {
                 "key": "magic_check_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -445,7 +445,7 @@
               },
               {
                 "key": "wpn_dmg_up",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -482,7 +482,7 @@
               },
               {
                 "key": "magic_damage_up",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -521,7 +521,7 @@
               },
               {
                 "key": "bonus_ip",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -554,7 +554,7 @@
               },
               {
                 "key": "initiative_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -1714,7 +1714,7 @@
             },
             {
               "key": "item_price",
-              "cssClass": "",
+              "cssClass": "align-center",
               "role": "0",
               "permission": "0",
               "tooltip": "",
@@ -1847,506 +1847,31 @@
         "description": ""
       }
     ],
-    "templateSystemUniqueVersion": 1008168967
+    "templateSystemUniqueVersion": 1371225855
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
   "flags": {
     "scene-packer": {
-      "hash": "feb5ead1bf308fcc34226acc2a7d042fe9a7b67c",
-      "sourceId": "Item.cp0B290qrMBSDEQa"
+      "hash": "feb5ead1bf308fcc34226acc2a7d042fe9a7b67c"
     },
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
         [
           {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              10,
-              "contents"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            }
-          }
-        ],
-        [
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents"
-            ],
-            "index": 10,
-            "item": {
-              "kind": "D",
-              "lhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": null,
-                    "defaultValue": null,
-                    "size": "medium",
-                    "icon": "",
-                    "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                    "prefix": "",
-                    "suffix": "",
-                    "rollMessage": "",
-                    "altRollMessage": "",
-                    "style": "label",
-                    "type": "label"
-                  },
-                  {
-                    "key": "item_price",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "",
-                    "size": "small",
-                    "charList": "",
-                    "maxLength": "",
-                    "type": "textField"
-                  },
-                  {
-                    "key": "",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "contents": [],
-                    "flow": "vertical",
-                    "align": "left",
-                    "type": "panel"
-                  }
-                ],
-                "flow": "horizontal",
-                "align": "right",
-                "type": "panel"
-              }
-            }
-          },
-          {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              9,
-              "key"
-            ],
-            "lhs": "desc_table",
-            "rhs": ""
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
+              2,
               "contents",
-              9,
-              "contents"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": null,
-                    "defaultValue": null,
-                    "size": "full-size",
-                    "icon": "",
-                    "value": "Description",
-                    "prefix": "",
-                    "suffix": "",
-                    "rollMessage": "",
-                    "altRollMessage": "",
-                    "style": "title",
-                    "type": "label"
-                  }
-                ],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents"
-            ],
-            "index": 1,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "item_price",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": "",
-                "defaultValue": "",
-                "size": "small",
-                "charList": "",
-                "maxLength": "",
-                "type": "textField"
-              }
-            }
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0
-            ],
-            "lhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "item_desc",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "<p>Enter description here.</p>",
-                    "size": null,
-                    "style": "dialog",
-                    "type": "textArea"
-                  }
-                ],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            ],
-            "rhs": {
-              "key": "",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "label": null,
-              "defaultValue": null,
-              "size": "medium",
-              "icon": "",
-              "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-              "prefix": "",
-              "suffix": "",
-              "rollMessage": "",
-              "altRollMessage": "",
-              "style": "label",
-              "type": "label"
-            }
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "cols"
-            ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "rows"
-            ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "layout"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "type"
-            ],
-            "lhs": "table",
-            "rhs": "panel"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "flow"
-            ],
-            "rhs": "horizontal"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "align"
-            ],
-            "rhs": "right"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "key"
+              1,
+              1,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "desc_table"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "label"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "defaultValue"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "size"
-            ],
-            "lhs": "full-size"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "icon"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "value"
-            ],
-            "lhs": "Description"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "prefix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "suffix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "rollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "altRollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "style"
-            ],
-            "lhs": "title"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "type"
-            ],
-            "lhs": "label",
-            "rhs": "table"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "contents"
-            ],
-            "rhs": [
-              [
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "contents": [
-                    {
-                      "key": "item_desc",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "",
-                      "defaultValue": "<p>Enter description here.</p>",
-                      "size": null,
-                      "style": "dialog",
-                      "type": "textArea"
-                    }
-                  ],
-                  "flow": "vertical",
-                  "align": "left",
-                  "type": "panel"
-                }
-              ]
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "cols"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "rows"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "layout"
-            ],
-            "rhs": ""
+            "rhs": "align-center"
           }
         ],
         [
@@ -2355,504 +1880,14 @@
             "path": [
               "body",
               "contents",
-              9,
-              "contents",
               2,
-              "key"
+              "contents",
+              1,
+              3,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_price"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "contents"
-            ],
-            "lhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": null,
-                "defaultValue": null,
-                "size": "full-size",
-                "icon": "",
-                "value": "Description",
-                "prefix": "",
-                "suffix": "",
-                "rollMessage": "",
-                "altRollMessage": "",
-                "style": "title",
-                "type": "label"
-              }
-            ]
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "flow"
-            ],
-            "lhs": "vertical"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "align"
-            ],
-            "lhs": "left"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "type"
-            ],
-            "lhs": "panel",
-            "rhs": "textField"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "label"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "defaultValue"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "size"
-            ],
-            "rhs": "small"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "charList"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              2,
-              "maxLength"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "key"
-            ],
-            "lhs": "item_price",
-            "rhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "label"
-            ],
-            "lhs": "",
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "defaultValue"
-            ],
-            "lhs": "",
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "size"
-            ],
-            "lhs": "small",
-            "rhs": "medium"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "charList"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "maxLength"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "type"
-            ],
-            "lhs": "textField",
-            "rhs": "label"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "icon"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "value"
-            ],
-            "rhs": "<i class=\"fa-solid fa-coin\"> Value:</i>"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "prefix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "suffix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "rollMessage"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "altRollMessage"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              1,
-              "style"
-            ],
-            "rhs": "label"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "label"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "defaultValue"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "size"
-            ],
-            "lhs": "medium"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "icon"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "value"
-            ],
-            "lhs": "<i class=\"fa-solid fa-coin\"> Value:</i>"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "prefix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "suffix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "altRollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "style"
-            ],
-            "lhs": "label"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "type"
-            ],
-            "lhs": "label",
-            "rhs": "panel"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "contents"
-            ],
-            "rhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": null,
-                "defaultValue": null,
-                "size": "full-size",
-                "icon": "",
-                "value": "Description",
-                "prefix": "",
-                "suffix": "",
-                "rollMessage": "",
-                "altRollMessage": "",
-                "style": "title",
-                "type": "label"
-              }
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "flow"
-            ],
-            "rhs": "vertical"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0,
-              "align"
-            ],
-            "rhs": "left"
+            "rhs": "align-center"
           }
         ],
         [
@@ -2861,522 +1896,67 @@
             "path": [
               "body",
               "contents",
-              9,
-              "key"
+              2,
+              "contents",
+              2,
+              1,
+              "cssClass"
             ],
             "lhs": "",
-            "rhs": "desc_table"
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "D",
-              "lhs": {
-                "key": "item_price",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": "",
-                "defaultValue": "",
-                "size": "small",
-                "charList": "",
-                "maxLength": "",
-                "type": "textField"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents"
-            ],
-            "index": 1,
-            "item": {
-              "kind": "D",
-              "lhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": null,
-                "defaultValue": null,
-                "size": "medium",
-                "icon": "",
-                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                "prefix": "",
-                "suffix": "",
-                "rollMessage": "",
-                "altRollMessage": "",
-                "style": "label",
-                "type": "label"
-              }
-            }
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "contents",
-              0
-            ],
-            "lhs": {
-              "key": "",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "contents": [
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "label": null,
-                  "defaultValue": null,
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Description",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "style": "title",
-                  "type": "label"
-                }
-              ],
-              "flow": "vertical",
-              "align": "left",
-              "type": "panel"
-            },
-            "rhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "item_desc",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "<p>Enter description here.</p>",
-                    "size": null,
-                    "style": "dialog",
-                    "type": "textArea"
-                  }
-                ],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            ]
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "flow"
-            ],
-            "lhs": "horizontal"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "align"
-            ],
-            "lhs": "right"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "type"
-            ],
-            "lhs": "panel",
-            "rhs": "table"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "cols"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "rows"
-            ],
-            "rhs": "1"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              9,
-              "layout"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "key"
-            ],
-            "lhs": "desc_table",
-            "rhs": ""
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "contents"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "item_price",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": "",
-                "defaultValue": "",
-                "size": "small",
-                "charList": "",
-                "maxLength": "",
-                "type": "textField"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "contents"
-            ],
-            "index": 1,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "label": null,
-                "defaultValue": null,
-                "size": "medium",
-                "icon": "",
-                "value": "<i class=\"fa-solid fa-coin\"> Value:</i>",
-                "prefix": "",
-                "suffix": "",
-                "rollMessage": "",
-                "altRollMessage": "",
-                "style": "label",
-                "type": "label"
-              }
-            }
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "contents",
-              0
-            ],
-            "lhs": [
-              {
-                "key": "",
-                "cssClass": "",
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
-                  {
-                    "key": "item_desc",
-                    "cssClass": "",
-                    "role": "0",
-                    "permission": "0",
-                    "tooltip": "",
-                    "visibilityFormula": "",
-                    "label": "",
-                    "defaultValue": "<p>Enter description here.</p>",
-                    "size": null,
-                    "style": "dialog",
-                    "type": "textArea"
-                  }
-                ],
-                "flow": "vertical",
-                "align": "left",
-                "type": "panel"
-              }
-            ],
-            "rhs": {
-              "key": "",
-              "cssClass": "",
-              "role": "0",
-              "permission": "0",
-              "tooltip": "",
-              "visibilityFormula": "",
-              "contents": [
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": "",
-                  "label": null,
-                  "defaultValue": null,
-                  "size": "full-size",
-                  "icon": "",
-                  "value": "Description",
-                  "prefix": "",
-                  "suffix": "",
-                  "rollMessage": "",
-                  "altRollMessage": "",
-                  "style": "title",
-                  "type": "label"
-                }
-              ],
-              "flow": "vertical",
-              "align": "left",
-              "type": "panel"
-            }
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "cols"
-            ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "rows"
-            ],
-            "lhs": "1"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "layout"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "type"
-            ],
-            "lhs": "table",
-            "rhs": "panel"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "flow"
-            ],
-            "rhs": "horizontal"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              8,
-              "align"
-            ],
-            "rhs": "right"
+            "rhs": "align-center"
           }
         ],
         [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
-              5,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              5,
-              "contents",
-              1,
-              "defaultChecked"
+              2,
+              3,
+              "cssClass"
             ],
-            "rhs": false
-          },
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
-              5,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              5,
-              "contents",
-              0,
-              0,
+              2,
               "contents",
               3,
-              "contents",
               1,
-              "defaultChecked"
+              "cssClass"
             ],
-            "rhs": false
-          },
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              5,
-              "contents",
-              0,
-              0,
-              "contents",
-              2,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              5,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              5,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
               2,
               "contents",
-              4,
               3,
-              "controlsStyle"
+              3,
+              "cssClass"
             ],
-            "rhs": "hover"
-          },
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
@@ -3384,111 +1964,10 @@
               "contents",
               4,
               1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              3,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              3,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              2,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              2,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "cssClass"
-            ],
-            "lhs": "table{background: linear-gradient(to right, #ff0000 0%, #ffffff 100%)}",
-            "rhs": "item_alt_background"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              3,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              0,
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -3497,11 +1976,14 @@
             "path": [
               "body",
               "contents",
+              2,
+              "contents",
+              4,
               3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -3509,12 +1991,15 @@
             "kind": "E",
             "path": [
               "body",
+              "contents",
+              2,
               "contents",
               5,
+              1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -3523,24 +2008,14 @@
             "path": [
               "body",
               "contents",
-              7,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_alt_background"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
+              2,
               "contents",
-              9,
+              5,
+              3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ]
       ],
@@ -3550,15 +2025,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
+      "systemVersion": "2.4.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692558406012,
+    "modifiedTime": 1692783993131,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

@@ -101,7 +101,7 @@
               },
               {
                 "key": "weapon_category",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -187,7 +187,7 @@
                 "contents": [
                   {
                     "key": "attr1",
-                    "cssClass": "",
+                    "cssClass": "align-center",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
@@ -243,7 +243,7 @@
                   },
                   {
                     "key": "attr2",
-                    "cssClass": "",
+                    "cssClass": "align-center",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
@@ -306,7 +306,7 @@
               },
               {
                 "key": "acc",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -345,7 +345,7 @@
               },
               {
                 "key": "weapon_dmg",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -384,7 +384,7 @@
               },
               {
                 "key": "weapon_ele",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -539,7 +539,7 @@
               },
               {
                 "key": "armor_mod",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -576,7 +576,7 @@
               },
               {
                 "key": "magic_defense_mod",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -615,7 +615,7 @@
               },
               {
                 "key": "bonus_hp",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -652,7 +652,7 @@
               },
               {
                 "key": "bonus_mp",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -691,7 +691,7 @@
               },
               {
                 "key": "heal_received_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -728,7 +728,7 @@
               },
               {
                 "key": "healing_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -769,7 +769,7 @@
               },
               {
                 "key": "magic_check_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -806,7 +806,7 @@
               },
               {
                 "key": "magic_damage_up",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -845,7 +845,7 @@
               },
               {
                 "key": "bonus_ip",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -882,7 +882,7 @@
               },
               {
                 "key": "initiative_bonus",
-                "cssClass": "",
+                "cssClass": "align-center",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
@@ -2129,14 +2129,13 @@
       "pp_width": "300",
       "pp_height": "300"
     },
-    "templateSystemUniqueVersion": 573507914
+    "templateSystemUniqueVersion": 325570842
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
   "flags": {
     "scene-packer": {
-      "hash": "14158028557be138eb3d5f8a0282539bd326c3c2",
-      "sourceId": "Item.ovjJIsY8b1Vu709i"
+      "hash": "14158028557be138eb3d5f8a0282539bd326c3c2"
     },
     "custom-system-builder": {
       "version": "2.3.1",
@@ -2147,494 +2146,94 @@
             "path": [
               "body",
               "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              0,
-              "size"
-            ],
-            "lhs": "small",
-            "rhs": "m-small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "defaultValue"
-            ],
-            "lhs": "DEX",
-            "rhs": "-"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "size"
-            ],
-            "lhs": "small",
-            "rhs": "m-small"
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "options"
-            ],
-            "index": 4,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "-",
-                "value": "-"
-              }
-            }
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "options",
-              3,
-              "value"
-            ],
-            "lhs": "Might",
-            "rhs": "MIG"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "options",
-              2,
-              "value"
-            ],
-            "lhs": "Insight",
-            "rhs": "INS"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "options",
-              1,
-              "value"
-            ],
-            "lhs": "Willpower",
-            "rhs": "WLP"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              2,
-              "options",
-              0,
-              "value"
-            ],
-            "lhs": "Dex",
-            "rhs": "DEX"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              0,
-              "defaultValue"
-            ],
-            "lhs": "DEX",
-            "rhs": "-"
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "contents",
-              2,
-              1,
-              "contents",
-              0,
-              "options"
-            ],
-            "index": 4,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "-",
-                "value": "-"
-              }
-            }
-          }
-        ],
-        [
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              5,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              2,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              4,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              4,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              3,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              3,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              2,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              2,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              1,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              1,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
               4,
               "contents",
               0,
-              3,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              4,
-              "contents",
-              0,
-              1,
-              "controlsStyle"
-            ],
-            "rhs": "hover"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
               1,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
-          },
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
-              "contents",
-              1,
               "contents",
               4,
+              "contents",
               1,
-              "controlsStyle"
+              1,
+              "cssClass"
             ],
-            "rhs": "hover"
-          },
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
+              4,
+              "contents",
+              2,
               1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              4,
               "contents",
               3,
               1,
-              "controlsStyle"
+              "cssClass"
             ],
-            "rhs": "hover"
-          },
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
           {
-            "kind": "N",
+            "kind": "E",
             "path": [
               "body",
               "contents",
+              4,
+              "contents",
+              4,
               1,
+              "cssClass"
+            ],
+            "lhs": "",
+            "rhs": "align-center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              4,
               "contents",
               0,
-              1,
-              "defaultChecked"
-            ],
-            "rhs": false
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
               3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -2644,10 +2243,13 @@
               "body",
               "contents",
               4,
+              "contents",
+              1,
+              3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -2656,11 +2258,14 @@
             "path": [
               "body",
               "contents",
-              5,
+              4,
+              "contents",
+              2,
+              3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -2669,11 +2274,14 @@
             "path": [
               "body",
               "contents",
-              7,
+              4,
+              "contents",
+              3,
+              3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ],
         [
@@ -2682,24 +2290,14 @@
             "path": [
               "body",
               "contents",
-              9,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_alt_background"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
+              4,
               "contents",
-              11,
+              4,
+              3,
               "cssClass"
             ],
             "lhs": "",
-            "rhs": "item_alt_background"
+            "rhs": "align-center"
           }
         ]
       ],
@@ -2710,15 +2308,15 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
+      "systemVersion": "2.4.1"
     }
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692558510741,
+    "modifiedTime": 1692771365075,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

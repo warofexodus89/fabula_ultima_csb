@@ -27,206 +27,20 @@
                   "role": "0",
                   "permission": "0",
                   "tooltip": "",
-                  "visibilityFormula": null,
-                  "contents": [
-                    {
-                      "key": "",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": null,
-                      "defaultValue": null,
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "<h1 style=\"color: #f20012; font-weight: bold;\"><i class=\"fa-solid fa-heart\" style=\"--fa-primary-color: #f20012; --fa-secondary-color: #f20012;\"> H P</i>  </h1>",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "style": "subtitle",
-                      "type": "label"
-                    },
-                    {
-                      "key": "hp_current",
-                      "cssClass": "npc_alt_text_field_background",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "",
-                      "defaultValue": "0",
-                      "size": "small",
-                      "allowDecimal": false,
-                      "minVal": "0",
-                      "maxVal": "${ref('hp_max')}$",
-                      "allowRelative": true,
-                      "showControls": true,
-                      "controlsStyle": "hover",
-                      "type": "numberField"
-                    },
-                    {
-                      "key": "hp_max",
-                      "cssClass": "npc_alt_text_field_background",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "/",
-                      "defaultValue": "0",
-                      "size": "small",
-                      "allowDecimal": false,
-                      "minVal": "0",
-                      "maxVal": "",
-                      "allowRelative": false,
-                      "showControls": false,
-                      "controlsStyle": "hover",
-                      "type": "numberField"
-                    }
-                  ],
-                  "flow": "vertical",
-                  "align": "center",
-                  "type": "panel"
-                },
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": null,
-                  "contents": [
-                    {
-                      "key": "",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": null,
-                      "defaultValue": null,
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "<h1 style=\"color: blue; font-weight: bold;\"><i class=\"fa-solid fa-sparkles\"> M P</i></h1>",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "style": "subtitle",
-                      "type": "label"
-                    },
-                    {
-                      "key": "mp_current",
-                      "cssClass": "npc_alt_text_field_background",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "",
-                      "defaultValue": "0",
-                      "size": "small",
-                      "allowDecimal": false,
-                      "minVal": "0",
-                      "maxVal": "${ref('mp_max')}$",
-                      "allowRelative": true,
-                      "showControls": true,
-                      "controlsStyle": "hover",
-                      "type": "numberField"
-                    },
-                    {
-                      "key": "mp_max",
-                      "cssClass": "npc_alt_text_field_background",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "/",
-                      "defaultValue": "0",
-                      "size": "small",
-                      "allowDecimal": false,
-                      "minVal": "0",
-                      "maxVal": "",
-                      "allowRelative": false,
-                      "showControls": false,
-                      "controlsStyle": "hover",
-                      "type": "numberField"
-                    }
-                  ],
-                  "flow": "vertical",
-                  "align": "center",
-                  "type": "panel"
-                },
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
-                  "visibilityFormula": null,
-                  "contents": [
-                    {
-                      "key": "",
-                      "cssClass": "",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": null,
-                      "defaultValue": null,
-                      "size": "full-size",
-                      "icon": "",
-                      "value": "<h1 style=\"font-weight: bold;\"><i class=\"fa-solid fa-clock\"> INIT</i></h1>",
-                      "prefix": "",
-                      "suffix": "",
-                      "rollMessage": "",
-                      "altRollMessage": "",
-                      "style": "subtitle",
-                      "type": "label"
-                    },
-                    {
-                      "key": "init",
-                      "cssClass": "npc_alt_text_field_background",
-                      "role": "0",
-                      "permission": "0",
-                      "tooltip": "",
-                      "visibilityFormula": "",
-                      "label": "",
-                      "defaultValue": "0",
-                      "size": "small",
-                      "allowDecimal": false,
-                      "minVal": "",
-                      "maxVal": "",
-                      "allowRelative": false,
-                      "showControls": false,
-                      "controlsStyle": "hover",
-                      "type": "numberField"
-                    }
-                  ],
-                  "flow": "vertical",
-                  "align": "center",
-                  "type": "panel"
-                },
-                {
-                  "key": "",
-                  "cssClass": "",
-                  "role": "0",
-                  "permission": "0",
-                  "tooltip": "",
                   "visibilityFormula": "",
                   "contents": [
                     {
                       "key": "",
-                      "cssClass": "",
+                      "cssClass": "life-icon",
                       "role": "0",
                       "permission": "0",
-                      "tooltip": "Fabula Points",
+                      "tooltip": "Health Points",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
-                      "size": "full-size",
+                      "size": "small",
                       "icon": "",
-                      "value": "<h1 style=\"color: darkcyan; font-weight: bold;\"><i class=\"fa-solid fa-wand-magic\"> U P</i></h1>",
+                      "value": "",
                       "prefix": "",
                       "suffix": "",
                       "rollMessage": "",
@@ -243,35 +57,388 @@
                       "visibilityFormula": "",
                       "contents": [
                         {
-                          "key": "fp",
-                          "cssClass": "npc_alt_text_field_background",
+                          "key": "",
+                          "cssClass": "char-attribute-text no-margin",
                           "role": "0",
                           "permission": "0",
                           "tooltip": "",
                           "visibilityFormula": "",
-                          "label": "",
-                          "defaultValue": "0",
-                          "size": "small",
-                          "allowDecimal": false,
-                          "minVal": "0",
-                          "maxVal": "",
-                          "allowRelative": false,
-                          "showControls": true,
-                          "controlsStyle": "hover",
-                          "type": "numberField"
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "full-size",
+                          "icon": "",
+                          "value": "<span style=\"color:#f20012; text-decoration: underline;\"> Health<span>",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "hp_current",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "${ref('hp_max')}$",
+                              "allowRelative": true,
+                              "showControls": true,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            },
+                            {
+                              "key": "hp_max",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "/",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "",
+                              "allowRelative": false,
+                              "showControls": false,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "center",
+                          "type": "panel"
                         }
                       ],
-                      "flow": "horizontal",
+                      "flow": "vertical",
                       "align": "center",
                       "type": "panel"
                     }
                   ],
-                  "flow": "vertical",
+                  "flow": "horizontal",
+                  "align": "center",
+                  "type": "panel"
+                },
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "contents": [
+                    {
+                      "key": "",
+                      "cssClass": "mana-icon",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "Mind Point",
+                      "visibilityFormula": "",
+                      "label": null,
+                      "defaultValue": null,
+                      "size": "small",
+                      "icon": "",
+                      "value": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "rollMessage": "",
+                      "altRollMessage": "",
+                      "style": "subtitle",
+                      "type": "label"
+                    },
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "",
+                          "cssClass": "char-attribute-text no-margin",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "full-size",
+                          "icon": "",
+                          "value": "<span style=\"color:#6fa1f8; text-decoration: underline;\"> Magic<span>",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "mp_current",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "${ref('mp_max')}$",
+                              "allowRelative": true,
+                              "showControls": true,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            },
+                            {
+                              "key": "mp_max",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "/",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "",
+                              "allowRelative": false,
+                              "showControls": false,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "center",
+                          "type": "panel"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "center",
+                      "type": "panel"
+                    }
+                  ],
+                  "flow": "horizontal",
+                  "align": "center",
+                  "type": "panel"
+                },
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "contents": [
+                    {
+                      "key": "",
+                      "cssClass": "init-icon",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "Inventory Points",
+                      "visibilityFormula": "",
+                      "label": null,
+                      "defaultValue": null,
+                      "size": "small",
+                      "icon": "",
+                      "value": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "rollMessage": "",
+                      "altRollMessage": "",
+                      "style": "subtitle",
+                      "type": "label"
+                    },
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "",
+                          "cssClass": "char-attribute-text no-margin",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "full-size",
+                          "icon": "",
+                          "value": "<span style=\"color:#eab359; text-decoration: underline;\";>Init.</span>",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "init",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "full-size",
+                              "allowDecimal": false,
+                              "minVal": "",
+                              "maxVal": "",
+                              "allowRelative": false,
+                              "showControls": false,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            }
+                          ],
+                          "flow": "horizontal",
+                          "align": "left",
+                          "type": "panel"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "center",
+                      "type": "panel"
+                    }
+                  ],
+                  "flow": "horizontal",
+                  "align": "center",
+                  "type": "panel"
+                },
+                {
+                  "key": "",
+                  "cssClass": "",
+                  "role": "0",
+                  "permission": "0",
+                  "tooltip": "",
+                  "visibilityFormula": "",
+                  "contents": [
+                    {
+                      "key": "",
+                      "cssClass": "fp-icon",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "Fabula Points",
+                      "visibilityFormula": "",
+                      "label": null,
+                      "defaultValue": null,
+                      "size": "small",
+                      "icon": "",
+                      "value": "",
+                      "prefix": "",
+                      "suffix": "",
+                      "rollMessage": "",
+                      "altRollMessage": "",
+                      "style": "subtitle",
+                      "type": "label"
+                    },
+                    {
+                      "key": "",
+                      "cssClass": "",
+                      "role": "0",
+                      "permission": "0",
+                      "tooltip": "",
+                      "visibilityFormula": "",
+                      "contents": [
+                        {
+                          "key": "",
+                          "cssClass": "char-attribute-text no-margin",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "label": null,
+                          "defaultValue": null,
+                          "size": "full-size",
+                          "icon": "",
+                          "value": "<span style=\"color:#adad7b; text-decoration: underline;\";>Ultima</span> ",
+                          "prefix": "",
+                          "suffix": "",
+                          "rollMessage": "",
+                          "altRollMessage": "",
+                          "style": "label",
+                          "type": "label"
+                        },
+                        {
+                          "key": "",
+                          "cssClass": "",
+                          "role": "0",
+                          "permission": "0",
+                          "tooltip": "",
+                          "visibilityFormula": "",
+                          "contents": [
+                            {
+                              "key": "fp",
+                              "cssClass": "npc_alt_text_field_background",
+                              "role": "0",
+                              "permission": "0",
+                              "tooltip": "",
+                              "visibilityFormula": "",
+                              "label": "",
+                              "defaultValue": "0",
+                              "size": "small",
+                              "allowDecimal": false,
+                              "minVal": "0",
+                              "maxVal": "",
+                              "allowRelative": false,
+                              "showControls": true,
+                              "controlsStyle": "hover",
+                              "type": "numberField"
+                            }
+                          ],
+                          "flow": "vertical",
+                          "align": "left",
+                          "type": "panel"
+                        }
+                      ],
+                      "flow": "vertical",
+                      "align": "center",
+                      "type": "panel"
+                    }
+                  ],
+                  "flow": "horizontal",
                   "align": "center",
                   "type": "panel"
                 }
               ],
-              "flow": "horizontal",
+              "flow": "grid-4",
               "align": "center",
               "type": "panel"
             }
@@ -431,7 +598,7 @@
             },
             {
               "key": "traits",
-              "cssClass": "npc_alt_text_field_background",
+              "cssClass": "npc_alt_text_field_background align-left",
               "role": "0",
               "permission": "0",
               "tooltip": "",
@@ -3837,7 +4004,7 @@
                             "type": "label"
                           },
                           {
-                            "key": "basic_att_table",
+                            "key": "basic_attack",
                             "cssClass": "npc_alt_background",
                             "role": "0",
                             "permission": "0",
@@ -4869,7 +5036,7 @@
       "refreshedInsFU": []
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 1017801978
+    "templateSystemUniqueVersion": 3687154198
   },
   "flags": {
     "custom-system-builder": {
@@ -4879,306 +5046,200 @@
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              3,
+              "header",
               "contents",
               0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
               "contents",
               0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</span>\n     \n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</span>\n     \n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</span>\n     \n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<span style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</span>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n\n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
               "contents",
               2,
               "contents",
               1,
-              "rowLayout",
-              9,
-              "rollMessage"
+              "align"
             ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;>\n    <td>\n      <span style=\"text-align:center; color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n      <strong>\n        <span style=\"text-align:center; color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n      </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n\n\n"
+            "lhs": "right",
+            "rhs": "left"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              3,
+              "header",
               "contents",
               0,
+              "contents",
               0,
-              "contents",
-              1,
-              "contents",
-              3,
-              "contents",
-              1,
-              "rowLayout",
-              8,
-              "rollMessage"
+              "flow"
             ],
-            "lhs": "${#word:='fa-star-of-david'}$\n\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n\n<div class=\"npc_chat_card\">\n${!string(sameRow('details'))}$\n</div>\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_mcheck')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;>\n    <td style=\"text-align:center\">\n      <span style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n        <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n      </span>\n          <strong>\n            <span style=\"color:red; font-size: 1.75em; font-weight: bolder\">${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$</span>\n          </strong>\n    </td>\n  </tr>\n\n\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:='fa-star-of-david'}$\n\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n\n<div class=\"npc_chat_card\">\n${!string(sameRow('details'))}$\n</div>\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_mcheck')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n\n"
+            "lhs": "horizontal",
+            "rhs": "grid-4"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              3,
+              "header",
               "contents",
               0,
-              0,
               "contents",
-              1,
+              0,
               "contents",
               2,
               "contents",
               1,
-              "rowLayout",
-              9,
-              "rollMessage"
+              "contents",
+              1,
+              "contents",
+              0,
+              "size"
             ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n\n\n",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n"
+            "lhs": "small",
+            "rhs": "full-size"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              3,
+              "header",
               "contents",
               0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
               "contents",
               0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n\n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n\n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
               "contents",
               2,
               "contents",
               1,
-              "rowLayout",
-              9,
-              "rollMessage"
+              "align"
             ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i> ${!sameRow('basic_name')}$</h2>\n\n<table class=\"npc_chat_card\">\n  <tr>\n    <td class=\"chat-padding\">\n         ${!sameRow('detail','')}$\n    </td>\n  </tr>\n</table>\n\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_acc')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n"
+            "lhs": "left",
+            "rhs": "center"
           }
         ],
         [
           {
             "kind": "E",
             "path": [
-              "body",
-              "contents",
-              3,
+              "header",
               "contents",
               0,
-              0,
               "contents",
-              1,
+              0,
               "contents",
               3,
               "contents",
               1,
-              "rowLayout",
-              8,
-              "rollMessage"
+              "align"
             ],
-            "lhs": "${#word:='fa-star-of-david'}$\n\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n\n<div class=\"npc_chat_card\">\n${!string(sameRow('details'))}$\n</div>\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_mcheck')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n\n",
-            "rhs": "${#word:='fa-star-of-david'}$\n\n\n<h2>Casts <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('spell_name'))}$! </h2>\n\n\n<div class=\"npc_chat_card\">\n${!string(sameRow('details'))}$\n</div>\n\n\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'INS') == true ? ref('ins_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'MIG') == true ? ref('mig_current') : dice1}$\n${#dice1:= equalText(string(sameRow('attrib_1')) ,'WLP') == true ? ref('wlp_current') : dice1}$\n\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('attrib_2')) ,'INS') == true ? ref('ins_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'MIG') == true ? ref('mig_current') : dice2}$\n${#dice2:= equalText(string(sameRow('attrib_2')) ,'WLP') == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p> \n<p><b>${!string(sameRow('attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Spell Attack Roll: ${D1+D2+sameRow('check_bonus')+ref('mod_mcheck')}$ HR: ${HR}$ + ${string(sameRow('dmg_bonus'))}$ </strong></p> \n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('type')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'ICE') == true ?'rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'FIR') == true ?'rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'AIR') == true ?'rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'BOL') == true ?'rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'EAR') == true ?'rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'LIG') == true ?'rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'DAR') == true ?'rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'POI') == true ?'rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('type')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('type')) ,'PHY') == true ?'rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('type')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('dmg_bonus'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>\n\n"
+            "lhs": "left",
+            "rhs": "center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#f20012\"> Health<span>",
+            "rhs": "<span style=\"color:#f20012, text-decoration: underline;\"> Health<span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#f20012, text-decoration: underline;\"> Health<span>",
+            "rhs": "<span style=\"color:#f20012; text-decoration: underline;\"> Health<span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#6fa1f8\"> Magic<span>",
+            "rhs": "<span style=\"color:#6fa1f8; text-decoration: underline;\"> Magic<span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#eab359\";>Init.</span>",
+            "rhs": "<span style=\"color:#eab359; text-decoration: underline;\";>Init.</span>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "<span style=\"color:#adad7b\";>Ultima</span> ",
+            "rhs": "<span style=\"color:#adad7b; text-decoration: underline;\";>Ultima</span> "
           }
         ]
       ],
@@ -5188,10 +5249,7 @@
       "world": "fabula-ultima-as-above-so-below",
       "system": "custom-system-builder",
       "coreVersion": "11.307",
-      "systemVersion": "2.4.0"
-    },
-    "scene-packer": {
-      "sourceId": "Actor.F4wMLkWhh6IAxBin"
+      "systemVersion": "2.4.1"
     }
   },
   "img": "icons/svg/mystery-man.svg",
@@ -5325,10 +5383,10 @@
   "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.0",
+    "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687192833754,
-    "modifiedTime": 1692566282523,
+    "modifiedTime": 1692803945065,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
