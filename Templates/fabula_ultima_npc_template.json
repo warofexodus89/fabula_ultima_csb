@@ -260,7 +260,7 @@
                       "cssClass": "init-icon",
                       "role": "0",
                       "permission": "0",
-                      "tooltip": "Inventory Points",
+                      "tooltip": "Initiative",
                       "visibilityFormula": "",
                       "label": null,
                       "defaultValue": null,
@@ -5036,31 +5036,12 @@
       "refreshedInsFU": []
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 3687154198
+    "templateSystemUniqueVersion": 4246334393
   },
   "flags": {
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "header",
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              2,
-              "contents",
-              1,
-              "align"
-            ],
-            "lhs": "right",
-            "rhs": "left"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -5241,6 +5222,25 @@
             "lhs": "<span style=\"color:#adad7b\";>Ultima</span> ",
             "rhs": "<span style=\"color:#adad7b; text-decoration: underline;\";>Ultima</span> "
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "header",
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "tooltip"
+            ],
+            "lhs": "Inventory Points",
+            "rhs": "Initiative"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -5386,7 +5386,7 @@
     "systemVersion": "2.4.1",
     "coreVersion": "11.307",
     "createdTime": 1687192833754,
-    "modifiedTime": 1692803945065,
+    "modifiedTime": 1692864563260,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
