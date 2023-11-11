@@ -19,7 +19,7 @@ There will be updates and changes to the templates as I improve on it to cater f
   - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
 - [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#5-frequently-asked-questions)
   - [5.1 The sheet is too big or profile picture on the sheet is too big! ](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#52-the-sheet-is-too-big-or-profile-picture-on-the-sheet-is-too-big)
-  
+  - [5.2 The equipment section is missing on new character sheets ](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#52-the-equipment-section-is-missing-on-new-character-sheets)
 
 ## 1. Dependencies
 
@@ -81,3 +81,16 @@ Press F5 to refresh your Foundry so that it will load your CSS file. It's good t
 **Answer:** The size of the sheet is fixed to accomodate the components on the sheet but if you want to adjust you can still do so from **"Configure sheet display"** on the respective templates!
 
 ![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/8b96a6c3-a32b-474f-be99-3eb42279a2bd)
+
+### 5.2 The equipment section is missing on new character sheets
+
+![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/5b4b2964-8c20-4d6a-97ae-0dcb3b16d35d)
+
+Newly generated character sheets might be missing the equipment section. 
+
+- You will need to navigate to the 'Class features' tab. If you do not see this tab, you will need to uncheck and check the 'Class features' checkbox at the settings tab (cogwheel icon). ![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/72ab097f-0cef-4d6d-941e-80fabddfe906)
+- At the 'Class features' tab, check 'Vehicle'. This will unlock the mount button at the 'Inventory' tab. ![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/00ffffb1-471d-4959-85dc-ed24160a8539)
+- Click the 'Mount' button. This should show the equipment and personal vehicle section to show again. Toggle the 'Mount' button so that it shows the equipment section. ![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/95d030b8-c9d9-465f-85e7-cba6492836e0)
+- (Optional) Uncheck 'Vehicle' checkbox if you are not character is not a Pilot.
+
+  
