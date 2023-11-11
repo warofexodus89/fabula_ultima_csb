@@ -2,7 +2,7 @@
 
 ![image](https://github.com/warofexodus89/fabula_ultima_csb/assets/4443200/98e24042-307e-4551-8375-5dc187e565c3)
 
-**Dislaimer:** These templates are **NOT** official and does not support Foundry version **before v11**. I personally use them in my own games but it can be used as a npc/character sheet for new players trying out the game. As of current release, the template only caters for the **base and high fantasy book**. So feel free to draw inspiration from it to apply to your own CSB sheets (or modify it for your own use)! :)
+**Dislaimer:** These templates are **NOT** official and does not support Foundry version **before v11**. I personally use them in my own games but it can be used as a npc/character sheet for new players trying out the game. As of current release, the template only caters for the **base, high fantasy, natural fantasy and technofantasy book (excluding technosphere support)**. So feel free to draw inspiration from it to apply to your own CSB sheets (or modify it for your own use)! :)
 
 You can find both PC/NPC and item templates under '**Templates**'. The CSS file is mostly meant for styling the PC template; though you might notice some of it applying to the item templates as well (it still look pleasant!).
 
