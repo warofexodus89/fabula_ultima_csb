@@ -8916,7 +8916,7 @@
                                 "visibilityFormula": "",
                                 "label": "",
                                 "defaultValue": "",
-                                "size": "full-size",
+                                "size": "m-small",
                                 "options": [
                                   {
                                     "key": "BIT",
@@ -8957,7 +8957,7 @@
                                 "visibilityFormula": "",
                                 "label": "",
                                 "defaultValue": "",
-                                "size": "full-size",
+                                "size": "m-small",
                                 "options": [
                                   {
                                     "key": "BIT",
@@ -8988,6 +8988,47 @@
                                 "type": "select",
                                 "align": "center",
                                 "colName": "Taste 2"
+                              },
+                              {
+                                "key": "taste3",
+                                "cssClass": "",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": "",
+                                "size": "m-small",
+                                "options": [
+                                  {
+                                    "key": "BIT",
+                                    "value": "Bitter"
+                                  },
+                                  {
+                                    "key": "SAL",
+                                    "value": "Salty"
+                                  },
+                                  {
+                                    "key": "SOU",
+                                    "value": "Sour"
+                                  },
+                                  {
+                                    "key": "SWE",
+                                    "value": "Sweet"
+                                  },
+                                  {
+                                    "key": "UMA",
+                                    "value": "Umami"
+                                  }
+                                ],
+                                "tableKey": null,
+                                "tableKeyColumn": null,
+                                "tableLabelColumn": null,
+                                "formulaKeyOptions": null,
+                                "formulaLabelOptions": null,
+                                "type": "select",
+                                "align": "center",
+                                "colName": "Taste 3"
                               },
                               {
                                 "key": "description",
@@ -13126,7 +13167,7 @@
       ]
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 4082493552
+    "templateSystemUniqueVersion": 1889019987
   },
   "flags": {
     "custom-system-builder": {
@@ -13147,16 +13188,14 @@
               "contents",
               11,
               "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
+              4,
+              "rowLayout",
+              6,
+              "key"
             ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n\n<table class=\"pc_chat_card\" style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>\n\n</table>\n"
-          }
-        ],
-        [
+            "lhs": "taste3",
+            "rhs": "roll"
+          },
           {
             "kind": "E",
             "path": [
@@ -13171,64 +13210,14 @@
               "contents",
               11,
               "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>\n\n</table>\n",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
               4,
-              "contents",
-              11,
-              "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"width: 100%%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              5,
-              "contents",
-              0,
-              "rollMessage"
+              "rowLayout",
+              6,
+              "label"
             ],
             "lhs": "",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"height: 150px; border-width: 1px; border-color: rgb(236, 240, 241); width: 100%;\" border=\"1\"><colgroup><col style=\"width: 11.2613%;\"><col style=\"width: 88.7387%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers from </span><strong><span class=\"fontstyle2\">(choose one: dazed; enraged; poisoned; shaken; slow; weak)</span></strong><span class=\"fontstyle0\">.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers </span><span class=\"fontstyle2\"><strong>(choose one: dazed; shaken; slow; weak)</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3-4</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers 40 </span><strong><span class=\"fontstyle2\">(choose one: Hit Points; Mind Points)</span></strong><span class=\"fontstyle0\">. This amount increases to 50if you are </span><span class=\"fontstyle2\"><strong>level 30 or higher</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers 15 </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage. This amount increases to 20 if you are </span><strong><span class=\"fontstyle2\">level 30 or higher.</span></strong></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">Until the end of your next turn, the target suffers 5 extra damage from all sources that deal </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">7</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target cannot perform the<strong> </strong></span><strong><span class=\"fontstyle2\">(choose one: Guard; Spell; Skill) </span></strong><span class=\"fontstyle0\">action on their next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">8</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target gains Resistance to </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage until the end of your next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">9</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target treats their </span><span class=\"fontstyle2\"><strong>(choose one: Dexterity; Insight; Might; Willpower)</strong> </span><span class=\"fontstyle0\">as if it were one die size higher (up to a maximum of </span><span class=\"fontstyle2\">d12</span><span class=\"fontstyle0\">) until the end of your next turn.</span></td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121); height: 17px;\">10</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); height: 17px; background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">During the target's next turn, all damage they deal becomes </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">and its type cannot change.</span></td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n"
-          }
-        ],
-        [
+            "rhs": null
+          },
           {
             "kind": "E",
             "path": [
@@ -13243,289 +13232,1659 @@
               "contents",
               11,
               "contents",
-              5,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"height: 150px; border-width: 1px; border-color: rgb(236, 240, 241); width: 100%;\" border=\"1\"><colgroup><col style=\"width: 11.2613%;\"><col style=\"width: 88.7387%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers from </span><strong><span class=\"fontstyle2\">(choose one: dazed; enraged; poisoned; shaken; slow; weak)</span></strong><span class=\"fontstyle0\">.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers </span><span class=\"fontstyle2\"><strong>(choose one: dazed; shaken; slow; weak)</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3-4</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers 40 </span><strong><span class=\"fontstyle2\">(choose one: Hit Points; Mind Points)</span></strong><span class=\"fontstyle0\">. This amount increases to 50if you are </span><span class=\"fontstyle2\"><strong>level 30 or higher</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers 15 </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage. This amount increases to 20 if you are </span><strong><span class=\"fontstyle2\">level 30 or higher.</span></strong></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">Until the end of your next turn, the target suffers 5 extra damage from all sources that deal </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">7</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target cannot perform the<strong> </strong></span><strong><span class=\"fontstyle2\">(choose one: Guard; Spell; Skill) </span></strong><span class=\"fontstyle0\">action on their next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">8</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target gains Resistance to </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage until the end of your next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">9</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target treats their </span><span class=\"fontstyle2\"><strong>(choose one: Dexterity; Insight; Might; Willpower)</strong> </span><span class=\"fontstyle0\">as if it were one die size higher (up to a maximum of </span><span class=\"fontstyle2\">d12</span><span class=\"fontstyle0\">) until the end of your next turn.</span></td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121); height: 17px;\">10</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); height: 17px; background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">During the target's next turn, all damage they deal becomes </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">and its type cannot change.</span></td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for delicacy effects.</h2>\n\n</hr>\n\n<table class=\"pc_chat_card\">\n\n<tr>\n<td>\n\n<table style=\"height: 150px; border-width: 1px; border-color: rgb(236, 240, 241); width: 100%;\" border=\"1\"><colgroup><col style=\"width: 11.2613%;\"><col style=\"width: 88.7387%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers from </span><strong><span class=\"fontstyle2\">(choose one: dazed; enraged; poisoned; shaken; slow; weak)</span></strong><span class=\"fontstyle0\">.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers </span><span class=\"fontstyle2\"><strong>(choose one: dazed; shaken; slow; weak)</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3-4</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target recovers 40 </span><strong><span class=\"fontstyle2\">(choose one: Hit Points; Mind Points)</span></strong><span class=\"fontstyle0\">. This amount increases to 50if you are </span><span class=\"fontstyle2\"><strong>level 30 or higher</strong>.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target suffers 15 </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage. This amount increases to 20 if you are </span><strong><span class=\"fontstyle2\">level 30 or higher.</span></strong></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">Until the end of your next turn, the target suffers 5 extra damage from all sources that deal </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage.</span></td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">7</td>\n<td style=\"height: 17px; padding: 5px; text-align: left; border-color: rgb(236, 240, 241);\"><span class=\"fontstyle0\">The target cannot perform the<strong> </strong></span><strong><span class=\"fontstyle2\">(choose one: Guard; Spell; Skill) </span></strong><span class=\"fontstyle0\">action on their next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">8</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target gains Resistance to </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">damage until the end of your next turn.</span></td>\n</tr>\n<tr>\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">9</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">The target treats their </span><span class=\"fontstyle2\"><strong>(choose one: Dexterity; Insight; Might; Willpower)</strong> </span><span class=\"fontstyle0\">as if it were one die size higher (up to a maximum of </span><span class=\"fontstyle2\">d12</span><span class=\"fontstyle0\">) until the end of your next turn.</span></td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121); height: 17px;\">10</td>\n<td style=\"padding: 5px; text-align: left; border-color: rgb(236, 240, 241); height: 17px; background-color: rgb(191, 237, 210);\"><span class=\"fontstyle0\">During the target's next turn, all damage they deal becomes </span><span class=\"fontstyle2\"><strong>(choose one: air; bolt; earth; fire; ice; poison)</strong> </span><span class=\"fontstyle0\">and its type cannot change.</span></td>\n</tr>\n</tbody>\n</table>\n</td>\n</tr>\n</table>\n"
-          }
-        ],
-        [
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
+              4,
               "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 26,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Merchant",
-                "value": "Merchant"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 25,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Pilot",
-                "value": "Pilot"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 24,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Gourmet",
-                "value": "Gourmet"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 23,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Floralist",
-                "value": "Floralist"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 22,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Esper",
-                "value": "Esper"
-              }
-            }
-          }
-        ],
-        [
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              0,
-              "contents",
-              1,
-              "rowLayout",
-              1,
-              "options"
-            ],
-            "index": 27,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "Invoker",
-                "value": "Invoker"
-              }
-            }
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              2,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              0,
-              "contents",
-              2,
-              "contents",
-              0,
-              "defaultValue"
-            ],
-            "lhs": "<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td><strong>Trigger Name</strong></td>\n<td>&nbsp;Trigger name</td>\n</tr>\n<tr>\n<td><strong>Filled Sections</strong></td>\n<td>&nbsp;X per trigger</td>\n</tr>\n</tbody>\n</table>\n<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td>Zero trigger description here</td>\n</tr>\n</tbody>\n</table>",
-            "rhs": "<table style=\"width: 100%; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Trigger Name</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;Trigger name&gt;</td>\n</tr>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Filled Sections</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;X per trigger&gt;</td>\n</tr>\n</tbody>\n</table>\n<table style=\"width: 100%; height: 17px;\" border=\"1\"><colgroup><col style=\"width: 99.7908%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"background-color: rgb(248, 202, 198); height: 17px;\">&lt;Zero trigger description here&gt;</td>\n</tr>\n</tbody>\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              2,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "contents",
-              1,
-              "contents",
-              0,
-              "contents",
-              2,
-              "contents",
-              0,
-              "defaultValue"
-            ],
-            "lhs": "<p>Zero effect description here.</p>",
-            "rhs": "<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"background-color: rgb(248, 202, 198);\">&lt;Zero effect description here&gt;</td>\n</tr>\n</tbody>\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              2,
-              "contents",
-              0,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              0,
-              0,
+              6,
               "defaultValue"
             ],
             "lhs": "",
-            "rhs": "<table style=\"border-width: 1px; background-color: rgb(248, 202, 198);\" border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"padding: 5px;\">\n<blockquote><em>&lt;Quirk description here&gt;</em></blockquote>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&lt;Quirk effects here&gt;</p>"
+            "rhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "options"
+            ],
+            "lhs": [
+              {
+                "key": "SAL",
+                "value": "Salty"
+              },
+              {
+                "key": "SWE",
+                "value": "Sweet"
+              }
+            ]
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "tableKey"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "tableKeyColumn"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "tableLabelColumn"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "formulaKeyOptions"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "formulaLabelOptions"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "type"
+            ],
+            "lhs": "select",
+            "rhs": "label"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "align"
+            ],
+            "lhs": "left",
+            "rhs": "right"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "colName"
+            ],
+            "lhs": "Taste 3",
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "icon"
+            ],
+            "rhs": "dice"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "value"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "prefix"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "suffix"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "rollMessage"
+            ],
+            "rhs": "<h2>Cooks <i class=\"fa-solid fa-pan-frying\"> </i> ${!sameRow('del_name')}$!</h2>\n\n</hr>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-utensils\"><b> Delicacy Effects</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "altRollMessage"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              6,
+              "style"
+            ],
+            "rhs": "label"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "key"
+            ],
+            "lhs": "roll",
+            "rhs": "taste3"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "label"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "defaultValue"
+            ],
+            "lhs": null,
+            "rhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "icon"
+            ],
+            "lhs": "dice"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "value"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "prefix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "suffix"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "rollMessage"
+            ],
+            "lhs": "<h2>Cooks <i class=\"fa-solid fa-pan-frying\"> </i> ${!sameRow('del_name')}$!</h2>\n\n</hr>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-utensils\"><b> Delicacy Effects</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "altRollMessage"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "style"
+            ],
+            "lhs": "label"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "type"
+            ],
+            "lhs": "label",
+            "rhs": "select"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "align"
+            ],
+            "lhs": "right",
+            "rhs": "left"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "colName"
+            ],
+            "lhs": "",
+            "rhs": "Taste 3"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "options"
+            ],
+            "rhs": [
+              {
+                "key": "SAL",
+                "value": "Salty"
+              },
+              {
+                "key": "SWE",
+                "value": "Sweet"
+              }
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableKey"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableKeyColumn"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableLabelColumn"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "formulaKeyOptions"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "formulaLabelOptions"
+            ],
+            "rhs": null
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "key"
+            ],
+            "lhs": "taste3",
+            "rhs": "description"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "defaultValue"
+            ],
+            "lhs": "",
+            "rhs": "<table style=\"width: 100%; height: 68px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 44.7887%;\"><col style=\"width: 55.2113%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; height: 17px; background-color: rgb(22, 145, 121); border-color: rgb(236, 240, 241); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; text-align: center;\" colspan=\"2\">Effects</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210); padding: 5px;\" colspan=\"2\">&nbsp;</td>\n</tr>\n</tbody>\n</table>"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "options"
+            ],
+            "lhs": [
+              {
+                "key": "SAL",
+                "value": "Salty"
+              },
+              {
+                "key": "SWE",
+                "value": "Sweet"
+              }
+            ]
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableKey"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableKeyColumn"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "tableLabelColumn"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "formulaKeyOptions"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "formulaLabelOptions"
+            ],
+            "lhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "type"
+            ],
+            "lhs": "select",
+            "rhs": "textArea"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "colName"
+            ],
+            "lhs": "Taste 3",
+            "rhs": "Description"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              5,
+              "style"
+            ],
+            "rhs": "dialog"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "key"
+            ],
+            "lhs": "description",
+            "rhs": "taste3"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "defaultValue"
+            ],
+            "lhs": "<table style=\"width: 100%; height: 68px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 44.7887%;\"><col style=\"width: 55.2113%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; height: 17px; background-color: rgb(22, 145, 121); border-color: rgb(236, 240, 241); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; text-align: center;\" colspan=\"2\">Effects</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210); padding: 5px;\" colspan=\"2\">&nbsp;</td>\n</tr>\n</tbody>\n</table>",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "size"
+            ],
+            "lhs": null,
+            "rhs": "full-size"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "style"
+            ],
+            "lhs": "dialog"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "type"
+            ],
+            "lhs": "textArea",
+            "rhs": "select"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "colName"
+            ],
+            "lhs": "Description",
+            "rhs": "Taste 3"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options"
+            ],
+            "rhs": [
+              {
+                "key": "SAL",
+                "value": "Salty"
+              },
+              {
+                "key": "SWE",
+                "value": "Sweet"
+              }
+            ]
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "tableKey"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "tableKeyColumn"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "tableLabelColumn"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "formulaKeyOptions"
+            ],
+            "rhs": null
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "formulaLabelOptions"
+            ],
+            "rhs": null
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options"
+            ],
+            "index": 3,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "SWE",
+                "value": "Sweet"
+              }
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "SOU",
+                "value": "Sour"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options",
+              1,
+              "key"
+            ],
+            "lhs": "SWE",
+            "rhs": "SAL"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options",
+              1,
+              "value"
+            ],
+            "lhs": "Sweet",
+            "rhs": "Salty"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options",
+              0,
+              "key"
+            ],
+            "lhs": "SAL",
+            "rhs": "BIT"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options",
+              0,
+              "value"
+            ],
+            "lhs": "Salty",
+            "rhs": "Bitter"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "options"
+            ],
+            "index": 4,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "UMA",
+                "value": "Umami"
+              }
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "align"
+            ],
+            "lhs": "left",
+            "rhs": "center"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": "small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              3,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": "small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              2,
+              "size"
+            ],
+            "lhs": "full-size",
+            "rhs": "small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              2,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              3,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              4,
+              "contents",
+              11,
+              "contents",
+              4,
+              "rowLayout",
+              4,
+              "size"
+            ],
+            "lhs": "small",
+            "rhs": "m-small"
           }
         ]
       ],
@@ -13661,7 +15020,7 @@
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1687192833609,
-    "modifiedTime": 1699731940766,
+    "modifiedTime": 1699732542045,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
