@@ -19,7 +19,7 @@ There will be updates and changes to the templates as I improve on it to cater f
   - [4.2 Styling the sheets](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#33-styling-the-sheets)
 - [5. Frequently asked questions](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#5-frequently-asked-questions)
   - [5.1 The sheet is too big or profile picture on the sheet is too big! ](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#52-the-sheet-is-too-big-or-profile-picture-on-the-sheet-is-too-big)
-  - [5.2 The equipment section is missing on new character sheets ](https://github.com/warofexodus89/fabula_ultima_csb/edit/main/README.md#52-the-equipment-section-is-missing-on-new-character-sheets)
+  - [5.2 The equipment section is missing on new character sheets ](https://github.com/warofexodus89/fabula_ultima_csb/blob/main/README.md#52-the-equipment-section-is-missing-on-new-character-sheets)
 
 ## 1. Dependencies
 
