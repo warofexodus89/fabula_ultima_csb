@@ -3974,7 +3974,7 @@
                                             "tooltip": "",
                                             "visibilityFormula": "",
                                             "label": "",
-                                            "defaultValue": "",
+                                            "defaultValue": "<table style=\"border-width: 1px; background-color: rgb(248, 202, 198);\" border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"padding: 5px;\">\n<blockquote><em>&lt;Quirk description here&gt;</em></blockquote>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&lt;Quirk effects here&gt;</p>",
                                             "size": null,
                                             "style": "dialog",
                                             "type": "textArea"
@@ -4282,7 +4282,7 @@
                                                           "tooltip": "",
                                                           "visibilityFormula": "",
                                                           "label": "",
-                                                          "defaultValue": "<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td><strong>Trigger Name</strong></td>\n<td>&nbsp;Trigger name</td>\n</tr>\n<tr>\n<td><strong>Filled Sections</strong></td>\n<td>&nbsp;X per trigger</td>\n</tr>\n</tbody>\n</table>\n<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td>Zero trigger description here</td>\n</tr>\n</tbody>\n</table>",
+                                                          "defaultValue": "<table style=\"width: 100%; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Trigger Name</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;Trigger name&gt;</td>\n</tr>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Filled Sections</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;X per trigger&gt;</td>\n</tr>\n</tbody>\n</table>\n<table style=\"width: 100%; height: 17px;\" border=\"1\"><colgroup><col style=\"width: 99.7908%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"background-color: rgb(248, 202, 198); height: 17px;\">&lt;Zero trigger description here&gt;</td>\n</tr>\n</tbody>\n</table>",
                                                           "size": null,
                                                           "style": "dialog",
                                                           "type": "textArea"
@@ -4372,7 +4372,7 @@
                                                           "tooltip": "",
                                                           "visibilityFormula": "",
                                                           "label": "",
-                                                          "defaultValue": "<p>Zero effect description here.</p>",
+                                                          "defaultValue": "<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"background-color: rgb(248, 202, 198);\">&lt;Zero effect description here&gt;</td>\n</tr>\n</tbody>\n</table>",
                                                           "size": null,
                                                           "style": "dialog",
                                                           "type": "textArea"
@@ -13126,84 +13126,12 @@
       ]
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 1854391747
+    "templateSystemUniqueVersion": 4082493552
   },
   "flags": {
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls for ingredient taste.</h2>\n\n</hr>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px;\" colspan=\"2\">Ingredient Taste</td>\n</tr>\n<tr style=\"height: 31px;\">\n<td style=\"height: 31px; text-align: center; padding: 5px;\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center;\">Bitter</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Salty</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sour</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sweet</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Umami</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Your choice</td>\n</tr>\n</tbody>\n</table>\n\n${[1d6]}$",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px;\" colspan=\"2\">Ingredient Taste</td>\n</tr>\n<tr style=\"height: 31px;\">\n<td style=\"height: 31px; text-align: center; padding: 5px;\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center;\">Bitter</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Salty</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sour</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sweet</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Umami</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Your choice</td>\n</tr>\n</tbody>\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px;\" colspan=\"2\">Ingredient Taste</td>\n</tr>\n<tr style=\"height: 31px;\">\n<td style=\"height: 31px; text-align: center; padding: 5px;\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center;\">Bitter</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Salty</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sour</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Sweet</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Umami</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; text-align: center; padding: 5px;\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center;\">Your choice</td>\n</tr>\n</tbody>\n</table>",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              2,
-              "contents",
-              0,
-              "rollMessage"
-            ],
-            "lhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n<table style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>",
-            "rhs": "<h2>Rolls a ${[1d6]}$ for ingredient taste.</h2>\n\n</hr>\n\n\n<table class=\"pc_chat_card\" style=\"width: 93.0939%; height: 133px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 9.12816%;\"><col style=\"width: 90.8718%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; background-color: rgb(22, 145, 121); text-align: center; height: 17px; padding: 5px; border-color: rgb(236, 240, 241);\" colspan=\"2\"><strong>Ingredient Taste</strong></td>\n</tr>\n<tr style=\"height: 31px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 31px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">\n<p>1</p>\n</td>\n<td style=\"height: 31px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Bitter</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">2</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Salty</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">3</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sour</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">4</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Sweet</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">5</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Umami</td>\n</tr>\n<tr style=\"height: 17px; background-color: rgb(191, 237, 210);\">\n<td style=\"color: white; height: 17px; text-align: center; padding: 5px; border-color: rgb(236, 240, 241); background-color: rgb(22, 145, 121);\">6</td>\n<td style=\"height: 17px; padding: 5px; text-align: center; border-color: rgb(236, 240, 241);\">Your choice</td>\n</tr>\n</tbody>\n</table>"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -13495,6 +13423,110 @@
               }
             }
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "defaultValue"
+            ],
+            "lhs": "<table style=\"width: 100%;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td><strong>Trigger Name</strong></td>\n<td>&nbsp;Trigger name</td>\n</tr>\n<tr>\n<td><strong>Filled Sections</strong></td>\n<td>&nbsp;X per trigger</td>\n</tr>\n</tbody>\n</table>\n<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td>Zero trigger description here</td>\n</tr>\n</tbody>\n</table>",
+            "rhs": "<table style=\"width: 100%; border-width: 1px;\" border=\"1\"><colgroup><col style=\"width: 33.0756%;\"><col style=\"width: 66.9244%;\"></colgroup>\n<tbody>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Trigger Name</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;Trigger name&gt;</td>\n</tr>\n<tr>\n<td style=\"color: white; background-color: rgb(224, 62, 45); padding: 5px;\"><strong>Filled Sections</strong></td>\n<td style=\"background-color: rgb(248, 202, 198); padding: 5px;\">&nbsp;&lt;X per trigger&gt;</td>\n</tr>\n</tbody>\n</table>\n<table style=\"width: 100%; height: 17px;\" border=\"1\"><colgroup><col style=\"width: 99.7908%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"background-color: rgb(248, 202, 198); height: 17px;\">&lt;Zero trigger description here&gt;</td>\n</tr>\n</tbody>\n</table>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "contents",
+              1,
+              "contents",
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "defaultValue"
+            ],
+            "lhs": "<p>Zero effect description here.</p>",
+            "rhs": "<table border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"background-color: rgb(248, 202, 198);\">&lt;Zero effect description here&gt;</td>\n</tr>\n</tbody>\n</table>"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              2,
+              "contents",
+              0,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "contents",
+              1,
+              "contents",
+              0,
+              0,
+              "defaultValue"
+            ],
+            "lhs": "",
+            "rhs": "<table style=\"border-width: 1px; background-color: rgb(248, 202, 198);\" border=\"1\"><colgroup><col></colgroup>\n<tbody>\n<tr>\n<td style=\"padding: 5px;\">\n<blockquote><em>&lt;Quirk description here&gt;</em></blockquote>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&lt;Quirk effects here&gt;</p>"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -13629,7 +13661,7 @@
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1687192833609,
-    "modifiedTime": 1699729785294,
+    "modifiedTime": 1699731940766,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
