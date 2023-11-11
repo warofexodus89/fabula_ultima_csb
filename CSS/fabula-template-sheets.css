@@ -29,10 +29,13 @@
 
 /* PC gray table color */
 .alt_background {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
+.alt_background_left {border-left:1px solid #854A4A;}
+.alt_background_right {border-right:1px solid #854A4A;}
 .alt_background > table {margin-top: 0px; margin-bottom: 0px;}
 
 /* Table styling */
 .table_style > table {border:0px;margin-top:0px; margin-bottom:0px; padding:0px;}
+.table_style > table > tbody > tr > td {padding-left:0px}
 .border-right > table {border-right: 1px solid #854A4A;}
 .border-left > table {border-left: 1px solid #854A4A;}
 
@@ -40,7 +43,7 @@
 .alt_background_ritual {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
 .section-border { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 10px; margin-top: 0px}
 .verses-section { border-top: 2px solid #854A4A; border-bottom: 2px solid #854A4A; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px; margin-bottom: 5px}
-.section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;}
+.section-border-light {background-color: rgba(255, 255, 255, 0.2); margin-top: 0px; margin-bottom: 0px;padding-top: 5px; padding-bottom: 5px;}
 .ritual-section-header > table {border:0px; border-right: 1px solid #854A4A; background: rgba(0, 0, 0, 0.05); margin:0px;}
 
 /* Project section */
@@ -57,6 +60,33 @@
 /* Buff/Debuff section styling  */
 .label-styling {border: 2px solid #854A4A;background: #F1E4CA;}
 .margin-bottom > table {margin-bottom: 0px;}
+
+
+/* Mechanic mounting button styling  */
+.mech_button input[type="checkbox"] {
+	width: 265px;
+    height: 62px;
+    flex: 0 0 265px;
+    appearance: initial;
+    background: url(https://i.imgur.com/SXaWQe2.png);
+    background-size: cover;
+    box-shadow: none;
+    cursor: pointer;
+ }
+
+.mech_button input[type="checkbox"]:checked {
+	width: 265px;
+    height: 62px;
+    flex: 0 0 265px;
+    appearance: initial;
+    background: url(https://i.imgur.com/t75TCRB.png) !important;
+    background-size: cover !important;
+    -webkit-filter: none !important;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
 
 /* ------------- NPC Sheet styling -------------  */
 
@@ -106,6 +136,7 @@
 .damage_chat_card {text-align: center; padding-right: 5px;}
 
 
+
 /* Solid border */
 hr.solid {
   border-top: 3px solid #854A4A;
@@ -125,7 +156,7 @@ hr.solid {
 }
 
 table td:first-child {
-	padding-left:0px;
+	padding-left:5px;
 }
 
 .table tr:nth-child(even) {
@@ -185,6 +216,11 @@ input[type="checkbox"] {
 	margin: 20px 2%;
 	box-shadow: none;
 
+}
+
+
+.cinzel {
+	font-family: 'Cinzel', cursive;
 }
 
 .charname {

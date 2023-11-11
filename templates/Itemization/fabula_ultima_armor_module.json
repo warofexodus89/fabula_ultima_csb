@@ -1,7 +1,7 @@
 {
-  "name": "_Armor",
+  "name": "_Armor Module",
   "type": "_equippableItemTemplate",
-  "img": "icons/svg/statue.svg",
+  "img": "icons/svg/aura.svg",
   "system": {
     "hidden": [],
     "header": {
@@ -1788,8 +1788,8 @@
       "width": "730",
       "height": "700",
       "fix_size": false,
-      "pp_width": "300",
-      "pp_height": "300"
+      "pp_width": "200",
+      "pp_height": "200"
     },
     "modifiers": [
       {
@@ -6650,10 +6650,10 @@
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.1",
-    "coreVersion": "11.307",
+    "systemVersion": "3.0.0",
+    "coreVersion": "11.314",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692805724114,
+    "modifiedTime": 1699524111503,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
