@@ -12476,8 +12476,8 @@
                             "type": "panel"
                           },
                           {
-                            "key": "others",
-                            "cssClass": "font-color",
+                            "key": "",
+                            "cssClass": "",
                             "role": "0",
                             "permission": "0",
                             "tooltip": "",
@@ -12486,121 +12486,242 @@
                             "defaultValue": null,
                             "size": "full-size",
                             "icon": "",
-                            "value": "<i class=\"fa-solid fa-backpack\"> Others</i>",
+                            "value": "",
                             "prefix": "",
                             "suffix": "",
                             "rollMessage": "",
                             "altRollMessage": "",
-                            "style": "bold",
+                            "style": "label",
                             "type": "label"
                           },
                           {
-                            "key": "backpack_table",
-                            "cssClass": "alt_background",
+                            "key": "",
+                            "cssClass": "nav_item_header_bar",
                             "role": "0",
                             "permission": "0",
                             "tooltip": "",
                             "visibilityFormula": "",
-                            "rowLayout": [
+                            "contents": [
                               {
-                                "key": "price",
-                                "cssClass": "font-color",
+                                "key": "items",
+                                "cssClass": null,
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
                                 "visibilityFormula": "",
-                                "label": null,
-                                "defaultValue": null,
-                                "size": "medium",
-                                "icon": "",
-                                "value": "${item.item_price}$ Zenit",
-                                "prefix": "",
-                                "suffix": "",
-                                "rollMessage": "",
-                                "altRollMessage": "",
-                                "style": "label",
-                                "type": "label",
-                                "align": "center",
-                                "colName": "Value"
+                                "contents": [
+                                  {
+                                    "key": "backpack_table",
+                                    "cssClass": "alt_background",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "rowLayout": [
+                                      {
+                                        "key": "quantity",
+                                        "cssClass": "font-color",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": null,
+                                        "defaultValue": null,
+                                        "size": "small",
+                                        "icon": "",
+                                        "value": "${item.quantity}$",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "rollMessage": "",
+                                        "altRollMessage": "",
+                                        "style": "label",
+                                        "type": "label",
+                                        "align": "center",
+                                        "colName": "Quantity"
+                                      },
+                                      {
+                                        "key": "price",
+                                        "cssClass": "font-color",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": null,
+                                        "defaultValue": null,
+                                        "size": "medium",
+                                        "icon": "",
+                                        "value": "${item.item_price}$ Zenit",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "rollMessage": "",
+                                        "altRollMessage": "",
+                                        "style": "label",
+                                        "type": "label",
+                                        "align": "center",
+                                        "colName": "Value"
+                                      },
+                                      {
+                                        "key": "item_desc",
+                                        "cssClass": "font-color",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": null,
+                                        "defaultValue": null,
+                                        "size": "full-size",
+                                        "icon": "",
+                                        "value": "${item.item_details}$",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "rollMessage": "",
+                                        "altRollMessage": "",
+                                        "style": "label",
+                                        "type": "label",
+                                        "align": "left",
+                                        "colName": "Description"
+                                      },
+                                      {
+                                        "key": "roll",
+                                        "cssClass": "",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": null,
+                                        "defaultValue": null,
+                                        "size": "full-size",
+                                        "icon": "dice",
+                                        "value": "",
+                                        "prefix": "",
+                                        "suffix": "",
+                                        "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
+                                        "altRollMessage": "",
+                                        "style": "label",
+                                        "type": "label",
+                                        "align": "right",
+                                        "colName": ""
+                                      }
+                                    ],
+                                    "head": true,
+                                    "deleteWarning": true,
+                                    "title": "",
+                                    "hideEmpty": false,
+                                    "headDisplay": true,
+                                    "showDelete": true,
+                                    "statusIcon": false,
+                                    "nameAlign": "left",
+                                    "nameLabel": "Name",
+                                    "templateFilter": [
+                                      "BGqsiduGyVp8a28W"
+                                    ],
+                                    "itemFilter": [],
+                                    "type": "itemContainer"
+                                  }
+                                ],
+                                "name": "Items",
+                                "type": "tab"
                               },
                               {
-                                "key": "item_desc",
-                                "cssClass": "font-color",
+                                "key": "misc",
+                                "cssClass": null,
                                 "role": "0",
                                 "permission": "0",
                                 "tooltip": "",
                                 "visibilityFormula": "",
-                                "label": null,
-                                "defaultValue": null,
-                                "size": "full-size",
-                                "icon": "",
-                                "value": "${item.item_details}$",
-                                "prefix": "",
-                                "suffix": "",
-                                "rollMessage": "",
-                                "altRollMessage": "",
-                                "style": "label",
-                                "type": "label",
-                                "align": "left",
-                                "colName": "Description"
-                              },
-                              {
-                                "key": "quality",
-                                "cssClass": "font-color",
-                                "role": "0",
-                                "permission": "0",
-                                "tooltip": "",
-                                "visibilityFormula": "",
-                                "label": null,
-                                "defaultValue": null,
-                                "size": "full-size",
-                                "icon": "",
-                                "value": "${item.item_effect}$",
-                                "prefix": "",
-                                "suffix": "",
-                                "rollMessage": "",
-                                "altRollMessage": "",
-                                "style": "label",
-                                "type": "label",
-                                "align": "left",
-                                "colName": "Quality"
-                              },
-                              {
-                                "key": "roll",
-                                "cssClass": "",
-                                "role": "0",
-                                "permission": "0",
-                                "tooltip": "",
-                                "visibilityFormula": "",
-                                "label": null,
-                                "defaultValue": null,
-                                "size": "full-size",
-                                "icon": "dice",
-                                "value": "",
-                                "prefix": "",
-                                "suffix": "",
-                                "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
-                                "altRollMessage": "",
-                                "style": "label",
-                                "type": "label",
-                                "align": "right",
-                                "colName": ""
+                                "contents": [
+                                  {
+                                    "key": "misc_table",
+                                    "cssClass": "alt_background",
+                                    "role": "0",
+                                    "permission": "0",
+                                    "tooltip": "",
+                                    "visibilityFormula": "",
+                                    "rowLayout": [
+                                      {
+                                        "key": "item_name",
+                                        "cssClass": "",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": "",
+                                        "defaultValue": "",
+                                        "size": "m-large",
+                                        "charList": "",
+                                        "maxLength": "",
+                                        "type": "textField",
+                                        "align": "center",
+                                        "colName": "Item Name"
+                                      },
+                                      {
+                                        "key": "desc",
+                                        "cssClass": "",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": "",
+                                        "defaultValue": "",
+                                        "size": null,
+                                        "style": "dialog",
+                                        "type": "textArea",
+                                        "align": "left",
+                                        "colName": "Description"
+                                      },
+                                      {
+                                        "key": "value",
+                                        "cssClass": "",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": "",
+                                        "defaultValue": "0",
+                                        "size": "small",
+                                        "allowDecimal": false,
+                                        "minVal": "0",
+                                        "maxVal": "",
+                                        "allowRelative": false,
+                                        "showControls": true,
+                                        "controlsStyle": "hover",
+                                        "type": "numberField",
+                                        "align": "center",
+                                        "colName": "Value (Zenith)"
+                                      },
+                                      {
+                                        "key": "quantity",
+                                        "cssClass": "",
+                                        "role": "0",
+                                        "permission": "0",
+                                        "tooltip": "",
+                                        "visibilityFormula": "",
+                                        "label": "",
+                                        "defaultValue": "1",
+                                        "size": "small",
+                                        "allowDecimal": false,
+                                        "minVal": "1",
+                                        "maxVal": "",
+                                        "allowRelative": false,
+                                        "showControls": true,
+                                        "controlsStyle": "hover",
+                                        "type": "numberField",
+                                        "align": "center",
+                                        "colName": "Quantity"
+                                      }
+                                    ],
+                                    "head": true,
+                                    "deleteWarning": true,
+                                    "predefinedLines": [],
+                                    "canPlayerAdd": true,
+                                    "type": "dynamicTable"
+                                  }
+                                ],
+                                "name": "Others",
+                                "type": "tab"
                               }
                             ],
-                            "head": true,
-                            "deleteWarning": true,
-                            "title": "",
-                            "hideEmpty": false,
-                            "headDisplay": true,
-                            "showDelete": true,
-                            "statusIcon": false,
-                            "nameAlign": "left",
-                            "nameLabel": "Name",
-                            "templateFilter": [
-                              "BGqsiduGyVp8a28W"
-                            ],
-                            "itemFilter": [],
-                            "type": "itemContainer"
+                            "type": "tabbedPanel"
                           }
                         ],
                         "flow": "vertical",
@@ -13167,7 +13288,7 @@
       ]
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 1889019987
+    "templateSystemUniqueVersion": 1756530651
   },
   "flags": {
     "custom-system-builder": {
@@ -13184,20 +13305,20 @@
               0,
               0,
               "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               6,
-              "key"
+              "contents",
+              3,
+              "contents",
+              4,
+              "cssClass"
             ],
-            "lhs": "taste3",
-            "rhs": "roll"
-          },
+            "lhs": "nav_item_header_bar > nav",
+            "rhs": "nav_item_header_bar"
+          }
+        ],
+        [
           {
-            "kind": "E",
+            "kind": "A",
             "path": [
               "body",
               "contents",
@@ -13206,174 +13327,244 @@
               0,
               0,
               "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               6,
-              "label"
+              "contents",
+              3,
+              "contents"
             ],
-            "lhs": "",
-            "rhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "defaultValue"
-            ],
-            "lhs": "",
-            "rhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "options"
-            ],
-            "lhs": [
-              {
-                "key": "SAL",
-                "value": "Salty"
-              },
-              {
-                "key": "SWE",
-                "value": "Sweet"
+            "index": 4,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "",
+                "cssClass": "nav_item_header_bar",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "important",
+                    "cssClass": null,
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "backpack_table",
+                        "cssClass": "alt_background",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "rowLayout": [
+                          {
+                            "key": "quantity",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "small",
+                            "icon": "",
+                            "value": "${item.quantity}$",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label",
+                            "align": "center",
+                            "colName": "Quantity"
+                          },
+                          {
+                            "key": "price",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "${item.item_price}$ Zenit",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label",
+                            "align": "center",
+                            "colName": "Value"
+                          },
+                          {
+                            "key": "item_desc",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "full-size",
+                            "icon": "",
+                            "value": "${item.item_details}$",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label",
+                            "align": "left",
+                            "colName": "Description"
+                          },
+                          {
+                            "key": "roll",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "full-size",
+                            "icon": "dice",
+                            "value": "",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label",
+                            "align": "right",
+                            "colName": ""
+                          }
+                        ],
+                        "head": true,
+                        "deleteWarning": true,
+                        "title": "",
+                        "hideEmpty": false,
+                        "headDisplay": true,
+                        "showDelete": true,
+                        "statusIcon": false,
+                        "nameAlign": "left",
+                        "nameLabel": "Name",
+                        "templateFilter": [
+                          "BGqsiduGyVp8a28W"
+                        ],
+                        "itemFilter": [],
+                        "type": "itemContainer"
+                      }
+                    ],
+                    "name": "Important items",
+                    "type": "tab"
+                  },
+                  {
+                    "key": "misc",
+                    "cssClass": null,
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "misc_table",
+                        "cssClass": "alt_background",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "rowLayout": [
+                          {
+                            "key": "item_name",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": "",
+                            "size": "full-size",
+                            "charList": "",
+                            "maxLength": "",
+                            "type": "textField",
+                            "align": "left",
+                            "colName": "Item Name"
+                          },
+                          {
+                            "key": "desc",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": "",
+                            "size": null,
+                            "style": "dialog",
+                            "type": "textArea",
+                            "align": "left",
+                            "colName": "Description"
+                          },
+                          {
+                            "key": "value",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": "0",
+                            "size": "full-size",
+                            "allowDecimal": false,
+                            "minVal": "0",
+                            "maxVal": "",
+                            "allowRelative": false,
+                            "showControls": true,
+                            "controlsStyle": "hover",
+                            "type": "numberField",
+                            "align": "left",
+                            "colName": "Value (Zenith)"
+                          },
+                          {
+                            "key": "quantity",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": "1",
+                            "size": "full-size",
+                            "allowDecimal": false,
+                            "minVal": "1",
+                            "maxVal": "",
+                            "allowRelative": false,
+                            "showControls": true,
+                            "controlsStyle": "hover",
+                            "type": "numberField",
+                            "align": "center",
+                            "colName": "Quantity"
+                          }
+                        ],
+                        "head": true,
+                        "deleteWarning": true,
+                        "predefinedLines": [],
+                        "canPlayerAdd": true,
+                        "type": "dynamicTable"
+                      }
+                    ],
+                    "name": "Misc. items",
+                    "type": "tab"
+                  }
+                ],
+                "type": "tabbedPanel"
               }
-            ]
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "tableKey"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "tableKeyColumn"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "tableLabelColumn"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "formulaKeyOptions"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "formulaLabelOptions"
-            ],
-            "lhs": null
+            }
           },
           {
             "kind": "E",
@@ -13385,20 +13576,18 @@
               0,
               0,
               "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               6,
-              "type"
+              "contents",
+              3,
+              "contents",
+              3,
+              "cssClass"
             ],
-            "lhs": "select",
-            "rhs": "label"
+            "lhs": "",
+            "rhs": "nav_item_header_bar"
           },
           {
-            "kind": "E",
+            "kind": "D",
             "path": [
               "body",
               "contents",
@@ -13407,233 +13596,17 @@
               0,
               0,
               "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               6,
-              "align"
-            ],
-            "lhs": "left",
-            "rhs": "right"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
               "contents",
-              2,
+              3,
               "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "colName"
-            ],
-            "lhs": "Taste 3",
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "icon"
-            ],
-            "rhs": "dice"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "value"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "prefix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "suffix"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "rollMessage"
-            ],
-            "rhs": "<h2>Cooks <i class=\"fa-solid fa-pan-frying\"> </i> ${!sameRow('del_name')}$!</h2>\n\n</hr>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-utensils\"><b> Delicacy Effects</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "altRollMessage"
-            ],
-            "rhs": ""
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              6,
-              "style"
-            ],
-            "rhs": "label"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "key"
-            ],
-            "lhs": "roll",
-            "rhs": "taste3"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "label"
             ],
-            "lhs": null,
-            "rhs": ""
+            "lhs": null
           },
           {
-            "kind": "E",
+            "kind": "D",
             "path": [
               "body",
               "contents",
@@ -13642,17 +13615,14 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "defaultValue"
             ],
-            "lhs": null,
-            "rhs": ""
+            "lhs": null
           },
           {
             "kind": "D",
@@ -13664,16 +13634,33 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
+              "size"
+            ],
+            "lhs": "full-size"
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              3,
               "icon"
             ],
-            "lhs": "dice"
+            "lhs": ""
           },
           {
             "kind": "D",
@@ -13685,13 +13672,11 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "value"
             ],
             "lhs": ""
@@ -13706,13 +13691,11 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "prefix"
             ],
             "lhs": ""
@@ -13727,13 +13710,11 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "suffix"
             ],
             "lhs": ""
@@ -13748,16 +13729,14 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "rollMessage"
             ],
-            "lhs": "<h2>Cooks <i class=\"fa-solid fa-pan-frying\"> </i> ${!sameRow('del_name')}$!</h2>\n\n</hr>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-utensils\"><b> Delicacy Effects</b></i></p>\n\n<table class=\"pc_chat_card\">\n  <tr>\n    <td>${!string(sameRow('description'))}$</td>\n  </tr>\n</table>"
+            "lhs": ""
           },
           {
             "kind": "D",
@@ -13769,13 +13748,11 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "altRollMessage"
             ],
             "lhs": ""
@@ -13790,13 +13767,11 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "style"
             ],
             "lhs": "label"
@@ -13811,61 +13786,15 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              3,
               "type"
             ],
             "lhs": "label",
-            "rhs": "select"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "align"
-            ],
-            "lhs": "right",
-            "rhs": "left"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "colName"
-            ],
-            "lhs": "",
-            "rhs": "Taste 3"
+            "rhs": "tabbedPanel"
           },
           {
             "kind": "N",
@@ -13877,134 +13806,235 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
-              "options"
+              3,
+              "contents"
             ],
             "rhs": [
               {
-                "key": "SAL",
-                "value": "Salty"
+                "key": "important",
+                "cssClass": null,
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "backpack_table",
+                    "cssClass": "alt_background",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "rowLayout": [
+                      {
+                        "key": "quantity",
+                        "cssClass": "font-color",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "small",
+                        "icon": "",
+                        "value": "${item.quantity}$",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label",
+                        "align": "center",
+                        "colName": "Quantity"
+                      },
+                      {
+                        "key": "price",
+                        "cssClass": "font-color",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "medium",
+                        "icon": "",
+                        "value": "${item.item_price}$ Zenit",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label",
+                        "align": "center",
+                        "colName": "Value"
+                      },
+                      {
+                        "key": "item_desc",
+                        "cssClass": "font-color",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "",
+                        "value": "${item.item_details}$",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label",
+                        "align": "left",
+                        "colName": "Description"
+                      },
+                      {
+                        "key": "roll",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "full-size",
+                        "icon": "dice",
+                        "value": "",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
+                        "altRollMessage": "",
+                        "style": "label",
+                        "type": "label",
+                        "align": "right",
+                        "colName": ""
+                      }
+                    ],
+                    "head": true,
+                    "deleteWarning": true,
+                    "title": "",
+                    "hideEmpty": false,
+                    "headDisplay": true,
+                    "showDelete": true,
+                    "statusIcon": false,
+                    "nameAlign": "left",
+                    "nameLabel": "Name",
+                    "templateFilter": [
+                      "BGqsiduGyVp8a28W"
+                    ],
+                    "itemFilter": [],
+                    "type": "itemContainer"
+                  }
+                ],
+                "name": "Important items",
+                "type": "tab"
               },
               {
-                "key": "SWE",
-                "value": "Sweet"
+                "key": "misc",
+                "cssClass": null,
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "misc_table",
+                    "cssClass": "alt_background",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "rowLayout": [
+                      {
+                        "key": "item_name",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "",
+                        "size": "full-size",
+                        "charList": "",
+                        "maxLength": "",
+                        "type": "textField",
+                        "align": "left",
+                        "colName": "Item Name"
+                      },
+                      {
+                        "key": "desc",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "",
+                        "size": null,
+                        "style": "dialog",
+                        "type": "textArea",
+                        "align": "left",
+                        "colName": "Description"
+                      },
+                      {
+                        "key": "value",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "0",
+                        "size": "full-size",
+                        "allowDecimal": false,
+                        "minVal": "0",
+                        "maxVal": "",
+                        "allowRelative": false,
+                        "showControls": true,
+                        "controlsStyle": "hover",
+                        "type": "numberField",
+                        "align": "left",
+                        "colName": "Value (Zenith)"
+                      },
+                      {
+                        "key": "quantity",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "label": "",
+                        "defaultValue": "1",
+                        "size": "full-size",
+                        "allowDecimal": false,
+                        "minVal": "1",
+                        "maxVal": "",
+                        "allowRelative": false,
+                        "showControls": true,
+                        "controlsStyle": "hover",
+                        "type": "numberField",
+                        "align": "center",
+                        "colName": "Quantity"
+                      }
+                    ],
+                    "head": true,
+                    "deleteWarning": true,
+                    "predefinedLines": [],
+                    "canPlayerAdd": true,
+                    "type": "dynamicTable"
+                  }
+                ],
+                "name": "Misc. items",
+                "type": "tab"
               }
             ]
           },
           {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableKey"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableKeyColumn"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableLabelColumn"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "formulaKeyOptions"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "formulaLabelOptions"
-            ],
-            "rhs": null
-          }
-        ],
-        [
-          {
             "kind": "E",
             "path": [
               "body",
@@ -14014,304 +14044,14 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              5,
+              2,
               "key"
             ],
-            "lhs": "taste3",
-            "rhs": "description"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "defaultValue"
-            ],
-            "lhs": "",
-            "rhs": "<table style=\"width: 100%; height: 68px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 44.7887%;\"><col style=\"width: 55.2113%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; height: 17px; background-color: rgb(22, 145, 121); border-color: rgb(236, 240, 241); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; text-align: center;\" colspan=\"2\">Effects</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210); padding: 5px;\" colspan=\"2\">&nbsp;</td>\n</tr>\n</tbody>\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "options"
-            ],
-            "lhs": [
-              {
-                "key": "SAL",
-                "value": "Salty"
-              },
-              {
-                "key": "SWE",
-                "value": "Sweet"
-              }
-            ]
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableKey"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableKeyColumn"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "tableLabelColumn"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "formulaKeyOptions"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "formulaLabelOptions"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "type"
-            ],
-            "lhs": "select",
-            "rhs": "textArea"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "colName"
-            ],
-            "lhs": "Taste 3",
-            "rhs": "Description"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              5,
-              "style"
-            ],
-            "rhs": "dialog"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "key"
-            ],
-            "lhs": "description",
-            "rhs": "taste3"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "defaultValue"
-            ],
-            "lhs": "<table style=\"width: 100%; height: 68px; border-width: 1px; border-color: rgb(236, 240, 241);\" border=\"1\"><colgroup><col style=\"width: 44.7887%;\"><col style=\"width: 55.2113%;\"></colgroup>\n<tbody>\n<tr style=\"height: 17px;\">\n<td style=\"color: white; height: 17px; background-color: rgb(22, 145, 121); border-color: rgb(236, 240, 241); padding-top: 5px; padding-right: 5px; padding-bottom: 5px; text-align: center;\" colspan=\"2\">Effects</td>\n</tr>\n<tr style=\"height: 17px;\">\n<td style=\"height: 17px; border-color: rgb(236, 240, 241); background-color: rgb(191, 237, 210); padding: 5px;\" colspan=\"2\">&nbsp;</td>\n</tr>\n</tbody>\n</table>",
+            "lhs": "others",
             "rhs": ""
           },
           {
@@ -14324,20 +14064,18 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              4,
-              "size"
+              2,
+              "cssClass"
             ],
-            "lhs": null,
-            "rhs": "full-size"
+            "lhs": "font-color",
+            "rhs": ""
           },
           {
-            "kind": "D",
+            "kind": "E",
             "path": [
               "body",
               "contents",
@@ -14346,255 +14084,39 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              4,
+              2,
+              "value"
+            ],
+            "lhs": "<i class=\"fa-solid fa-backpack\"> Others</i>",
+            "rhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              2,
               "style"
             ],
-            "lhs": "dialog"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "type"
-            ],
-            "lhs": "textArea",
-            "rhs": "select"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "colName"
-            ],
-            "lhs": "Description",
-            "rhs": "Taste 3"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "options"
-            ],
-            "rhs": [
-              {
-                "key": "SAL",
-                "value": "Salty"
-              },
-              {
-                "key": "SWE",
-                "value": "Sweet"
-              }
-            ]
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "tableKey"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "tableKeyColumn"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "tableLabelColumn"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "formulaKeyOptions"
-            ],
-            "rhs": null
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "formulaLabelOptions"
-            ],
-            "rhs": null
+            "lhs": "bold",
+            "rhs": "label"
           }
         ],
         [
           {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "options"
-            ],
-            "index": 3,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "SWE",
-                "value": "Sweet"
-              }
-            }
-          },
-          {
-            "kind": "A",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "options"
-            ],
-            "index": 2,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "SOU",
-                "value": "Sour"
-              }
-            }
-          },
-          {
             "kind": "E",
             "path": [
               "body",
@@ -14604,96 +14126,26 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
-              "rowLayout",
-              4,
-              "options",
+              3,
+              "contents",
               1,
-              "key"
-            ],
-            "lhs": "SWE",
-            "rhs": "SAL"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
               "contents",
               0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
               "rowLayout",
-              4,
-              "options",
-              1,
-              "value"
-            ],
-            "lhs": "Sweet",
-            "rhs": "Salty"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
               2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "options",
-              0,
-              "key"
+              "size"
             ],
-            "lhs": "SAL",
-            "rhs": "BIT"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "options",
-              0,
-              "value"
-            ],
-            "lhs": "Salty",
-            "rhs": "Bitter"
+            "lhs": "full-size",
+            "rhs": "m-small"
           }
         ],
         [
           {
-            "kind": "A",
+            "kind": "E",
             "path": [
               "body",
               "contents",
@@ -14702,23 +14154,49 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
               "rowLayout",
-              4,
-              "options"
+              3,
+              "size"
             ],
-            "index": 4,
-            "item": {
-              "kind": "N",
-              "rhs": {
-                "key": "UMA",
-                "value": "Umami"
-              }
-            }
+            "lhs": "full-size",
+            "rhs": "small"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "rowLayout",
+              2,
+              "size"
+            ],
+            "lhs": "m-small",
+            "rhs": "small"
           },
           {
             "kind": "E",
@@ -14730,13 +14208,17 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
               "rowLayout",
-              4,
+              2,
               "align"
             ],
             "lhs": "left",
@@ -14754,113 +14236,21 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              4,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": "small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               3,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": "small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
               "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              2,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": "small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
-              2,
-              "size"
-            ],
-            "lhs": "small",
-            "rhs": "m-small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              4,
-              "contents",
-              11,
-              "contents",
-              4,
-              "rowLayout",
               3,
+              "contents",
+              1,
+              "contents",
+              0,
+              "rowLayout",
+              0,
               "size"
             ],
-            "lhs": "small",
-            "rhs": "m-small"
+            "lhs": "full-size",
+            "rhs": "m-large"
           }
         ],
         [
@@ -14874,19 +14264,94 @@
               0,
               0,
               "contents",
-              4,
+              6,
               "contents",
-              11,
+              3,
               "contents",
-              4,
+              3,
+              "contents",
+              1,
+              "contents",
+              0,
               "rowLayout",
-              4,
-              "size"
+              0,
+              "align"
             ],
-            "lhs": "small",
-            "rhs": "m-small"
+            "lhs": "left",
+            "rhs": "center"
           }
-        ]
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              3,
+              "contents",
+              0,
+              "key"
+            ],
+            "lhs": "important",
+            "rhs": "items"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              3,
+              "contents",
+              0,
+              "name"
+            ],
+            "lhs": "Important items",
+            "rhs": "Items"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              6,
+              "contents",
+              3,
+              "contents",
+              3,
+              "contents",
+              1,
+              "name"
+            ],
+            "lhs": "Misc. items",
+            "rhs": "Others"
+          }
+        ],
+        null
       ],
       "templateHistoryRedo": []
     },
@@ -15020,7 +14485,7 @@
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1687192833609,
-    "modifiedTime": 1699732542045,
+    "modifiedTime": 1700533159347,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

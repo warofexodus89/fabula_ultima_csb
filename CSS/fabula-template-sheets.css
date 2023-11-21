@@ -26,6 +26,17 @@
 .tab_content > table { border: 0px solid #4C0F0F; background: #F1E4CA; color:#854A4A; margin-left: 0px; margin-right: 0px; padding: 0px;}
 .hidding-mod-atr {color:#F1E4CA;}
 
+/* Item page tab stylings */
+.nav_item_header_bar > nav { 
+	font-weight: 900; 
+	font-family: "Font Awesome 6 Pro"; 
+	-webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    color:#854A4A;
+}
 
 /* PC gray table color */
 .alt_background {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
@@ -124,6 +135,11 @@
 .item_alt_background {background : #fafffa; border-top:1px solid #279123; border-bottom:1px solid #279123; margin-top: 10px; margin-bottom: 10px; color:#022e00;}
 .item_alt_background > table {margin-top: 0px; margin-bottom: 0px; color:#022e00;}
 .item_no_padding > select {padding:0px}
+
+/* ------------- Item Sheet styling -------------  */
+.contact_background {background : #ffe8e6; border-top:1px solid #e03e2d; border-bottom:1px solid #e03e2d; margin-top: 10px; margin-bottom: 10px; color:#9e1408;}
+.contact_background > table {margin-top: 0px; margin-bottom: 0px; color:#9e1408;}
+.contact_padding > select {padding:0px}
 
 /* ------------- Chat Sheet styling -------------  */
 
