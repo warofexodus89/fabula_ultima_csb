@@ -682,7 +682,7 @@
                     "defaultValue": null,
                     "size": "full-size",
                     "icon": "fa-solid fa-shield",
-                    "value": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + ref('mod_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$",
+                    "value": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + ref('mod_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true)) + sum(fetchFromDynamicTable('weapon_mod_table', 'custom_weapon_def', 'is_equipped', true))}$",
                     "prefix": "Defense: ",
                     "suffix": "",
                     "rollMessage": "",
@@ -701,7 +701,7 @@
                     "defaultValue": null,
                     "size": "full-size",
                     "icon": "fa-solid fa-shield-halved",
-                    "value": "${(is_basemdef ? 0 : ref('ins_current'))+ ref('skillmdef_mod')+ ref('mod_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
+                    "value": "${(is_basemdef ? 0 : ref('ins_current'))+ ref('skillmdef_mod')+ ref('mod_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true)) + sum(fetchFromDynamicTable('weapon_mod_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
                     "prefix": "Magic defense: ",
                     "suffix": "",
                     "rollMessage": "",
@@ -13285,15 +13285,135 @@
           "formula": "2",
           "description": ""
         }
+      ],
+      "actLastFU": [],
+      "bondFU": [],
+      "lightningTrapFU": [],
+      "stuffedDexFU": [],
+      "stuffedInsFU": [],
+      "stuffedMigFU": [],
+      "stuffedWlpFU": [],
+      "targetFU": [],
+      "veilFU": [],
+      "satietyDexFU": [
+        {
+          "id": "zBldz0Nz8L8lDVvg",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "dex_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": "Your Dexterity is improved!"
+        }
+      ],
+      "satietyMigFU": [
+        {
+          "id": "bDpuHiRa6HAbeUrb",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "mig_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satietyInsFU": [
+        {
+          "id": "BmoHBGywl5PBJ159",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "ins_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satietyWlpFU": [
+        {
+          "id": "XXZc7YJKUpmMyVCS",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "wlp_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satedDexFU": [
+        {
+          "id": "08zYyFIXgyrfQRhl",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "dex_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satedInsFU": [
+        {
+          "id": "46RBEIE8FBNNyIJL",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "ins_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satedMigFU": [
+        {
+          "id": "P1j8LnJcQwAIFke1",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "mig_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
+      ],
+      "satedWlpFU": [
+        {
+          "id": "bi5OxsKstphLEIrC",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "wlp_mod",
+          "operator": "add",
+          "formula": "2",
+          "description": ""
+        }
       ]
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 1756530651
+    "templateSystemUniqueVersion": 3259834937
   },
   "flags": {
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 6,
+            "item": {
+              "kind": "N",
+              "rhs": "Food Buff (DEX)"
+            }
+          }
+        ],
         [
           {
             "kind": "E",
@@ -13305,15 +13425,13 @@
               0,
               0,
               "contents",
-              6,
+              7,
               "contents",
-              3,
-              "contents",
-              4,
-              "cssClass"
+              0,
+              "infoDisplay"
             ],
-            "lhs": "nav_item_header_bar > nav",
-            "rhs": "nav_item_header_bar"
+            "lhs": false,
+            "rhs": true
           }
         ],
         [
@@ -13327,242 +13445,716 @@
               0,
               0,
               "contents",
-              6,
+              7,
               "contents",
-              3,
-              "contents"
+              0,
+              "groupFilter"
+            ],
+            "index": 6,
+            "item": {
+              "kind": "D",
+              "lhs": "Food Buff (DEX)"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 5,
+            "item": {
+              "kind": "D",
+              "lhs": "Enraged"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
             ],
             "index": 4,
             "item": {
               "kind": "D",
+              "lhs": "Poisoned"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 3,
+            "item": {
+              "kind": "D",
+              "lhs": "Shaken"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "D",
+              "lhs": "Weak"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "D",
+              "lhs": "Dazed"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 0,
+            "item": {
+              "kind": "D",
+              "lhs": "Slow"
+            }
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "key"
+            ],
+            "lhs": "",
+            "rhs": "food_buff"
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 0,
+            "item": {
+              "kind": "N",
+              "rhs": "Food Buff (DEX)"
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": "Food Buff (DEX)"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter",
+              0
+            ],
+            "lhs": "Food Buff (DEX)",
+            "rhs": "test"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 6,
+            "item": {
+              "kind": "N",
+              "rhs": "Food Buff (DEX)"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 5,
+            "item": {
+              "kind": "N",
+              "rhs": "Enraged"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 4,
+            "item": {
+              "kind": "N",
+              "rhs": "Poisoned"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 3,
+            "item": {
+              "kind": "N",
+              "rhs": "Shaken"
+            }
+          },
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter"
+            ],
+            "index": 2,
+            "item": {
+              "kind": "N",
+              "rhs": "Weak"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter",
+              1
+            ],
+            "lhs": "Food Buff (DEX)",
+            "rhs": "Dazed"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents",
+              0,
+              "groupFilter",
+              0
+            ],
+            "lhs": "test",
+            "rhs": "Slow"
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              7,
+              "contents"
+            ],
+            "index": 0,
+            "item": {
+              "kind": "D",
               "lhs": {
-                "key": "",
-                "cssClass": "nav_item_header_bar",
+                "key": "food_buff",
+                "cssClass": "",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
                 "visibilityFormula": "",
+                "rowLayout": [],
+                "head": true,
+                "deleteWarning": false,
+                "headDisplay": true,
+                "infoDisplay": true,
+                "selectionLabel": "Selected",
+                "selectionAlign": "left",
+                "groupLabel": "Active Effects",
+                "groupAlign": "left",
+                "groupFilter": [
+                  "Slow",
+                  "Dazed",
+                  "Weak",
+                  "Shaken",
+                  "Poisoned",
+                  "Enraged",
+                  "Food Buff (DEX)"
+                ],
+                "groupFilterFormula": "",
+                "type": "conditionalModifierList"
+              }
+            }
+          }
+        ],
+        [
+          {
+            "kind": "A",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents"
+            ],
+            "index": 8,
+            "item": {
+              "kind": "D",
+              "lhs": {
+                "key": "settings",
+                "cssClass": null,
+                "role": "0",
+                "permission": "0",
+                "tooltip": "Tab visibility settings",
+                "visibilityFormula": "",
                 "contents": [
                   {
-                    "key": "important",
-                    "cssClass": null,
+                    "key": "",
+                    "cssClass": "alt_background_ritual",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
                     "visibilityFormula": "",
                     "contents": [
                       {
-                        "key": "backpack_table",
-                        "cssClass": "alt_background",
+                        "key": "",
+                        "cssClass": "font-color",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
                         "visibilityFormula": "",
-                        "rowLayout": [
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "medium",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-gears\"> Tab Visibility</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "bold",
+                        "type": "label"
+                      },
+                      {
+                        "key": "",
+                        "cssClass": "section-border-light ",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
                           {
-                            "key": "quantity",
-                            "cssClass": "font-color",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": null,
-                            "defaultValue": null,
-                            "size": "small",
-                            "icon": "",
-                            "value": "${item.quantity}$",
-                            "prefix": "",
-                            "suffix": "",
-                            "rollMessage": "",
-                            "altRollMessage": "",
-                            "style": "label",
-                            "type": "label",
-                            "align": "center",
-                            "colName": "Quantity"
-                          },
-                          {
-                            "key": "price",
-                            "cssClass": "font-color",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": null,
-                            "defaultValue": null,
-                            "size": "medium",
-                            "icon": "",
-                            "value": "${item.item_price}$ Zenit",
-                            "prefix": "",
-                            "suffix": "",
-                            "rollMessage": "",
-                            "altRollMessage": "",
-                            "style": "label",
-                            "type": "label",
-                            "align": "center",
-                            "colName": "Value"
-                          },
-                          {
-                            "key": "item_desc",
-                            "cssClass": "font-color",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": null,
-                            "defaultValue": null,
-                            "size": "full-size",
-                            "icon": "",
-                            "value": "${item.item_details}$",
-                            "prefix": "",
-                            "suffix": "",
-                            "rollMessage": "",
-                            "altRollMessage": "",
-                            "style": "label",
-                            "type": "label",
-                            "align": "left",
-                            "colName": "Description"
-                          },
-                          {
-                            "key": "roll",
+                            "key": "",
                             "cssClass": "",
                             "role": "0",
                             "permission": "0",
                             "tooltip": "",
                             "visibilityFormula": "",
-                            "label": null,
-                            "defaultValue": null,
-                            "size": "full-size",
-                            "icon": "dice",
-                            "value": "",
-                            "prefix": "",
-                            "suffix": "",
-                            "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
-                            "altRollMessage": "",
-                            "style": "label",
-                            "type": "label",
-                            "align": "right",
-                            "colName": ""
+                            "contents": [
+                              {
+                                "key": "",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "Quirks are an advanced optional rule that provides strong thematic and mechanical options for Player Characters.",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "medium",
+                                "icon": "",
+                                "value": "<i class=\"fa-solid fa-scroll-old\"> Optional Rules</i>",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label"
+                              },
+                              {
+                                "key": "isOptional",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": null,
+                                "size": "x-small",
+                                "type": "checkbox",
+                                "defaultChecked": false
+                              }
+                            ],
+                            "flow": "horizontal",
+                            "align": "center",
+                            "type": "panel"
+                          },
+                          {
+                            "key": "",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "contents": [
+                              {
+                                "key": "",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "medium",
+                                "icon": "",
+                                "value": "<i class=\"fa-solid fa-star-of-david\"> Spells & Rituals</i>",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label"
+                              },
+                              {
+                                "key": "isSpells",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": null,
+                                "size": "x-small",
+                                "type": "checkbox",
+                                "defaultChecked": true
+                              }
+                            ],
+                            "flow": "horizontal",
+                            "align": "center",
+                            "type": "panel"
+                          },
+                          {
+                            "key": "",
+                            "cssClass": "",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "contents": [
+                              {
+                                "key": "",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "medium",
+                                "icon": "",
+                                "value": "<i class=\"fa-solid fa-hand-holding-magic\"> Class features</i>",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label"
+                              },
+                              {
+                                "key": "isClassFeatures",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": null,
+                                "size": "x-small",
+                                "type": "checkbox",
+                                "defaultChecked": true
+                              }
+                            ],
+                            "flow": "horizontal",
+                            "align": "center",
+                            "type": "panel"
                           }
                         ],
-                        "head": true,
-                        "deleteWarning": true,
-                        "title": "",
-                        "hideEmpty": false,
-                        "headDisplay": true,
-                        "showDelete": true,
-                        "statusIcon": false,
-                        "nameAlign": "left",
-                        "nameLabel": "Name",
-                        "templateFilter": [
-                          "BGqsiduGyVp8a28W"
-                        ],
-                        "itemFilter": [],
-                        "type": "itemContainer"
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
                       }
                     ],
-                    "name": "Important items",
-                    "type": "tab"
+                    "flow": "horizontal",
+                    "align": "center",
+                    "type": "panel"
                   },
                   {
-                    "key": "misc",
-                    "cssClass": null,
+                    "key": "",
+                    "cssClass": "alt_background_ritual",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
                     "visibilityFormula": "",
                     "contents": [
                       {
-                        "key": "misc_table",
-                        "cssClass": "alt_background",
+                        "key": "",
+                        "cssClass": "font-color",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
                         "visibilityFormula": "",
-                        "rowLayout": [
+                        "label": null,
+                        "defaultValue": null,
+                        "size": "medium",
+                        "icon": "",
+                        "value": "<i class=\"fa-solid fa-scroll\"> Alternate Rulings</i>",
+                        "prefix": "",
+                        "suffix": "",
+                        "rollMessage": "",
+                        "altRollMessage": "",
+                        "style": "bold",
+                        "type": "label"
+                      },
+                      {
+                        "key": "",
+                        "cssClass": "section-border-light ",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
                           {
-                            "key": "item_name",
+                            "key": "",
                             "cssClass": "",
                             "role": "0",
                             "permission": "0",
                             "tooltip": "",
                             "visibilityFormula": "",
-                            "label": "",
-                            "defaultValue": "",
-                            "size": "full-size",
-                            "charList": "",
-                            "maxLength": "",
-                            "type": "textField",
-                            "align": "left",
-                            "colName": "Item Name"
-                          },
-                          {
-                            "key": "desc",
-                            "cssClass": "",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": "",
-                            "defaultValue": "",
-                            "size": null,
-                            "style": "dialog",
-                            "type": "textArea",
-                            "align": "left",
-                            "colName": "Description"
-                          },
-                          {
-                            "key": "value",
-                            "cssClass": "",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": "",
-                            "defaultValue": "0",
-                            "size": "full-size",
-                            "allowDecimal": false,
-                            "minVal": "0",
-                            "maxVal": "",
-                            "allowRelative": false,
-                            "showControls": true,
-                            "controlsStyle": "hover",
-                            "type": "numberField",
-                            "align": "left",
-                            "colName": "Value (Zenith)"
-                          },
-                          {
-                            "key": "quantity",
-                            "cssClass": "",
-                            "role": "0",
-                            "permission": "0",
-                            "tooltip": "",
-                            "visibilityFormula": "",
-                            "label": "",
-                            "defaultValue": "1",
-                            "size": "full-size",
-                            "allowDecimal": false,
-                            "minVal": "1",
-                            "maxVal": "",
-                            "allowRelative": false,
-                            "showControls": true,
-                            "controlsStyle": "hover",
-                            "type": "numberField",
+                            "contents": [
+                              {
+                                "key": "",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "Quirks are an advanced optional rule that provides strong thematic and mechanical options for Player Characters.",
+                                "visibilityFormula": "",
+                                "label": null,
+                                "defaultValue": null,
+                                "size": "medium",
+                                "icon": "",
+                                "value": "<i class=\"fa-solid fa-diamond-half-stroke\"> Alternate Arcanist Rulings</i>",
+                                "prefix": "",
+                                "suffix": "",
+                                "rollMessage": "",
+                                "altRollMessage": "",
+                                "style": "label",
+                                "type": "label"
+                              },
+                              {
+                                "key": "isAltArcRule",
+                                "cssClass": "font-color",
+                                "role": "0",
+                                "permission": "0",
+                                "tooltip": "",
+                                "visibilityFormula": "",
+                                "label": "",
+                                "defaultValue": null,
+                                "size": "x-small",
+                                "type": "checkbox",
+                                "defaultChecked": false
+                              }
+                            ],
+                            "flow": "horizontal",
                             "align": "center",
-                            "colName": "Quantity"
+                            "type": "panel"
                           }
                         ],
-                        "head": true,
-                        "deleteWarning": true,
-                        "predefinedLines": [],
-                        "canPlayerAdd": true,
-                        "type": "dynamicTable"
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
                       }
                     ],
-                    "name": "Misc. items",
-                    "type": "tab"
+                    "flow": "horizontal",
+                    "align": "center",
+                    "type": "panel"
                   }
                 ],
-                "type": "tabbedPanel"
+                "name": "⚙️",
+                "type": "tab"
               }
             }
           },
@@ -13576,18 +14168,30 @@
               0,
               0,
               "contents",
-              6,
+              7,
+              "key"
+            ],
+            "lhs": "effect",
+            "rhs": "settings"
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
               "contents",
-              3,
+              2,
               "contents",
-              3,
-              "cssClass"
+              0,
+              0,
+              "contents",
+              7,
+              "tooltip"
             ],
             "lhs": "",
-            "rhs": "nav_item_header_bar"
+            "rhs": "Tab visibility settings"
           },
           {
-            "kind": "D",
+            "kind": "A",
             "path": [
               "body",
               "contents",
@@ -13596,446 +14200,106 @@
               0,
               0,
               "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "label"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "defaultValue"
-            ],
-            "lhs": null
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "size"
-            ],
-            "lhs": "full-size"
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "icon"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "value"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "prefix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "suffix"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "rollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "altRollMessage"
-            ],
-            "lhs": ""
-          },
-          {
-            "kind": "D",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "style"
-            ],
-            "lhs": "label"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "type"
-            ],
-            "lhs": "label",
-            "rhs": "tabbedPanel"
-          },
-          {
-            "kind": "N",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
+              7,
               "contents"
             ],
-            "rhs": [
-              {
-                "key": "important",
-                "cssClass": null,
+            "index": 1,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "alt_background_ritual",
                 "role": "0",
                 "permission": "0",
                 "tooltip": "",
                 "visibilityFormula": "",
                 "contents": [
                   {
-                    "key": "backpack_table",
-                    "cssClass": "alt_background",
+                    "key": "",
+                    "cssClass": "font-color",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
                     "visibilityFormula": "",
-                    "rowLayout": [
-                      {
-                        "key": "quantity",
-                        "cssClass": "font-color",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": null,
-                        "defaultValue": null,
-                        "size": "small",
-                        "icon": "",
-                        "value": "${item.quantity}$",
-                        "prefix": "",
-                        "suffix": "",
-                        "rollMessage": "",
-                        "altRollMessage": "",
-                        "style": "label",
-                        "type": "label",
-                        "align": "center",
-                        "colName": "Quantity"
-                      },
-                      {
-                        "key": "price",
-                        "cssClass": "font-color",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": null,
-                        "defaultValue": null,
-                        "size": "medium",
-                        "icon": "",
-                        "value": "${item.item_price}$ Zenit",
-                        "prefix": "",
-                        "suffix": "",
-                        "rollMessage": "",
-                        "altRollMessage": "",
-                        "style": "label",
-                        "type": "label",
-                        "align": "center",
-                        "colName": "Value"
-                      },
-                      {
-                        "key": "item_desc",
-                        "cssClass": "font-color",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": null,
-                        "defaultValue": null,
-                        "size": "full-size",
-                        "icon": "",
-                        "value": "${item.item_details}$",
-                        "prefix": "",
-                        "suffix": "",
-                        "rollMessage": "",
-                        "altRollMessage": "",
-                        "style": "label",
-                        "type": "label",
-                        "align": "left",
-                        "colName": "Description"
-                      },
-                      {
-                        "key": "roll",
-                        "cssClass": "",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": null,
-                        "defaultValue": null,
-                        "size": "full-size",
-                        "icon": "dice",
-                        "value": "",
-                        "prefix": "",
-                        "suffix": "",
-                        "rollMessage": "<h2>Uses <i class=\"fa-solid fa-sack\"> </i> ${!string(item.name)}$!</h2>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-star-of-david\"><b> Quality</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_effect)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:center;\"><i class=\"fa-solid fa-scroll\"><b> Description</b></i></p>\n<table class=\"item_chat_card\"> \n\n<tr>\n  \n  <td>\n    <span>\n      ${!string(item.item_details)}$\n    </span>\n  </td>\n</tr>\n\n</table>\n\n<p style=\"text-align:right;\"><i class=\"fa-solid fa-coin\"><b> Value: </b></i> ${!string(item.item_price)}$ Zenit</p>",
-                        "altRollMessage": "",
-                        "style": "label",
-                        "type": "label",
-                        "align": "right",
-                        "colName": ""
-                      }
-                    ],
-                    "head": true,
-                    "deleteWarning": true,
-                    "title": "",
-                    "hideEmpty": false,
-                    "headDisplay": true,
-                    "showDelete": true,
-                    "statusIcon": false,
-                    "nameAlign": "left",
-                    "nameLabel": "Name",
-                    "templateFilter": [
-                      "BGqsiduGyVp8a28W"
-                    ],
-                    "itemFilter": [],
-                    "type": "itemContainer"
-                  }
-                ],
-                "name": "Important items",
-                "type": "tab"
-              },
-              {
-                "key": "misc",
-                "cssClass": null,
-                "role": "0",
-                "permission": "0",
-                "tooltip": "",
-                "visibilityFormula": "",
-                "contents": [
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "medium",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-scroll\"> Alternate Rulings</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "bold",
+                    "type": "label"
+                  },
                   {
-                    "key": "misc_table",
-                    "cssClass": "alt_background",
+                    "key": "",
+                    "cssClass": "section-border-light ",
                     "role": "0",
                     "permission": "0",
                     "tooltip": "",
                     "visibilityFormula": "",
-                    "rowLayout": [
+                    "contents": [
                       {
-                        "key": "item_name",
+                        "key": "",
                         "cssClass": "",
                         "role": "0",
                         "permission": "0",
                         "tooltip": "",
                         "visibilityFormula": "",
-                        "label": "",
-                        "defaultValue": "",
-                        "size": "full-size",
-                        "charList": "",
-                        "maxLength": "",
-                        "type": "textField",
-                        "align": "left",
-                        "colName": "Item Name"
-                      },
-                      {
-                        "key": "desc",
-                        "cssClass": "",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": "",
-                        "defaultValue": "",
-                        "size": null,
-                        "style": "dialog",
-                        "type": "textArea",
-                        "align": "left",
-                        "colName": "Description"
-                      },
-                      {
-                        "key": "value",
-                        "cssClass": "",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": "",
-                        "defaultValue": "0",
-                        "size": "full-size",
-                        "allowDecimal": false,
-                        "minVal": "0",
-                        "maxVal": "",
-                        "allowRelative": false,
-                        "showControls": true,
-                        "controlsStyle": "hover",
-                        "type": "numberField",
-                        "align": "left",
-                        "colName": "Value (Zenith)"
-                      },
-                      {
-                        "key": "quantity",
-                        "cssClass": "",
-                        "role": "0",
-                        "permission": "0",
-                        "tooltip": "",
-                        "visibilityFormula": "",
-                        "label": "",
-                        "defaultValue": "1",
-                        "size": "full-size",
-                        "allowDecimal": false,
-                        "minVal": "1",
-                        "maxVal": "",
-                        "allowRelative": false,
-                        "showControls": true,
-                        "controlsStyle": "hover",
-                        "type": "numberField",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "Quirks are an advanced optional rule that provides strong thematic and mechanical options for Player Characters.",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-diamond-half-stroke\"> Alternate Arcanist Rulings</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label"
+                          },
+                          {
+                            "key": "isAltArcRule",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": null,
+                            "size": "x-small",
+                            "type": "checkbox",
+                            "defaultChecked": false
+                          }
+                        ],
+                        "flow": "horizontal",
                         "align": "center",
-                        "colName": "Quantity"
+                        "type": "panel"
                       }
                     ],
-                    "head": true,
-                    "deleteWarning": true,
-                    "predefinedLines": [],
-                    "canPlayerAdd": true,
-                    "type": "dynamicTable"
+                    "flow": "horizontal",
+                    "align": "center",
+                    "type": "panel"
                   }
                 ],
-                "name": "Misc. items",
-                "type": "tab"
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
               }
-            ]
+            }
           },
           {
-            "kind": "E",
+            "kind": "A",
             "path": [
               "body",
               "contents",
@@ -14044,15 +14308,193 @@
               0,
               0,
               "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              2,
-              "key"
+              7,
+              "contents"
             ],
-            "lhs": "others",
-            "rhs": ""
+            "index": 0,
+            "item": {
+              "kind": "N",
+              "rhs": {
+                "key": "",
+                "cssClass": "alt_background_ritual",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "contents": [
+                  {
+                    "key": "",
+                    "cssClass": "font-color",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "label": null,
+                    "defaultValue": null,
+                    "size": "medium",
+                    "icon": "",
+                    "value": "<i class=\"fa-solid fa-gears\"> Tab Visibility</i>",
+                    "prefix": "",
+                    "suffix": "",
+                    "rollMessage": "",
+                    "altRollMessage": "",
+                    "style": "bold",
+                    "type": "label"
+                  },
+                  {
+                    "key": "",
+                    "cssClass": "section-border-light ",
+                    "role": "0",
+                    "permission": "0",
+                    "tooltip": "",
+                    "visibilityFormula": "",
+                    "contents": [
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "Quirks are an advanced optional rule that provides strong thematic and mechanical options for Player Characters.",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-scroll-old\"> Optional Rules</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label"
+                          },
+                          {
+                            "key": "isOptional",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": null,
+                            "size": "x-small",
+                            "type": "checkbox",
+                            "defaultChecked": false
+                          }
+                        ],
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
+                      },
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-star-of-david\"> Spells & Rituals</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label"
+                          },
+                          {
+                            "key": "isSpells",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": null,
+                            "size": "x-small",
+                            "type": "checkbox",
+                            "defaultChecked": true
+                          }
+                        ],
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
+                      },
+                      {
+                        "key": "",
+                        "cssClass": "",
+                        "role": "0",
+                        "permission": "0",
+                        "tooltip": "",
+                        "visibilityFormula": "",
+                        "contents": [
+                          {
+                            "key": "",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "Zero Powers are an optional rule designed for stories in which Player Characters unleash incredible strength when cornered.",
+                            "visibilityFormula": "",
+                            "label": null,
+                            "defaultValue": null,
+                            "size": "medium",
+                            "icon": "",
+                            "value": "<i class=\"fa-solid fa-hand-holding-magic\"> Class features</i>",
+                            "prefix": "",
+                            "suffix": "",
+                            "rollMessage": "",
+                            "altRollMessage": "",
+                            "style": "label",
+                            "type": "label"
+                          },
+                          {
+                            "key": "isClassFeatures",
+                            "cssClass": "font-color",
+                            "role": "0",
+                            "permission": "0",
+                            "tooltip": "",
+                            "visibilityFormula": "",
+                            "label": "",
+                            "defaultValue": null,
+                            "size": "x-small",
+                            "type": "checkbox",
+                            "defaultChecked": true
+                          }
+                        ],
+                        "flow": "horizontal",
+                        "align": "center",
+                        "type": "panel"
+                      }
+                    ],
+                    "flow": "horizontal",
+                    "align": "center",
+                    "type": "panel"
+                  }
+                ],
+                "flow": "horizontal",
+                "align": "center",
+                "type": "panel"
+              }
+            }
           },
           {
             "kind": "E",
@@ -14064,55 +14506,29 @@
               0,
               0,
               "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              2,
-              "cssClass"
+              7,
+              "name"
             ],
-            "lhs": "font-color",
-            "rhs": ""
-          },
+            "lhs": "Active Effects",
+            "rhs": "⚙️"
+          }
+        ],
+        [
           {
             "kind": "E",
             "path": [
               "body",
               "contents",
-              2,
+              1,
               "contents",
               0,
               0,
               "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              2,
+              1,
               "value"
             ],
-            "lhs": "<i class=\"fa-solid fa-backpack\"> Others</i>",
-            "rhs": ""
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              2,
-              "style"
-            ],
-            "lhs": "bold",
-            "rhs": "label"
+            "lhs": "${(is_basemdef ? 0 : ref('ins_current'))+ ref('skillmdef_mod')+ ref('mod_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
+            "rhs": "${(is_basemdef ? 0 : ref('ins_current'))+ ref('skillmdef_mod')+ ref('mod_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true)) + sum(fetchFromDynamicTable('weapon_mod_table', 'custom_weapon_mdef', 'is_equipped', true))}$"
           }
         ],
         [
@@ -14121,237 +14537,18 @@
             "path": [
               "body",
               "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
               1,
               "contents",
               0,
-              "rowLayout",
-              2,
-              "size"
+              0,
+              "contents",
+              0,
+              "value"
             ],
-            "lhs": "full-size",
-            "rhs": "m-small"
+            "lhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + ref('mod_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$",
+            "rhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('skilldef_mod') + ref('mod_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true)) + sum(fetchFromDynamicTable('weapon_mod_table', 'custom_weapon_def', 'is_equipped', true))}$"
           }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "rowLayout",
-              3,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": "small"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "rowLayout",
-              2,
-              "size"
-            ],
-            "lhs": "m-small",
-            "rhs": "small"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "rowLayout",
-              2,
-              "align"
-            ],
-            "lhs": "left",
-            "rhs": "center"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "rowLayout",
-              0,
-              "size"
-            ],
-            "lhs": "full-size",
-            "rhs": "m-large"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "contents",
-              0,
-              "rowLayout",
-              0,
-              "align"
-            ],
-            "lhs": "left",
-            "rhs": "center"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              0,
-              "key"
-            ],
-            "lhs": "important",
-            "rhs": "items"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              0,
-              "name"
-            ],
-            "lhs": "Important items",
-            "rhs": "Items"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              2,
-              "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              3,
-              "contents",
-              3,
-              "contents",
-              1,
-              "name"
-            ],
-            "lhs": "Misc. items",
-            "rhs": "Others"
-          }
-        ],
-        null
+        ]
       ],
       "templateHistoryRedo": []
     },
@@ -14431,61 +14628,14 @@
     "prependAdjective": false
   },
   "items": [],
-  "effects": [
-    {
-      "name": "Slow",
-      "icon": "worlds/fabula-ultima-as-above-so-below/images/Icons/Status/Status%20Icon/WoFF/WoFF_Slow_Icon.webp",
-      "statuses": [
-        "slowFU"
-      ],
-      "_id": "CXMcYnYOGCHRkqXg",
-      "changes": [],
-      "disabled": false,
-      "duration": {
-        "startTime": 0,
-        "seconds": null,
-        "combat": null,
-        "rounds": null,
-        "turns": null,
-        "startRound": 0,
-        "startTurn": 0
-      },
-      "description": "<p>Temporarily reduces your Dexterity die size by one.</p>",
-      "origin": null,
-      "transfer": false,
-      "flags": {
-        "dae": {
-          "specialDuration": [],
-          "transfer": false,
-          "showIcon": true
-        },
-        "ActiveAuras": {
-          "isAura": false,
-          "aura": "None",
-          "radius": "",
-          "alignment": "",
-          "type": "",
-          "ignoreSelf": false,
-          "height": false,
-          "hidden": false,
-          "displayTemp": false,
-          "hostile": false,
-          "onlyOnce": false
-        },
-        "core": {
-          "sheetClass": "core.ActiveEffectConfig"
-        }
-      },
-      "tint": null
-    }
-  ],
+  "effects": [],
   "folder": "8RkbLPOQ6QdaLBSi",
   "_stats": {
     "systemId": "custom-system-builder",
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1687192833609,
-    "modifiedTime": 1700533159347,
+    "modifiedTime": 1700671636638,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
