@@ -134,7 +134,8 @@
 /* ------------- Item Sheet styling -------------  */
 .item_alt_background {background : #fafffa; border-top:1px solid #279123; border-bottom:1px solid #279123; margin-top: 10px; margin-bottom: 10px; color:#022e00;}
 .item_alt_background > table {margin-top: 0px; margin-bottom: 0px; color:#022e00;}
-.item_no_padding > select {padding:0px}
+.item_alt_background > table > tbody > tr > td:first-child {padding-right:10px;}
+.item_no_padding > select {padding:0px} 
 
 /* ------------- Item Sheet styling -------------  */
 .contact_background {background : #ffe8e6; border-top:1px solid #e03e2d; border-bottom:1px solid #e03e2d; margin-top: 10px; margin-bottom: 10px; color:#9e1408;}
@@ -166,6 +167,9 @@ hr.solid {
 	border: none;
 }
 
+.custom-system-dynamic-table-row-icons {
+	padding-right: 10px;
+}
 
 .table td {
 	padding-left:0px;

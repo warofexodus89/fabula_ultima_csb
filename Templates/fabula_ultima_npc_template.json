@@ -645,7 +645,7 @@
                     "defaultValue": null,
                     "size": "full-size",
                     "icon": "fa-solid fa-shield",
-                    "value": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('mod_def') + ref('bonus_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$\n\n",
+                    "value": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('mod_def') + ref('bonus_def') + sum(fetchFromDynamicTable('equip_table', 'custom_weapon_def', 'is_equipped', true))}$\n\n",
                     "prefix": "Defense: ",
                     "suffix": "",
                     "rollMessage": "",
@@ -664,7 +664,7 @@
                     "defaultValue": null,
                     "size": "full-size",
                     "icon": "fa-solid fa-shield-halved",
-                    "value": "${ref('ins_current')+ ref('mod_mdef') + ref('bonus_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
+                    "value": "${ref('ins_current')+ ref('mod_mdef') + ref('bonus_mdef') + sum(fetchFromDynamicTable('equip_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
                     "prefix": "Magic defense: ",
                     "suffix": "",
                     "rollMessage": "",
@@ -4999,98 +4999,140 @@
     "activeEffects": {
       "slowFU": [
         {
+          "id": "9qnvTeFNxGnqAmJy",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "dex_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "GRf5F24SX9wBw2g1",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isSlow",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Slow</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Slow</i>",
+          "description": ""
         }
       ],
       "dazedFU": [
         {
+          "id": "Bt9BAXgfXsleUaxq",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "ins_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "COqLoHUCftQ0yeDY",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isDazed",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Dazed</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Dazed</i>",
+          "description": ""
         }
       ],
       "weakFU": [
         {
+          "id": "wvwVwoZZGOoo6t2C",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "mig_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "CcxJYXjHpK2vw4kz",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isWeak",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Weak</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Weak</i>",
+          "description": ""
         }
       ],
       "shakenFU": [
         {
+          "id": "pMsgUiVC1Zvgxl8i",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "wlp_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "JYCXlWq94vK2oull",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isShaken",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Shaken</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Shaken</i>",
+          "description": ""
         }
       ],
       "poisonedFU": [
         {
+          "id": "OjF47QMBOsWiHdK9",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "mig_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "pV5GvcCae6eBeBOR",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "wlp_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "jMiIdJzp9qK1mkwP",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isPoisoned",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Poisoned</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Poisoned</i>",
+          "description": ""
         }
       ],
       "enragedFU": [
         {
+          "id": "biSutShBdfio82Nx",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "dex_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "xUUQwISBQyILjxYk",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "ins_mod",
           "operator": "add",
-          "formula": "-2"
+          "formula": "-2",
+          "description": ""
         },
         {
+          "id": "ii3TVXry6bDKIBYe",
+          "conditionalGroup": "",
           "priority": 0,
           "key": "isEnraged",
           "operator": "set",
-          "formula": "<i class=\"fa-solid fa-square-check\"> Enraged</i>"
+          "formula": "<i class=\"fa-solid fa-square-check\"> Enraged</i>",
+          "description": ""
         }
       ],
       "accelerateFU": [],
@@ -5102,62 +5144,45 @@
       "fireVulFU": [],
       "sleepFU": [],
       "confuseFU": [],
-      "refreshedInsFU": []
+      "refreshedInsFU": [],
+      "accDownFU": [],
+      "accUpFU": [
+        {
+          "id": "YemC1WRYVKxP87Cd",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "mod_acc",
+          "operator": "add",
+          "formula": "3",
+          "description": ""
+        },
+        {
+          "id": "H3IHHUpQIFJ6Pt2A",
+          "conditionalGroup": "",
+          "priority": 0,
+          "key": "mod_mcheck",
+          "operator": "add",
+          "formula": "3",
+          "description": ""
+        }
+      ],
+      "actLastFU": [],
+      "bondFU": [],
+      "dexUpFU": [],
+      "insUpFU": [],
+      "lightningTrapFU": [],
+      "migUpFU": [],
+      "targetFU": [],
+      "veilFU": [],
+      "wlpUpFU": []
     },
     "activeConditionalModifierGroups": [],
-    "templateSystemUniqueVersion": 3872175781
+    "templateSystemUniqueVersion": 874020355
   },
   "flags": {
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        null,
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "rollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'background-color:rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'background-color:rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'background-color:rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'background-color:rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'background-color:rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'background-color:rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'background-color:rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'background-color:rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'background-color:rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'transparent':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'; background-image: linear-gradient(to left, violet, indigo, blue, green, burlywood, orange, brown, red); -webkit-background-clip: text;':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'fa-meteor':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n    <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"> </i>${!string(sameRow('main_hand'))}$! </h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$</p>\n<p><b>${!string(sameRow('main_attrib_2'))}$ </b>: ${D2:=[1d:dice2:]}$</p>\n${#HR:=max(D1, D2)}$\n\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: ${HR}$ + ${sameRow('weapon1_damage')}$ </strong></p> \n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'background-color:rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'background-color:rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'background-color:rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'background-color:rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'background-color:rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'background-color:rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'background-color:rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'background-color:rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'background-color:rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'transparent':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'; background-image: linear-gradient(to left, violet, indigo, blue, green, burlywood, orange, brown, red); -webkit-background-clip: text;':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'fa-meteor':element_icon}$\n\n<div style=\"text-align: center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n     \n<div style=\"text-align: center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n    <tr style=\"background-color:${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(HR+sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n</table>"
-          },
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              3,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "contents",
-              1,
-              "rowLayout",
-              12,
-              "altRollMessage"
-            ],
-            "lhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n${#target:= fetchFromActor('target',\"name\", '') }$\n${#targetRandom:=[#Nic and co.]}$\n\n<h2>Attacks ${!equalText(string(target),'') == true ?  targetRandom : target }$ with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'background-color:rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'background-color:rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'background-color:rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'background-color:rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'background-color:rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'background-color:rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'background-color:rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'background-color:rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'background-color:rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'transparent':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'background-image: linear-gradient(to left, violet, indigo, blue, green, burlywood, orange, brown, red); -webkit-background-clip: text;':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'fa-meteor':element_icon}$\n\n<div style=\"text-align:center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n\n<div style=\"text-align:center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>",
-            "rhs": "${#word:=sameRow('is_ranged')?'fa-bow-arrow':'fa-swords'}$\n\n<h2>Attacks with <i class=\"fa-solid ${!string(word)}$\"></i> ${!string(sameRow('main_hand'))}$  using two-weapon fighting!&nbsp;</h2>\n\n<p>\n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'INS') == true and isZero(dice1) == true ? ref('ins_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'MIG') == true and isZero(dice1) == true ? ref('mig_current') : dice1}$ \n${#dice1:= equalText(string(sameRow('main_attrib_1')) ,'WLP') == true and isZero(dice1) == true ? ref('wlp_current') : dice1}$ \n\n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'DEX') == true ? ref('dex_current') : 0}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'INS') == true and isZero(dice2) == true ? ref('ins_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'MIG') == true and isZero(dice2) == true ? ref('mig_current') : dice2}$ \n${#dice2:= equalText(string(sameRow('main_attrib_2')) ,'WLP') == true and isZero(dice2) == true ? ref('wlp_current') : dice2}$\n\n<p><b>${!string(sameRow('main_attrib_1'))}$</b>: ${D1:=[1d:dice1:]}$ </p> <p><b>${!string(sameRow('main_attrib_2'))}$</b>: ${D2:=[1d:dice2:]}$</p>\n\n<h4>\n<p><strong>Attack Roll: ${D1+D2+sameRow('weapon1_mod')+ref('mod_acc')}$ HR: 0 + ${sameRow('weapon1_damage')}$ </strong></p> \n<strong>\n\n\n${#element:= ''}$\n${#element_bg:= ''}$\n${#element_icon:= ''}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'#2493e0':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'background-color:rgba(21, 137, 232, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ICE') == true ?'fa-snowflake':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'#EA1518':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'background-color:rgba(235, 124, 21, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'FIR') == true ?'fa-fire':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'#359e31':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'background-color:rgba(155, 230, 25, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'AIR') == true ?'fa-wind':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'#EBFB04':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'background-color:rgba(232, 88, 23, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'BOL') == true ?'fa-bolt':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'#BEA141':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'background-color:rgba(239, 231, 16, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'EAR') == true ?'fa-mountains':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'#ffffff':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'background-color:rgba(0, 0, 0, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'LIG') == true ?'fa-sun':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'#000000':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'background-color:rgba(255, 255, 255, 0.70)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'DAR') == true ?'fa-moon-stars':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'#bd16b7':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'background-color:rgba(210, 104, 255, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'POI') == true ?'fa-skull-crossbones':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'#948b84':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'background-color:rgba(168, 161, 155, 0.4)':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'PHY') == true ?'fa-sword':element_icon}$\n\n${#element:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'transparent':element}$\n${#element_bg:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'background-image: linear-gradient(to left, violet, indigo, blue, green, burlywood, orange, brown, red); -webkit-background-clip: text;':element_bg}$\n${#element_icon:=equalText(string(sameRow('weapon1_damagetype')) ,'ALM') == true ?'fa-meteor':element_icon}$\n\n<div style=\"text-align:center; color:green; font-size: 1.75em; font-weight: bolder\">\n  <strong>${! largerEq(D1, 6) and D1 == D2 ? string('CRITICAL!!!'): string('')}$ </strong>\n</div>\n\n<div style=\"text-align:center; color:red; font-size: 1.75em; font-weight: bolder\">\n  <strong>${!D1 == D2 and D1 == 1 ? string('MISS!!!'): string('')}$ </strong>\n</div>\n\n<table>\n  <tr style=\"${!string(element_bg)}$;\">\n    <td class=\"damage_chat_card\"><span class=\"fa-solid\" style=\"color:${!string(element)}$; font-size: 2.25em; font-weight: bolder\"><em><strong> <i class=\"fa-solid ${!string(element_icon)}$\"></i> ${!string(sameRow('weapon1_damage'))}$ </strong><span style=\"font-size: 0.75em; font-weight: bolder\"><strong> damage! </strong></span></em></span></td>\n  </tr>\n\n\n</table>"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -5437,6 +5462,42 @@
             "lhs": "",
             "rhs": " <i class=\"fa-solid fa-circle-question\"></i>"
           }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              0,
+              "value"
+            ],
+            "lhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('mod_def') + ref('bonus_def') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_def', 'is_equipped', true))}$\n\n",
+            "rhs": "${(is_martialarmor ? 0 : ref('dex_current')) + ref('mod_def') + ref('bonus_def') + sum(fetchFromDynamicTable('equip_table', 'custom_weapon_def', 'is_equipped', true))}$\n\n"
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              0,
+              0,
+              "contents",
+              1,
+              "value"
+            ],
+            "lhs": "${ref('ins_current')+ ref('mod_mdef') + ref('bonus_mdef') + sum(fetchFromDynamicTable('equipment_table', 'custom_weapon_mdef', 'is_equipped', true))}$",
+            "rhs": "${ref('ins_current')+ ref('mod_mdef') + ref('bonus_mdef') + sum(fetchFromDynamicTable('equip_table', 'custom_weapon_mdef', 'is_equipped', true))}$"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -5582,7 +5643,7 @@
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1687192833754,
-    "modifiedTime": 1700467817352,
+    "modifiedTime": 1702053510396,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
