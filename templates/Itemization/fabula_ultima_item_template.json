@@ -111,9 +111,13 @@
                     "label": "",
                     "defaultValue": "0",
                     "size": "small",
-                    "charList": "",
-                    "maxLength": "",
-                    "type": "textField"
+                    "allowDecimal": false,
+                    "minVal": "0",
+                    "maxVal": "",
+                    "allowRelative": false,
+                    "showControls": true,
+                    "controlsStyle": "hover",
+                    "type": "numberField"
                   }
                 ],
                 "flow": "horizontal",
@@ -253,10 +257,10 @@
       "width": "600",
       "height": "600",
       "fix_size": false,
-      "pp_width": "64",
-      "pp_height": "64"
+      "pp_width": "200",
+      "pp_height": "200"
     },
-    "templateSystemUniqueVersion": 4098394714
+    "templateSystemUniqueVersion": 621224295
   },
   "effects": [],
   "flags": {
@@ -266,19 +270,6 @@
     "custom-system-builder": {
       "version": "2.3.1",
       "templateHistory": [
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              1,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_alt_background"
-          }
-        ],
         [
           {
             "kind": "E",
@@ -557,6 +548,144 @@
             "lhs": "item_price",
             "rhs": "quantity"
           }
+        ],
+        [
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "charList"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "D",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "maxLength"
+            ],
+            "lhs": ""
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "type"
+            ],
+            "lhs": "textField",
+            "rhs": "numberField"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "allowDecimal"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "minVal"
+            ],
+            "rhs": "0"
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "maxVal"
+            ],
+            "rhs": ""
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "allowRelative"
+            ],
+            "rhs": false
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "showControls"
+            ],
+            "rhs": true
+          },
+          {
+            "kind": "N",
+            "path": [
+              "body",
+              "contents",
+              0,
+              "contents",
+              0,
+              1,
+              "contents",
+              1,
+              "controlsStyle"
+            ],
+            "rhs": "hover"
+          }
         ]
       ],
       "templateHistoryRedo": []
@@ -573,7 +702,7 @@
     "systemVersion": "3.0.0",
     "coreVersion": "11.315",
     "createdTime": 1688078694030,
-    "modifiedTime": 1700247259108,
+    "modifiedTime": 1712954303513,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }

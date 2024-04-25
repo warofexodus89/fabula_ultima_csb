@@ -321,6 +321,82 @@
                 "defaultValue": null,
                 "size": "full-size",
                 "icon": "",
+                "value": "<i class=\"fa-solid fa-bomb\"> Item Boost (Offence)</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "item_boost_offence",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "controlsStyle": "hover",
+                "type": "numberField"
+              },
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
+                "value": "<i class=\"fa-solid fa-prescription-bottle-medical\"> Item Boost (Heal)</i>",
+                "prefix": "",
+                "suffix": "",
+                "rollMessage": "",
+                "altRollMessage": "",
+                "style": "label",
+                "type": "label"
+              },
+              {
+                "key": "item_boost_heal",
+                "cssClass": "align-center",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": "",
+                "defaultValue": "0",
+                "size": "small",
+                "allowDecimal": false,
+                "minVal": "0",
+                "maxVal": "",
+                "allowRelative": false,
+                "showControls": true,
+                "controlsStyle": "hover",
+                "type": "numberField"
+              }
+            ],
+            [
+              {
+                "key": "",
+                "cssClass": "",
+                "role": "0",
+                "permission": "0",
+                "tooltip": "",
+                "visibilityFormula": "",
+                "label": null,
+                "defaultValue": null,
+                "size": "full-size",
+                "icon": "",
                 "value": "<i class=\"fa-solid fa-crosshairs\"> Accuracy Check Bonus</i>",
                 "prefix": "",
                 "suffix": "",
@@ -531,7 +607,7 @@
             ]
           ],
           "cols": "4",
-          "rows": "6",
+          "rows": "7",
           "layout": "",
           "type": "table"
         },
@@ -1003,6 +1079,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1076,6 +1154,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1149,6 +1229,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1222,6 +1304,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1295,6 +1379,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1368,6 +1454,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1441,6 +1529,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1514,6 +1604,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1587,6 +1679,8 @@
                         "tableKey": null,
                         "tableKeyColumn": null,
                         "tableLabelColumn": null,
+                        "formulaKeyOptions": null,
+                        "formulaLabelOptions": null,
                         "type": "select"
                       }
                     ],
@@ -1755,43 +1849,124 @@
     },
     "modifiers": [
       {
+        "id": "0jacMvYo5GUaojHw",
+        "conditionalGroup": "",
         "priority": 0,
-        "key": "total_def",
+        "key": "mod_def",
         "operator": "add",
-        "formula": "${is_equipped ? ref('armor_mod') : 0}$"
+        "formula": "${is_equipped ? ref('armor_mod') : 0}$",
+        "description": ""
       },
       {
+        "id": "FAMohgc0jDnZEVB7",
+        "conditionalGroup": "",
         "priority": 0,
-        "key": "total_mdef",
+        "key": "mod_mdef",
         "operator": "add",
-        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$"
+        "formula": "${is_equipped ? ref('magic_defense_mod') : 0}$",
+        "description": ""
       },
       {
+        "id": "nHuHKujg26sY66ZH",
+        "conditionalGroup": "",
         "priority": 0,
-        "key": "max_mp",
+        "key": "mod_mp",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_mp') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_mp') : 0}$",
+        "description": ""
       },
       {
+        "id": "Ux3hf3tRtAqB0EJC",
+        "conditionalGroup": "",
         "priority": 0,
-        "key": "max_hp",
+        "key": "mod_hp",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_hp') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_hp') : 0}$",
+        "description": ""
       },
       {
+        "id": "7JKWFAltYP2cTOF6",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "total_init",
         "operator": "add",
-        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$"
+        "formula": "${is_equipped ? ref('initiative_bonus') : 0}$",
+        "description": ""
       },
       {
+        "id": "5T120uWL7QnDnJRW",
+        "conditionalGroup": "",
         "priority": 0,
         "key": "max_ip",
         "operator": "add",
-        "formula": "${is_equipped ? ref('bonus_ip') : 0}$"
+        "formula": "${is_equipped ? ref('bonus_ip') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "D2J3nG6Q8MewA5Ke",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_weapon_bonus",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('wpn_dmg_up') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "Or90gK604cmqtTyU",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_magic_bonus",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('magic_damage_up') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "SnE2PmzlGrNetV82",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_heal_bonus",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('healing_bonus') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "m7I4jgbOwBmd2YpZ",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_item_heal",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('item_boost_heal') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "9tmUdaGce2Hlyhzo",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_item_offence",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('item_boost_offence') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "1D79HrbdonDWQiHq",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_acc",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('accuracy_check_bonus') : 0}$",
+        "description": ""
+      },
+      {
+        "id": "fVDOBLZCvbQBq5gZ",
+        "conditionalGroup": "",
+        "priority": 0,
+        "key": "mod_mcheck",
+        "operator": "add",
+        "formula": "${is_equipped ? ref('magic_check_bonus') : 0}$",
+        "description": ""
       }
     ],
-    "templateSystemUniqueVersion": 587314177
+    "templateSystemUniqueVersion": 1503402026
   },
   "effects": [],
   "folder": "rUpkamytc1F92Qae",
@@ -1808,98 +1983,62 @@
             "path": [
               "body",
               "contents",
-              7,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              8,
-              "contents",
-              0,
-              "value"
+              4,
+              0
             ],
-            "lhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : 'black'}$\"></i>",
-            "rhs": "<i class=\"fa-solid fa-skull-crossbones\" style=\"color: ${equalText(string(ref('affinity_9')),'NOR') ? 'gray' : ''}$\"></i>"
-          }
-        ],
-        [
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-crosshairs\"> Accuracy Check Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
+          },
           {
             "kind": "E",
             "path": [
               "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              0,
-              "contents",
-              1,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_no_padding"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
-              1,
-              "contents",
-              1,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_no_padding"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
               "contents",
               2,
               "contents",
-              1,
-              "cssClass"
-            ],
-            "lhs": "",
-            "rhs": "item_no_padding"
-          }
-        ],
-        [
-          {
-            "kind": "E",
-            "path": [
-              "body",
-              "contents",
-              7,
-              "contents",
-              0,
-              0,
-              "contents",
               3,
-              "contents",
-              1,
-              "cssClass"
+              0
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-crosshairs\"> Accuracy Check Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            "rhs": null
           }
         ],
         [
@@ -1908,18 +2047,62 @@
             "path": [
               "body",
               "contents",
-              7,
-              "contents",
-              0,
-              0,
+              2,
               "contents",
               4,
-              "contents",
-              1,
-              "cssClass"
+              2
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "",
+              "prefix": "<i class=\"fa-solid fa-wand-magic-sparkles\"> Magic Check Bonus</i>",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              2
+            ],
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "",
+              "prefix": "<i class=\"fa-solid fa-wand-magic-sparkles\"> Magic Check Bonus</i>",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            "rhs": null
           }
         ],
         [
@@ -1928,18 +2111,60 @@
             "path": [
               "body",
               "contents",
-              7,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              5,
-              "contents",
-              1,
-              "cssClass"
+              4,
+              3
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": null,
+            "rhs": {
+              "key": "magic_check_bonus",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              3
+            ],
+            "lhs": {
+              "key": "magic_check_bonus",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            },
+            "rhs": null
           }
         ],
         [
@@ -1948,18 +2173,62 @@
             "path": [
               "body",
               "contents",
-              7,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              6,
-              "contents",
-              1,
-              "cssClass"
+              3,
+              0
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-heart-circle-plus\"> Heal Received Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              2,
+              0
+            ],
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-heart-circle-plus\"> Heal Received Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            "rhs": null
           }
         ],
         [
@@ -1968,18 +2237,62 @@
             "path": [
               "body",
               "contents",
-              7,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              7,
-              "contents",
-              1,
-              "cssClass"
+              3,
+              0
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-heart-circle-plus\"> Heal Received Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            },
+            "rhs": null
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              2,
+              0
+            ],
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-heart-circle-plus\"> Heal Received Bonus</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
           }
         ],
         [
@@ -1988,18 +2301,190 @@
             "path": [
               "body",
               "contents",
-              7,
+              2,
               "contents",
-              0,
-              0,
-              "contents",
-              8,
-              "contents",
-              1,
-              "cssClass"
+              4,
+              1
             ],
-            "lhs": "",
-            "rhs": "item_no_padding"
+            "lhs": null,
+            "rhs": {
+              "key": "accuracy_check_bonus",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            }
+          },
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              1
+            ],
+            "lhs": {
+              "key": "accuracy_check_bonus",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            },
+            "rhs": null
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              0
+            ],
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-bomb\"> Item Boost (Offence)</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              1
+            ],
+            "lhs": null,
+            "rhs": {
+              "key": "item_boost_offence",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "0",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            }
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              2
+            ],
+            "lhs": null,
+            "rhs": {
+              "key": "",
+              "cssClass": "",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": null,
+              "defaultValue": null,
+              "size": "full-size",
+              "icon": "",
+              "value": "<i class=\"fa-solid fa-prescription-bottle-medical\"> Item Boost (Heal)</i>",
+              "prefix": "",
+              "suffix": "",
+              "rollMessage": "",
+              "altRollMessage": "",
+              "style": "label",
+              "type": "label"
+            }
+          }
+        ],
+        [
+          {
+            "kind": "E",
+            "path": [
+              "body",
+              "contents",
+              2,
+              "contents",
+              3,
+              3
+            ],
+            "lhs": null,
+            "rhs": {
+              "key": "item_boost_heal",
+              "cssClass": "align-center",
+              "role": "0",
+              "permission": "0",
+              "tooltip": "",
+              "visibilityFormula": "",
+              "label": "",
+              "defaultValue": "0",
+              "size": "small",
+              "allowDecimal": false,
+              "minVal": "0",
+              "maxVal": "",
+              "allowRelative": false,
+              "showControls": true,
+              "controlsStyle": "hover",
+              "type": "numberField"
+            }
           }
         ]
       ],
@@ -2015,10 +2500,10 @@
   },
   "_stats": {
     "systemId": "custom-system-builder",
-    "systemVersion": "2.4.1",
-    "coreVersion": "11.307",
+    "systemVersion": "3.0.0",
+    "coreVersion": "11.315",
     "createdTime": 1687435117922,
-    "modifiedTime": 1692805704170,
+    "modifiedTime": 1714060859812,
     "lastModifiedBy": "Cdab6E6tDeyd5eNc"
   }
 }
