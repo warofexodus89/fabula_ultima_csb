@@ -18,6 +18,7 @@
 .tab_content_background { border:0px solid #854A4A; background: #D0CDBF;}
 .tab_content_background > table { border:2px solid #854A4A;}
 .tab_content_background > table > tbody > tr > td { padding-left:0px ; padding-right: 0px; padding-top: 0px;}
+.attribute_header { background: #854A4A; color: #F1E4CA; margin:0px; padding: 7px 0;}
 .nav_header_bar > nav { background: #854A4A; color: #F1E4CA; margin:0px;}
 .tab_background {border:0px solid #854A4A; background: #D0CDBF;margin: 0px;}
 .tab_background > table {background: rgba(0, 0, 0, 0.00); border:0px; padding-left:0px;}
@@ -37,6 +38,9 @@
     text-rendering: auto;
     color:#854A4A;
 }
+
+/* Weapon sheet tab stylings */
+.weapon_nav_header_bar > nav { background: #006944; color: #fafffa; margin:0px;padding-top: 15px !important; padding-bottom: 15px !important; border-top: 1px solid #022e00 !important; border-bottom: 1px solid #022e00 !important;}
 
 /* PC gray table color */
 .alt_background {background : #E5E3D9; border-top:1px solid #854A4A; border-bottom:1px solid #854A4A; margin-top: 10px; margin-bottom: 10px;}
@@ -58,7 +62,7 @@
 .ritual-section-header > table {border:0px; border-right: 1px solid #854A4A; background: rgba(0, 0, 0, 0.05); margin:0px;}
 
 /* Project section */
-.project_details_table {border: 1px solid; margin: 10px; text-align: center;}
+.project_details_table {margin: 10px; text-align: center;}
 
 
 /* Zero power table styling */
@@ -69,7 +73,7 @@
 .alt_background_zero_panel > div {margin-top:0px; margin-bottom:0px}
 
 /* Buff/Debuff section styling  */
-.label-styling {border: 2px solid #854A4A;background: #F1E4CA;}
+.label-styling {border: 2px solid #854A4A; background: rgba(230, 228, 218, 0.6);}
 .margin-bottom > table {margin-bottom: 0px;}
 
 
@@ -110,6 +114,7 @@
 .npc_tab_content_background { border:0px solid #43436a; background: #D0CDBF;}
 .npc_tab_content_background > table { border:2px solid #43436a;}
 .npc_tab_content_background > table > tbody > tr > td { padding-left:0px ; padding-right: 0px; padding-top: 0px;}
+.npc_attribute_header { background: #43436a; color: #68c2d3; margin:0px;  padding: 7px 0;}
 .npc_nav_header_bar > nav { background: #43436a; color: #68c2d3; margin:0px;}
 .npc_tab_background {border:0px solid #854A4A; background: #D0CDBF;margin: 0px;}
 .npc_tab_background > table {background: rgba(0, 0, 0, 0.00); border:0px; padding-left:0px;}
@@ -117,8 +122,11 @@
 .npc_tab_content { border-top: 1px solid #43436a; border-bottom: 1px solid #43436a; background: #e3f5ee; color:#43436a; margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 5px}
 .margin-top-styling {margin-top:10px;}
 .npc_tab_content > table { border: 0px solid #4C0F0F; background:#e3f5ee; color:#43436a; margin-left: 0px; margin-right: 0px; padding: 0px;}
-.npc-label-styling {border: 2px solid #43436a;background: #ecf8f4;}
+.npc-label-styling {border: 2px solid #43436a;background: rgba(230, 228, 218, 0.6);}
 .npc-hidding-mod-atr {color:#e3f5ee;}
+.npc_border-right  {border-right: 1px solid #43436a;}
+.npc_border-left  {border-left: 1px solid #43436a;}
+
 
 /* NPC gray table color */
 .npc_alt_background {background : #ecf8f4; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px; color:#43436a;}
@@ -143,7 +151,6 @@
 .contact_padding > select {padding:0px}
 
 /* ------------- Chat Sheet styling -------------  */
-
 .chat-padding {padding:3px;}
 .npc_chat_card {background : rgba(235, 247, 243, 0.502) ; border-top:1px solid #43436a; border-bottom:1px solid #43436a; margin-top: 10px; margin-bottom: 10px; color:#43436a;}
 .npc_chat_card > table {margin-top: 0px; margin-bottom: 0px;}
@@ -326,14 +333,16 @@ a.content-link {
 .npc_alt_text_field_background  #fp {background : rgba(235, 247, 243, 0.4); text-align: center;}
 .npc_alt_text_field_background > select {background : rgba(235, 247, 243, 0.4); padding: 0px; text-align: center;}
 .npc_alt_text_field_background > span > input {background : rgba(235, 247, 243, 0.4); text-align: center;}
-
 .main_attribute_field_background > span > input {background : rgba(235, 247, 243, 0.2); text-align: center;}
 .main_attribute_field_background > input {background : rgba(235, 247, 243, 0.2); text-align: center;}
 
+/* General CSS stylings */
 .align-left > input { text-align: left; }
 .align-center > select {text-align: center;}
 .align-center > input {text-align: center;}
 .align-center > span > input {text-align: center;}
+.mod_panel_padding {padding-top:10px; padding-bottom:10px;}
+
 
 .no-margin {
 	margin-left:0px;
